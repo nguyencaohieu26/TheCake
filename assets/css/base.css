@@ -1,12 +1,14 @@
 /* Color */
 :root {
   --primary-color: #ed563b;
+  --second-color: #fcaf28;
   --text-color: #232d39;
   --bg-facebook: #4867aa;
   --bg-twitter: #3cf;
   --bg-google: #db4437;
   --bg-rss: #e78733;
   --bg-linked: #0177b5;
+  --footer-text: rgb(173, 173, 173);
   /*  */
 }
 /* Default setting */

@@ -84,7 +84,7 @@
 .menu__icons > * {
   color: white;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .search__icon {
   margin-right: 2rem;
@@ -93,6 +93,68 @@
   display: none;
 }
 /* mobile nav */
+.menu-mobile__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  /* animate for mobile nav */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.8s linear;
+}
+.menu-mobile__nav.active {
+  max-height: 50rem;
+}
+.mobile__nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.mobile__nav-link::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 1.5rem;
+  height: 2px;
+  border-radius: 2px;
+  width: calc(100% - 3rem);
+  background: linear-gradient(to left, var(--primary-color), var(--text-color));
+  transform: scaleX(0);
+  transition: all 0.3s ease-in;
+}
+.mobile__nav-link:hover::after {
+  transform: scaleX(1);
+}
+.mobile__child-list {
+  margin-left: 3rem;
+  /* animate for mobile child list */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+}
+.mobile__nav-link.active ~ .mobile__child-list {
+  max-height: 30rem;
+}
+.fa-caret-down {
+  transition: 0.4s ease-in;
+}
+.mobile__nav-link.active .fa-caret-down {
+  transform: rotate(270deg);
+}
+.mobile__child-link {
+  padding: 0.8rem;
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+}
+.mobile__child-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 /* ------------------------------ */
 /* header image */
 .header__img {
@@ -169,3 +231,118 @@
 }
 /* ------------------------- */
 /* main content */
+
+/* -------------------------- */
+/* footer */
+.footer {
+  background: url(/assets/image/footer-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--footer-text);
+  line-height: 1.6;
+}
+
+.footer-top__list {
+  padding: 8rem 1.5rem 4rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.footer-top__heading {
+  position: relative;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: white;
+}
+.footer-top__heading::after,
+.footer-top__heading::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 1px;
+  width: 6rem;
+  background: var(--footer-text);
+}
+.footer-top__heading::after {
+  top: calc(100% + 3px);
+  width: 3rem;
+}
+.footer-top__item p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.item-footer__link {
+  display: inline-block;
+  line-height: 1.6;
+  color: var(--footer-text);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.footer-top__item:nth-of-type(3) .item-footer__link:hover {
+  transform: translateX(1rem);
+}
+.item-footer__link i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.footer-top__item:nth-of-type(4) .item-footer__link span {
+  color: white;
+}
+.item-footer__link:hover {
+  color: #fcaf28;
+}
+/* footer bottom */
+.footer-details__bottom {
+  padding: 2rem 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+.footer-details__bottom .row-index {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr auto;
+}
+.copy-right span {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 1.8rem;
+}
+.footer-social__link {
+  color: #fff;
+}
+.footer-social__link i {
+  height: 3.5rem;
+  width: 3.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+  display: inline-block;
+  border-radius: 3px;
+}
+.footer-social__link:hover {
+  opacity: 0.8;
+}
+.footer-social__link:nth-of-type(1) i {
+  background: var(--bg-facebook);
+}
+.footer-social__link:nth-of-type(2) i {
+  background: var(--bg-twitter);
+}
+.footer-social__link:nth-of-type(3) i {
+  background: var(--bg-rss);
+}
+.footer-social__link:nth-of-type(4) i {
+  background: var(--bg-google);
+}
+.footer-social__link:nth-of-type(5) i {
+  background: var(--bg-linked);
+}

@@ -1,0 +1,111 @@
+/*  */
+.main__gallery {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  padding: 0 1.5rem;
+}
+.main__gallery .row-index .image__icon {
+  width: 5rem;
+}
+.gallery__heading {
+  display: block;
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: var(--text-color);
+}
+.gallery__desc {
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+.gallery__desc a {
+  color: var(--second-color);
+  border-bottom: 2px solid var(--text-color);
+}
+.gallery__btns {
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+.gallery__btns .btn-gallery {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.btn-gallery.active,
+.btn-gallery:hover {
+  color: var(--second-color);
+}
+/*  */
+.header-gallery__img {
+  height: 90vh;
+}
+.gallery__img-item {
+  height: 90vh;
+  position: relative;
+}
+.gallery__img-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(128, 30, 30, 0.2);
+}
+.gallery__image-store img {
+  height: 90vh;
+}
+/* gallery */
+.gallery__grid {
+  max-width: 100rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.element-item {
+  cursor: pointer;
+  height: 35rem;
+  width: calc(100% / 4);
+}
+.element-item img {
+  height: 100%;
+}
+.gallery__zoom {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background-color: #fcaf2890;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.4s ease-in;
+}
+.element-item:hover .gallery__zoom {
+  transform: scaleY(1);
+}
+/* Responsive */
+@media only screen and (max-width: 930px) {
+  .element-item {
+    width: calc(100% / 3);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .element-item {
+    width: calc(100% / 2);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .element-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,59 @@
+/* Responsive for desktop first */
+/* Responsive for screen width between 992px and 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header__img-content {
+    top: 52%;
+  }
+}
+/* Responsive for screen less then 992px */
+@media only screen and (max-width: 992px) {
+  /* nav */
+  .header__nav {
+    grid-template-columns: 1fr auto;
+  }
+  .menu__nav {
+    display: none;
+  }
+  .menu__icons {
+    display: flex;
+  }
+  .search__icon {
+    margin: 0;
+  }
+  .menu__toggle {
+    margin: 0 2rem;
+    display: block;
+  }
+  /* header image */
+  .header__img-content {
+    top: 55%;
+    width: 90%;
+  }
+  .img-heading {
+    font-size: 4.5rem;
+  }
+}
+/* Responsive for screen less than 767px */
+@media only screen and (max-width: 767px) {
+  /* header image */
+  .img-heading {
+    font-size: 3rem;
+  }
+  .themost {
+    font-size: 2rem;
+  }
+  /* footer */
+  .footer-details__bottom .row-index {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-social__list {
+    order: -1;
+  }
+}
+/* Responsive for screen less than 576px */
+@media only screen and (max-width: 576px) {
+  .copy-right {
+    font-size: 1.4rem;
+  }
+}
