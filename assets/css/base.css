@@ -1,0 +1,58 @@
+/* Color */
+:root {
+  --primary-color: #ed563b;
+  --text-color: #232d39;
+  --bg-facebook: #4867aa;
+  --bg-twitter: #3cf;
+  --bg-google: #db4437;
+  --bg-rss: #e78733;
+  --bg-linked: #0177b5;
+  /*  */
+}
+/* Default setting */
+/* 
+10px = 1rem
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  height: 100%;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* video {
+  height: 100%;
+  object-fit: cover;
+} */
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+button {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+/*  */
