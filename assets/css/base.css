@@ -18,6 +18,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.row-index {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 html {
   font-size: 62.5%;
 }
@@ -35,9 +39,8 @@ li {
   list-style: none;
 }
 img {
-  height: 100%;
-  display: block;
   width: 100%;
+  display: block;
   object-fit: cover;
 }
 /* video {
@@ -55,4 +58,4 @@ button {
   outline: none;
   border: 0;
 }
-/*  */
+/* animate */

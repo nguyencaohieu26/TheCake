@@ -7,12 +7,22 @@
     <title>TheCake HomePage</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
   "
     />
     <!-- gg font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <!-- link base stylesheet -->
@@ -23,6 +33,269 @@
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
   </head>
   <body>
-    <section class="home__page"></section>
+    <section class="home__page">
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- header logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  <img
+                    src="assets/image/logo_cake.png"
+                    alt="Thecake_logo"
+                    class="header__logo-img"
+                  />
+                  <span class="header__logo-text">TheCake</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <nav class="menu__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Products</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="popularcake.html" class="nav-child__link">
+                          Popular Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="weddingcake.html" class="nav-child__link">
+                          Wedding Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="ordercake.html" class="nav-child__link">
+                          Order Cake
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>About Us</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="aboutus.html" class="nav-child__link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="blog.html" class="nav-child__link"> Blog </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="team.html" class="nav-child__link"> Team </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="testimonial.html" class="nav-child__link"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="faq.html" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="term.html" class="nav-child__link">Term</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icons">
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="menu__toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div class="login__icon">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu mobile -->
+          <nav class="menu-mobile__nav" style="display: none">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="index.html" class="mobile__nav-link">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>Products</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="popularcake.html" class="mobile__child-link"
+                      >Popular Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="weddingcake.html" class="mobile__child-link"
+                      >Wedding Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="ordercake.html" class="mobile__child-link">
+                      Order Cake</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>About Us</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="aboutus.html" class="mobile__child-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="blog.html" class="mobile__child-link">Blog</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="team.html" class="mobile__child-link">Team</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="testimonial.html" class="mobile__child-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="faq.html" class="mobile__child-link">FAQ</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="term.html" class="mobile__child-link">Term</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="contact.html" class="mobile__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- login form -->
+      <!-- header img -->
+      <section class="header__img">
+        <div class="header__img-list owl-carousel owl-theme">
+          <div class="header__img-item">
+            <img
+              src="assets/image/Index_headerImg/headerImg1.jpg"
+              alt="headerImg1"
+            />
+            <div class="header__img-content">
+              <h3 class="img-heading">The Taste Of Our Amazing Cakes</h3>
+              <p class="img__dess">Sometime you just need a cake</p>
+              <a href="#" class="btn btn-ordernow">Get Started</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img
+              src="assets/image/Index_headerImg/headerImg2.jpg"
+              alt="headerImg1"
+            />
+            <div class="header__img-content">
+              <p class="themost">THE MOST</p>
+              <h3 class="img-heading">DELICOUS</h3>
+              <p class="img__dess">Cake's Always A Good Idea</p>
+              <a href="#" class="btn btn-ordernow">Get Started</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img
+              src="assets/image/Index_headerImg/headerImg3.jpg"
+              alt="headerImg1"
+            />
+            <div class="header__img-content">
+              <p class="themost">MADE WITH LOVE</p>
+              <h3 class="img-heading">VANNILA SPECIALS</h3>
+              <p class="img__dess">Don't Be Sad Just Eat Some Cake</p>
+              <a href="#" class="btn btn-ordernow">View Now</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img
+              src="assets/image/Index_headerImg/headerImg4.jpg"
+              alt="headerImg1"
+            />
+            <div class="header__img-content">
+              <p class="themost">DELICOUS & SWEET</p>
+              <h3 class="img-heading">CELEBRATION CAKES</h3>
+              <p class="img__dess">All You Need Is Love And Dessert</p>
+              <a href="#" class="btn btn-ordernow">Get Started</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img
+              src="assets/image/Index_headerImg/headerImg5.jpg"
+              alt="headerImg1"
+            />
+            <div class="header__img-content">
+              <p class="themost">DELICOUS & SWEET</p>
+              <h3 class="img-heading">BIRTHDAY CAKES</h3>
+              <p class="img__dess">A Party Without Cake Is Just A Meeting</p>
+              <a href="#" class="btn btn-ordernow">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- main -->
+      <main class="main__home"></main>
+      <!-- footer -->
+      <footer class="footer"></footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+       "></script>
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
   </body>
 </html>
