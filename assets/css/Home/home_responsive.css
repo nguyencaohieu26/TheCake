@@ -1,8 +1,13 @@
 /* Responsive for desktop first */
 /* Responsive for screen width between 992px and 1200px */
+@media only screen and (min-width: 1201px) {
+  .header__img-content {
+    top: 60%;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header__img-content {
-    top: 52%;
+    top: 55%;
   }
 }
 /* Responsive for screen less then 992px */
@@ -53,7 +58,15 @@
 }
 /* Responsive for screen less than 576px */
 @media only screen and (max-width: 576px) {
+  /* footer */
   .copy-right {
     font-size: 1.4rem;
+  }
+  /* login form */
+  .login-form-details {
+    grid-template-columns: 1fr;
+  }
+  .form-right {
+    display: none;
   }
 }

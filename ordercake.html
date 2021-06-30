@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>CustomCake</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -28,9 +33,14 @@
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
     <!-- link stylesheet for gallery -->
     <link rel="stylesheet" href="assets/css/gallery.css">
+    <!-- link stylesheet for ordercake -->
+    <link rel="stylesheet" href="assets/css/OrderCake/ordercake.css">
+    <!-- link responsive for ordercake -->
+    <link rel="stylesheet" href="assets/css/OrderCake/oreder_responsive.css">
   </head>
   <body>
-    <section class="gallery__page">
+    <!-- view large size image -->
+    <section class="ordercake__page">
       <!-- header -->
       <header class="header">
         <div class="header__scroll">
@@ -269,163 +279,269 @@
           <div class="gallery__img-item">
             <div class="gallery__image-store">
               <img
-                src="assets/image/gallery/bg_img.png"
+                src="assets/image/ordercake/order_bg.jpg"
                 alt="gallery__img-top"
               />
             </div>
             <div class="header__img-content">
-              <h3 class="img-heading">The Taste Of Our </br>Amazing Cakes</h3>
-              <p class="img__dess">Sometime you just need a cake</p>
-              <a href="#" class="btn btn-ordernow">Get Started</a>
+              <h3 class="img-heading">Made with love</br>SPECIALS CAKES</h3>
+              <p class="img__dess">All You Need Is Love And Dessert</p>
+              <a href="#" class="btn btn-ordernow">Order Now</a>
             </div>
           </div>
       </section>
       <!-- main -->
-      <main class="main__gallery">
+      <main class="main__ordercake">
         <div class="row-index">
-          <img class="image__icon" src="assets/image/gallery/birthday-cake.png" alt="birthday-cake">
-          <h3 class="gallery__heading">
-            Gallery
-          </h3>
-          <p class="gallery__desc">
-            Make every occasion perfect with an amazing Gallery cake! Check out our gallery of 1000 designs, as well as our 33 flavors of cakes and 38 flavors of fillings.
-            Please <a href="contact.html">contact us</a> today and let’s discuss your thoughts and ideas.
-          </p>
-          <div class="gallery__btns filters-button-group">
-            <button class="btn btn-gallery active" data-filter="*">SHOW ALL</button>
-            <button class="btn btn-gallery" data-filter=".anniversry">ANNIVERSRY CAKE</button>
-            <button class="btn btn-gallery" data-filter=".popular">POPULAR CAKE</button>
-            <button class="btn btn-gallery" data-filter=".birthday">BIRTHDAY CAKE</button>
-          </div>
-          <div class="gallery__grid">
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img9.jpg" alt="Wedding Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Wedding Cake</h4>           
-                  <i class="fas fa-search"></i>
-              </div>
-            </div>
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img11.jpg" alt="Wedding Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Wedding Cake</h4> 
-                  <i class="fas fa-search"></i> 
-              </div>
-            </div>
-            <div class="element-item birthday">
-              <img src="assets/image/gallery/gallery-img/gallery_Img15.jpg" alt="Birthday Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Birthday Cake</h4>
-                  <i class="fas fa-search"></i>     
-              </div>
-            </div>
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img12.jpg" alt="Wedding Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Wedding Cake</h4>      
-                  <i class="fas fa-search"></i>
-              </div>
-            </div>
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img13.jpg" alt="Wedding Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Wedding Cake</h4>   
-                  <i class="fas fa-search"></i>
-              </div>
-            </div>
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img14.jpg" alt="Wedding Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Wedding Cake</h4>
-                  <i class="fas fa-search"></i>
-              </div>  
-            </div>
-            <div class="element-item birthday">
-              <img src="assets/image/gallery/gallery-img/gallery_Img16.jpg" alt="Birthday Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Birthday Cake</h4>        
-                  <i class="fas fa-search"></i>   
-              </div> 
-            </div>
-            <div class="element-item anniversry">
-              <img src="assets/image/gallery/gallery-img/gallery_Img4.jpg" alt="Popular Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Popular Cake</h4>       
-                  <i class="fas fa-search"></i>  
-              </div> 
-            </div>
-            <div class="element-item birthday">
-              <img src="assets/image/gallery/gallery-img/gallery_Img17.jpg" alt="Birthday Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Birthday Cake</h4>   
-                  <i class="fas fa-search"></i> 
-              </div> 
-            </div>
-            <div class="element-item popular">
-              <img src="assets/image/gallery/gallery-img/gallery_Img1.png" alt="Cupcake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">CupCake</h4> 
-                  <i class="fas fa-search"></i>
-              </div> 
-            </div>
-            <div class="element-item birthday">
-              <img src="assets/image/gallery/gallery-img/gallery_Img19.jpg" alt="Birthday Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Birthday Cake</h4>         
-                  <i class="fas fa-search"></i>   
-              </div> 
-            </div>
-            <div class="element-item birthday">
-              <img src="assets/image/gallery/gallery-img/gallery_Img20.jpg" alt="Birthday Cake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">Birthday Cake</h4>              
-                  <i class="fas fa-search"></i>   
-              </div> 
-            </div>
-            <div class="element-item popular">
-              <img src="assets/image/gallery/gallery-img/gallery_Img5.png" alt="Cupcake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">CupCake</h4>               
-                  <i class="fas fa-search"></i>            
-              </div> 
-            </div>
-            <div class="element-item birthday popular">
-              <img src="assets/image/gallery/gallery-img/gallery_Img3.jpg" alt="Cupcake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">CupCake & Birthday Cake</h4>
-                  <i class="fas fa-search"></i>        
-              </div> 
-            </div>
-            <div class="element-item popular">
-              <img src="assets/image/gallery/gallery-img/gallery_Img8.jpg" alt="Cupcake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">CupCake</h4>              
-                  <i class="fas fa-search"></i>            
-              </div> 
-            </div>
-            <div class="element-item popular">
-              <img src="assets/image/gallery/gallery-img/gallery_Img7.jpg" alt="Cupcake">
-              <div class="gallery__zoom">
-                <h4 class="gallery__name-cake">CupCake</h4>            
-                  <i class="fas fa-search"></i>  
-              </div> 
+          <h3 class="ordercake-home__heading">ORDER CAKES</h3>
+          <img class="ordercake-home__icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+          <!-- category list -->
+          <div class="ordercake__category-list owl-carousel owl-theme">
+          <div class="ordercake__category-item">
+            <h4 class="category-item__name">BIRTHDAY CAKE</h4>
+            <div class="category-item__content">
+              <p>Birthday cake with name</p>
+              <p>Custom ingredients</p>
+              <p>Custom size</p>
+              <p>Custom design</p>
+              <a href="#" class="category-item-order">ORDER NOW</a>
+              <p class="category-item-price">Starting at $25</p>
             </div>
           </div>
-          <!-- gallery full image -->
-          <div class="gallery-full__size">
-            <div class="gallery-full-details">
-              <div class="gallery-full-img">
-                <img src="" alt="">
-              </div>
-              <p class="gallery-full__content"></p>
-             <div class="close-gallery-full-img">
-              <i class="fa fa-times"></i>
-             </div>
-             <i class="fas fa-arrow-circle-left prev-btn"></i>
-             <i class="fas fa-arrow-circle-right next-btn"></i>
+          <div class="ordercake__category-item ordercake__category-item--yellow">
+            <h4 class="category-item__name">CUSTOM CAKE</h4>
+            <div class="category-item__content">
+              <p>Your event style</p>
+              <p>Custom ingredients</p>
+              <p>Custom size</p>
+              <p>Custom design</p>
+              <a href="#" class="category-item-order">ORDER NOW</a>
+              <p class="category-item-price">Starting at $30</p>
+            </div>
+          </div>
+          <div class="ordercake__category-item">
+            <h4 class="category-item__name">WEDDING CAKE</h4>
+            <div class="category-item__content">
+              <p>Unlimited layers</p>
+              <p>Custom size</p>
+              <p>Custom design</p>
+              <p>Optional golden coast</p>
+              <a href="#" class="category-item-order">ORDER NOW</a>
+              <p class="category-item-price">Starting at $40</p>
             </div>
           </div>
         </div>
+        </div>
+        <!-- form order cake -->
+        <div class="form-order-cake">
+          <h3>Custom Cake Order Form</h3>
+          <p class="form-order-cake-desc">
+            Do you have a question or would like to schedule a tasting appointment? We'd love to hear from you. Just fill out the form field below.
+          </p>
+         <div class="order-form-details">
+          <div class="row-index">
+            <form action="" class="order-form">
+              <div class="order-form-optioncake">
+                <div class="group-form1 group-form-chose">
+                  <p>Choose a cake: </p>
+                  <div>
+                    <input type="radio" id="Pound_Cake" name="typecake"><label for="Pound_Cake">Pound Cake</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Sponge_Cake" name="typecake"><label for="Sponge_Cake">Sponge Cake</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Upside_Down_Cake" name="typecake"><label for="Upside_Down_Cake">Upside Down Cake</label> 
+                  </div>
+                  <div >
+                    <input type="radio" id="Flourless_Cake" name="typecake"><label for="Flourless_Cake">Flourless Cake</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="CupCake" name="typecake"><label for="CupCake">CupCake</label> 
+                  </div>        
+                  <div>
+                    <input type="radio" id="Muffin" name="typecake"><label for="Muffin">Muffin</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="othertype" name="typecake"><label for="other">Other</label> 
+                  </div>
+                </div>
+                <div class="group-form2 group-form-chose">
+                  <p>Choose the filling</p>
+                  <div>
+                    <input type="radio" id="Chocolate" name="typefilling"><label for="Chocolate">Chocolate</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Vanila" name="typefilling"><label for="Vanila">Vanila</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Cream_Cheese" name="typefilling"><label for="Cream_Cheese">Cream Cheese</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Buttercream_Cheese" name="typefilling"><label for="Buttercream_Cheese">Buttercream Cheese</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="otherfilling" name="typefilling"><label for="otherfilling">Other</label> 
+                  </div>
+                </div>
+                <div class="group-form3 group-form-chose">
+                  <p>Choose flavors</p>
+                  <div>
+                    <input type="radio" id="Vanila_flavor" name="flavor"><label for="Vanila_flavor">Vanila</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Almond_flavor" name="flavor"><label for="Almond_flavor">Almond</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Pistachio_flavor" name="flavor"><label for="Pistachio_flavor">Pistachio</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Lemon_flavor" name="flavor"><label for="Lemon_flavor">Lemon</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Orange_flavor" name="flavor"><label for="Orange_flavor">Orange</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Dried_fruits_flavor" name="flavor"><label for="Dried_fruits_flavor">Dried Fruits</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="Otherflavor" name="flavor"><label for="Otherflavor">Other</label>
+                  </div>
+                </div>
+                <div class="group-form4 group-form-chose">
+                  <p>Shape</p>
+                  <div>
+                    <input type="radio" id="Square" name="shape"><label for="Square">Square</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Cricle" name="shape"><label for="Cricle">Cricle</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Rectangle" name="shape"><label for="Rectangle">Rectangle</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Special" name="shape"><label for="Special">Special</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="OtherSpecial" name="shape"><label for="OtherSpecial">Other</label> 
+                  </div>
+                </div>
+                <div class="group-form5 group-form-chose">
+                  <p>Choose the icing</p>
+                  <div>
+                    <input type="radio" id="Buttercream" name="icing"><label for="Buttercream">Buttercream</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Vanila_icing" name="icing"><label for="Vanila_icing">Vanila</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="Fondant" name="icing"><label for="Fondant">Fondant</label> 
+                  </div>
+                  <div>
+                    <input type="radio" id="OtherIcing" name="icing"><label for="OtherIcing">Other</label> 
+                  </div>
+                </div>    
+                 <!--group select  -->
+                <div class="group-form6 group-select">
+                  <div class="group-select-form">
+                    <label for="level">Level</label>
+                    <select id="level">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                      <option value="2">4</option>
+                    </select>
+                  </div>
+                  <div class="group-select-form">
+                    <label for="sizecake">Size</label>
+                    <select id="sizecake">
+                      <option value="4">4 inch</option>
+                      <option value="6">6 inch</option>
+                      <option value="8">8 inch</option>
+                      <option value="10">10 inch</option>
+                    </select>
+                  </div>
+                </div> 
+                <!-- group text -->
+                <div class="group-form7 group-text">
+                  <div class="group-form-text">
+                    <p>Number of servings</p>
+                    <input type="text" placeholder="Enter the number of people">
+                  </div>
+                  <div class="group-form-text">
+                    <p>Do you have any allergies?</p>
+                    <textarea></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="order-form-info-person">
+                <div class="person-name-email">
+                  <div class="group-form">
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="group-form">
+                    <span>Email</span>
+                    <input type="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="group-form">
+                    <p>Phone number</p>
+                    <input type="text" placeholder="Enter your phone number" required>
+                  </div>
+                  <div class="group-form">
+                    <p>Date Required</p>
+                    <input type="datetime-local" placeholder="MM-DD-YY">
+                  </div>
+                </div>
+                <div class="group-form">
+                  <p>Address</p>
+                  <span>Street Address</span>
+                  <input type="text" placeholder="Street Address" required>
+                  <span>City</span>
+                  <input type="text" placeholder="City">
+                  <span>State / Province</span>
+                  <input type="text" placeholder="State/ Province" required>
+                  <span>Postal/ Zipcode</span>
+                  <input type="text" placeholder="Postal/ Zipcode" required>
+                </div>           
+              </div>
+              <button type="submit" class="btn btn-place-order">Place Order</>
+            </form>
+          </div>
+         </div>
+        </div>
+       <!-- our product -->
+       <section class="ordercake__product">
+        <div class="row-index">
+          <h3>Our Work</h3>
+          <div class="our-work">
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam1.jpg" alt="ourwork1">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam2.jpg" alt="ourwork2">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam3.jpg" alt="ourwork3">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam4.jpg" alt="ourwork4">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam5.jpg" alt="ourwork5">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam6.jpg" alt="ourwork6">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam7.jpg" alt="ourwork7">
+            </div>
+            <div class="our-work__item">
+              <img src="assets/image/ordercake/ourwork/workteam8.jpg" alt="ourwork8">
+            </div>
+          </div>
+        </div>
+       </section>
       </main>
       <!-- footer -->
       <footer class="footer">
@@ -583,8 +699,38 @@
       </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="assets/Js/gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+       "></script>
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav:true,
+        dots:true,
+        responsive:{
+          0:{
+            items:1,
+          },
+          500:{
+            items:2,
+          },
+          800:{
+            items:3
+          }
+        }
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [5000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
    <script src="assets/Js/home.js"></script>
   </body>
 </html>

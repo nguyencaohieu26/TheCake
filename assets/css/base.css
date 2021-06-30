@@ -51,11 +51,6 @@ img {
 } */
 button {
   background: transparent;
-  border: none;
-  outline: none;
-}
-button {
-  background: transparent;
   cursor: pointer;
   outline: none;
   border: 0;
@@ -67,5 +62,13 @@ button {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
