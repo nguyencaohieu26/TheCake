@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link responsive for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <!-- link stylesheet for gallery -->
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <!-- link stylesheet for faq -->
+    <link rel="stylesheet" href="assets/css/FAQ/faq.css" />
+    <!-- link responsive for faq -->
+    <link rel="stylesheet" href="assets/css/FAQ/faq_responsive.css">
+  </head>
+  <body>
+    <!-- 
+      Thieu answer cho cau hoi 7 cau hoi 2
+      login form
+     -->
+    <section class="faq__page">
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- header logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  <img
+                    src="assets/image/logo_cake.png"
+                    alt="Thecake_logo"
+                    class="header__logo-img"
+                  />
+                  <span class="header__logo-text">TheCake</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <nav class="menu__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Products</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="popularcake.html" class="nav-child__link">
+                          Popular Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="weddingcake.html" class="nav-child__link">
+                          Wedding Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="ordercake.html" class="nav-child__link">
+                          Order Cake
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>About Us</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="aboutus.html" class="nav-child__link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="blog.html" class="nav-child__link"> Blog </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="team.html" class="nav-child__link"> Team </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="testimonial.html" class="nav-child__link"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="faq.html" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="term.html" class="nav-child__link">Term</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icons">
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="menu__toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div class="login__icon">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu mobile -->
+          <nav class="menu-mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="index.html" class="mobile__nav-link">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>Products</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="popularcake.html" class="mobile__child-link"
+                      >Popular Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="weddingcake.html" class="mobile__child-link"
+                      >Wedding Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="ordercake.html" class="mobile__child-link">
+                      Order Cake</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>About Us</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="aboutus.html" class="mobile__child-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="blog.html" class="mobile__child-link">Blog</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="team.html" class="mobile__child-link">Team</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="testimonial.html" class="mobile__child-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="faq.html" class="mobile__child-link">FAQ</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="term.html" class="mobile__child-link">Term</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="contact.html" class="mobile__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- login form -->
+      <!-- header img -->
+      <section class="header-gallery__img">
+        <div class="gallery__img-item">
+          <div class="gallery__image-store">
+            <img
+              src="assets/image/faq/faq_img.jpg"
+              alt="faq__img-top"
+            />
+          </div>
+          <div class="header__img-content">
+            <h3 class="img-heading">The Taste Of Our </br>Amazing Cakes</h3>
+            <p class="img__dess">Sometime you just need a cake</p>
+            <a href="#" class="btn btn-ordernow">Get Started</a>
+          </div>
+        </div>
+    </section>
+    <!-- main content -->
+      <main class="main__faq">
+        <div class="row-index">
+          <h3 class="faq__home-heading">FAQ</h3>
+          <div class="main__faq-details">
+            <!-- answer and question list -->
+            <div class="fqa__question-answer">
+              <!-- btns -->
+              <div class="faq-btns">
+                <button class="btn-faq-chose active" data-chose = "all">All</button><button class="btn-faq-chose" data-chose = "design">Design</button><button class="btn-faq-chose" data-chose = "location & shipping">Location and Shipping</button><button class="btn-faq-chose" data-chose="miscellaneous">Miscellaneous</button><button class="btn-faq-chose" data-chose ="pricing & payment">Pricing and Payment</button>
+              </div>
+              <!-- option list -->
+              <div class="faq__list-option">
+                <div class="faq__item-option active" data-title="all">
+                  <!-- question1 -->
+                  <div class="question__item active">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can I cancel my order?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Cancellations for any reason require a one week notice and incur a 10% service charge. Once your order is received there are no cash or credit refunds. If the order is confirmed with less than a weeks notice, there are no cancelations.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question2 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can I write a message on the cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        It depends on the cake design. Our cakes are served on a cake tray. Usually we will write the message on the tray below the cake. For sculpted cakes, we prefer not to write the message on the cake itself with buttercream because it could get sloppy if not on a flat surface of the cake. Round cakes usually can fit a small message ontop of the cake but they are also served on a tray that a message can be added to.</p>
+                    </div>
+                  </div>
+                  <!-- question3 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can you ship me a birthday cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        We tried. We carefully packaged our cakes and shipped them with cooler packs. It had about a 50% success rate. The cake will get to you fresh but might get damaged during the shipping. (Those FedEx workers don’t always follow the instructions on our box: “This side up” or “Handle with care”)
+                        We recommend going to your local bakery with one of our pictures and asking them if they can make the cake.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question4 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How much notice do you need to make a cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        It really depends on the design of the birthday cake and our schedule. We would like to have the order for extremely ornate cakes 1 month in advance. We can have many fondant cake designs ready for you with less than 3 days notice. Even if you left it to the last day to order a birthday cake, we have smaller birthday cakes in stock for you.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question5 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can I pick up my cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Yes, of course! We can also deliver, but pick up is always free!
+                        We just handle a large amount of walk-ins inquiring about birthday cake designs. Besides, the internet made that process so much easier for the both of us so it would be silly not to utilize it.
+                        Feel free to contact us to schedule your order.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question6 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">I don't see the question that I have answered here.</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Then call us or use our contact form, so I can add it to this list. 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question7 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Where are you located?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Then call us or use our contact form, so I can add it to this list. 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question8 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">What forms of payment do you accept?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Credit card payments in store or over the phone. Cash is also accepted.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question9 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Do you deliver?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Yes, we offer delivery in some areas. Please contact us to determine if we can deliver to your area.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question10 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How much does a birthday cake cost?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Costs vary depending on the size, number of servings and complexity of the order. We are constantly adding cakes and their prices on our website but if you would like a price on a specific design just fill out our “Quote Request” form. You can upload a picture of a cake you are interested in and we will reply ASAP with a price.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question11 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How do I order?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Customers can place orders right on our website! Start by looking through our distinctive picture collection for ideas about what sort of birthday cake or cupcake you find appealing. Either select a standard cake or decide on areas to personalize. Order online if you wish, or call one of our service agents to finalize your order.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question12 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Do you make birthday cupcakes, too?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Absolutely! Browse our cupcake designs or discuss your custom cupcake designs with one of our friendly customer service representatives. Cupcake orders start at one dozen minimum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item-option" data-title="design" >
+                   <!-- question1 -->
+                   <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Do you make birthday cupcakes, too?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Absolutely! Browse our cupcake designs or discuss your custom cupcake designs with one of our friendly customer service representatives. Cupcake orders start at one dozen minimum.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question2 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">What flavors and conditions are available?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        You can choose from a wide variety of flavor and filling combinations for cakes and cupcakes. We have a large selection of cake flavors and fillings. Just select on our cake designs and you will find a pull down menu with a list of our most common flavors and fillings. If you want something more unique, please discuss this in advance with your customer service representative.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question3 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">What are the options for customization on my cake order?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Our expert design team will work with you to create your ideal birthday cake. Every cake or cupcake order can be altered in nearly any way needed to suit your preferences. Details like size, colors, flavors, fillings and icing flavors are just a few ways we can personalize your order.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item-option" data-title="location & shipping" >
+                   <!-- question1 -->
+                   <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can I pick up my cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Yes, of course! We can also deliver, but pick up is always free!
+                        We just handle a large amount of walk-ins inquiring about birthday cake designs. Besides, the internet made that process so much easier for the both of us so it would be silly not to utilize it.
+                        Feel free to contact us to schedule your order.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question2 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Where are you located?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Yes, of course! We can also deliver, but pick up is always free!
+                        We just handle a large amount of walk-ins inquiring about birthday cake designs. Besides, the internet made that process so much easier for the both of us so it would be silly not to utilize it.
+                        Feel free to contact us to schedule your order.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question3 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Do you deliver?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Yes, we offer delivery in some areas. Please contact us to determine if we can deliver to your area.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item-option" data-title="miscellaneous">
+                  <!-- question1 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">Can I write a message on the cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        It depends on the cake design. Our cakes are served on a cake tray. Usually we will write the message on the tray below the cake. For sculpted cakes, we prefer not to write the message on the cake itself with buttercream because it could get sloppy if not on a flat surface of the cake. Round cakes usually can fit a small message ontop of the cake but they are also served on a tray that a message can be added to.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question2 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How much notice do you need to make a cake?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        It really depends on the design of the birthday cake and our schedule. We would like to have the order for extremely ornate cakes 1 month in advance. We can have many fondant cake designs ready for you with less than 3 days notice. Even if you left it to the last day to order a birthday cake, we have smaller birthday cakes in stock for you.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question3 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How do I order?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Customers can place orders right on our website! Start by looking through our distinctive picture collection for ideas about what sort of birthday cake or cupcake you find appealing. Either select a standard cake or decide on areas to personalize. Order online if you wish, or call one of our service agents to finalize your order.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item-option" data-title="pricing & payment">
+                  <!-- question1 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">What form of payment do you accept?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Credit card payments in store or over the phone. Cash is also accepted.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- question2 -->
+                  <div class="question__item">
+                    <div class="question-faq">
+                      <i class="fas fa-chevron-up"></i>
+                      <h3 class="question-faq__name">How much does a birthday cake cost?</h3>
+                    </div>
+                    <div class="answer-faq">
+                      <p>
+                        Costs vary depending on the size, number of servings and complexity of the order. We are constantly adding cakes and their prices on our website but if you would like a price on a specific design just fill out our “Quote Request” form. You can upload a picture of a cake you are interested in and we will reply ASAP with a price.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- aside right -->
+            <div class="faq__right-side">
+              <!-- search -->
+              <div class="faq__search">
+                <h4 class="right__side-heading">SEARCH</h4>
+                <form action="" class="faq__search-form">
+                  <input type="text" placeholder="Search">
+                  <button class="btn btn-faq-search">Go</button>
+                </form>
+              </div>
+              <!-- recent blogs -->
+              <div class="faq__recent-post">
+                <h4 class="right__side-heading">RECENT POSTS</h4>
+                <div class="recent-post__list">
+                    <div class="recent-post__item">
+                      <img src="assets/image/gallery/gallery-img/gallery_Img1.png" alt="cupcake">
+                      <div class="recent-post__item-details">
+                        <h4>
+                          <a href="#">Find a Birthday Cake</a>
+                        </h4>
+                        <p>
+                          <i class="far fa-calendar-alt"></i>
+                          <span>May 20, 2021</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="recent-post__item">
+                      <img src="assets/image/gallery/gallery-img/gallery_Img17.jpg" alt="birthday cake">
+                      <div class="recent-post__item-details">
+                        <h4>
+                          <a href="#">What is the best Cake on Birthday</a>
+                        </h4>
+                        <p>
+                          <i class="far fa-calendar-alt"></i>
+                          <span>May 25, 2021</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="recent-post__item">
+                      <img src="assets/image/gallery/gallery-img/gallery_Img3.jpg" alt="muffincake">
+                      <div class="recent-post__item-details">
+                        <h4>
+                          <a href="#">What is Muffin Cake</a>
+                        </h4>
+                        <p>
+                          <i class="far fa-calendar-alt"></i>
+                          <span>May 25, 2021</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="recent-post__item">
+                      <img src="assets/image/gallery/gallery-img/gallery_Img4.jpg" alt="cupcake">
+                      <div class="recent-post__item-details">
+                        <h4>
+                          <a href="#">Is Cupcake suitable for Birthday Party</a>
+                        </h4>
+                        <p>
+                          <i class="far fa-calendar-alt"></i>
+                          <span>May 30, 2021</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="recent-post__item">
+                      <img src="assets/image/BirthdayCake/gallery_Img20.jpg" alt="birthday cake">
+                      <div class="recent-post__item-details">
+                        <h4>
+                          <a href="#">What 's best sale on our shop</a>
+                        </h4>
+                        <p>
+                          <i class="far fa-calendar-alt"></i>
+                          <span>June 20, 2021</span>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- tag -->
+              <section class="faq__tag">
+                <h4 class="right__side-heading">TAGS</h4>
+                <div class="faq__tag-list">
+                  <a href="#" class="faq__tag-link">Birthday Cake</a>
+                  <a href="#" class="faq__tag-link">Anniversary Cake</a>
+                  <a href="#" class="faq__tag-link">CupCake</a>
+                  <a href="#" class="faq__tag-link">Muffin</a>
+                  <a href="#" class="faq__tag-link">Cream</a>
+                  <a href="#" class="faq__tag-link">Birthday Gift</a>
+                  <a href="#" class="faq__tag-link">The Cake</a>
+                  <a href="#" class="faq__tag-link">Kids</a>
+                  <a href="#" class="faq__tag-link">Custom Cake</a>
+                  <a href="#" class="faq__tag-link">Fresh Cake</a>
+                  <a href="#" class="faq__tag-link">Delicous</a>
+                  <a href="#" class="faq__tag-link">Sweet</a>
+                  <a href="#" class="faq__tag-link">Candle</a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-details">
+          <div class="footer-details__top">
+            <div class="row-index">
+              <ul class="footer-top__list">
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium suscipit ipsum harum error in sapiente alias,
+                    eos voluptatem tempore quis.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Odit commodi dolorem enim harum soluta ratione quod deserunt
+                    repellat ad. Atque?
+                  </p>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">LASTEST POST</h3>
+                  <!-- list child -->
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="#" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">QUICK LINKS</h3>
+                  <!-- list child -->
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="aboutus.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="popularcake.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="testimonial.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="faq.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>FAQ</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="contact.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">Contact Info</h3>
+                  <!-- Add address -->
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, ipsum placeat sunt suscipit omnis libero!
+                  </p>
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="tel: 1.800.555.6789" class="item-footer__link">
+                        <span>Phone:</span> 1.800.555.6789
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a
+                        href="mailto: support@gmail.com"
+                        class="item-footer__link"
+                      >
+                        <span>Email:</span> support@gmail.com
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                        <span>We Website:</span> TheCake.com
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-details__bottom">
+            <div class="row-index">
+              <p class="copy-right">
+                &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
+                <span>Made with love</span>
+              </p>
+              <div class="footer-social__list">
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/Js/home.js"></script>
+    <script src="assets/Js/faq.js"></script>
+  </body>
+</html>

@@ -61,3 +61,11 @@ button {
   border: 0;
 }
 /* animate */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -77,14 +77,18 @@
 .gallery__zoom {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
-  height: 50%;
+  height: 60%;
   width: 100%;
   background-color: #fcaf2890;
+  font-weight: 400;
+  color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* animate */
   transform-origin: bottom;
   transform: scaleY(0);
   transition: transform 0.4s ease-in;
@@ -92,9 +96,93 @@
 .element-item:hover .gallery__zoom {
   transform: scaleY(1);
 }
+.gallery__name-cake {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: cursive;
+}
+.gallery__zoom i {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease-out;
+}
+.gallery__zoom i:hover {
+  transform: scale(1.1);
+}
+/* full gallery img */
+.gallery-full__size {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.gallery-full-details {
+  width: 60%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 3px;
+  max-height: 60rem;
+  position: relative;
+  /* add animate */
+  animation: fadeIn 0.4s ease-in-out;
+}
+.gallery-full-details img {
+  border-radius: 3px;
+  max-height: 50rem;
+}
+p.gallery-full__content {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+}
+.close-gallery-full-img {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.close-gallery-full-img i {
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  background-color: rgb(233, 233, 233);
+}
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.next-btn:hover {
+  transform: translateX(8px);
+}
+.prev-btn:hover {
+  transform: translateX(-8px);
+}
+.next-btn {
+  right: 3rem;
+}
+.prev-btn {
+  left: 3rem;
+}
+/* -------------------------------- */
 /* Responsive */
 @media only screen and (max-width: 930px) {
   .element-item {
+    overflow: hidden;
     width: calc(100% / 3);
   }
 }
@@ -107,5 +195,18 @@
   .element-item {
     width: 100%;
     margin-bottom: 2rem;
+  }
+  .header__nav {
+    grid-template-columns: 1fr;
+  }
+  .menu__icons > * {
+    font-size: 2.5rem;
+  }
+  .menu__toggle {
+    order: -1;
+    margin-left: 0;
+  }
+  .search__icon {
+    margin-right: 1.5rem;
   }
 }
