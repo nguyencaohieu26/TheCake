@@ -36,10 +36,7 @@
     <!-- 
       Thieu
       Address ở footer
-      main content
-      scroll
-      backtotop
-      nav c2 for product
+      Fix mobilenav
      -->
     <section class="home__page">
       <!-- header -->
@@ -77,11 +74,22 @@
                         </a>
                       </li>
                       <li class="nav-child__item">
-                        <a href="weddingcake.html" class="nav-child__link">
+                        <a href="#" class="nav-child__link">
                           Event Cakes
                         </a>
+                        <!-- nav c2 -->
+                        <ul class="nav-subchild__list">
+                          <li class="nav-subchild__item">
+                            <a href="birthdaycake.html" class="nav-subchild__link">
+                              Birthday Cakes
+                            </a>
+                          </li>
+                          <li class="nav-subchild__item">
+                            <a href="anniversarycake.html" class="nav-subchild__link">Anniversary Cakes</a>
+                          </li>
+                        </ul>
                       </li>
-                      <li class="nav-child__item">
+                      <li class="nav-child__item" >
                         <a href="ordercake.html" class="nav-child__link">
                           Custom Order
                         </a>
@@ -281,7 +289,7 @@
         </div>
       </div>
       <!-- header img -->
-      <section class="header__img">
+      <section class="header__img" id="top">
         <div class="header__img-list owl-carousel owl-theme">
           <div class="header__img-item">
             <div class="header__img-item-img">
@@ -354,8 +362,1065 @@
           </div>
         </div>
       </section>
+      <!-- zigzac line -->
+      <div class="ziczac">
+      </div>
       <!-- main -->
-      <main class="main__home"></main>
+      <main class="main__home">
+        <!-- our cakes -->
+        <section class="our-cakes">
+          <div class="row-index">
+            <h3 class="subhome__heading">OUR CAKES</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <p class="subhome__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem.</p>
+            <div class="our-cakes__details">
+              <div class="our-cakes__item">
+                <img src="assets/image/Index_headerImg/ourcake/sara-cervera-zEwgRzJJIvk-unsplash.jpg" alt="">
+                <div class="our-cakes__item-content">
+                  <h4 class="name-cake">
+                    <a href="popularcake.html">POPULAR CAKES</a>
+                  </h4>
+                  <p class="cakes-description">We hope can bring you the best brithday cake</p>
+                </div>
+              </div>
+              <div class="our-cakes__item">
+                <img src="assets/image/Index_headerImg/ourcake/Birthdaydaycake.jpg" alt="">
+                <div class="our-cakes__item-content">
+                  <h4 class="name-cake">
+                    <a href="birthdaycake.html">BIRTHDAY CAKES</a>
+                  </h4>
+                  <p class="cakes-description">We hope can bring you the best brithday cake</p>
+                </div>
+              </div>
+              <div class="our-cakes__item">
+                <img src="assets/image/Index_headerImg/ourcake/jesse-ribeiro-b4-zAXyBdyU-unsplash.jpg" alt="">
+                <div class="our-cakes__item-content">
+                  <h4 class="name-cake">
+                    <a href="anniversarycake.html">ANNIVERSARY CAKES</a>
+                  </h4>
+                  <p class="cakes-description">We hope can bring you the best brithday cake</p>
+                </div>
+              </div>
+              <div class="our-cakes__item">
+                <img src="assets/image/Index_headerImg/ourcake/justin-heap-6kjujXU56WY-unsplash.jpg" alt="">
+                <div class="our-cakes__item-content">
+                  <h4 class="name-cake">
+                    <a href="ordercake.html">CUSTOM CAKES</a>
+                  </h4>
+                  <p class="cakes-description">We hope can bring you the best brithday cake</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!-- about us -->
+        <section class="aboutus">
+         <div class="row-index">
+           <div class="aboutus-details">
+            <div class="aboutus-img">
+              <img src="assets/image/Index_headerImg/welcomeimage.jpg" alt="">
+            </div>
+            <div class="aboutus-content">
+              <h2 class="aboutus__heading">WELCOME TO <span class="aboutus-mark">The Cake</span></h2>
+              <p class="aboutus__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid ex veniam. Officiis iusto, illum repudiandae ut rerum cumque nulla ipsum nostrum! Exercitationem doloribus nisi perspiciatis, est voluptatum quae minus?
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sequi iure autem natus, soluta iusto!</p>
+              <a href="#" class="btn btn-readmore btn-ordernow">READ MORE</a>
+            </div>
+           </div>
+         </div>
+        </section>
+        <!-- making cake in this time -->
+        <section class="callaction">
+          <div class="row-index">
+            <div class="callaction-details">
+              <h3>Making your Birthday Cake<br> in today is perfect!</h3>
+              <a href="#" class="btn btn-check-menu btn-ordernow">
+                CHECK MENU
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- ourmenu -->
+        <section class="our-menu">
+          <div class="row-index">
+            <h3 class="subhome__heading">OUR MENU</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <p class="subhome__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem.</p>
+            <div class="our-menu-details">
+              <div class="our-menu-btns">
+                <button class="btn our-menu-btn-chose active">Cakes</button>
+                <button class="btn our-menu-btn-chose">Birthday Cakes</button>
+                <button class="btn our-menu-btn-chose">Anniversary Cakes</button>
+              </div>
+              <div class="our-menu-cake-list active" data-category = "Cakes" >
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu1.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>       
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">Triple Chocolate Cupcake</span>
+                        <span class="price-cake">4$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">CC125</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu2.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                      <span class="menu-cake-item__name">Red Velvet Party Cupcake</span>
+                        <span class="price-cake">4$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">CC126</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu3.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                  
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4>
+                      <span class="menu-cake-item__name">Cookies & Cream Cupcake</span>
+                      <span class="price-cake">4$</span>
+                    </h4>
+                    <p>Item code: <span class="code-item-cake">CC127</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>   
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu4.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                      <span class="menu-cake-item__name">Chocolate Peanut Butter  Cupcake</span>
+                        <span class="price-cake">4$</span>
+                     </h4>
+                    <p>Item code: <span class="code-item-cake">CC125</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu5.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                      <span class="menu-cake-item__name">Caramel Mera Party Cupcake</span>
+                        <span class="price-cake">4$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">CC125</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/cupcake-menu6.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                      <span class="menu-cake-item__name">Vanilla Bean Party Cupcake</span>
+                        <span class="price-cake">4$</span>
+                     </h4>
+                    <p>Item code: <span class="code-item-cake">CC125</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="our-menu-cake-list" data-category = "Birthday Cakes">
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake1.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">GLUTEN-FREE BIRTHDAY CAKE</span>
+                        <span class="price-cake">40$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD122</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake2.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">CLASSIC BIRTHDAY CAKE</span>
+                        <span class="price-cake">45$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD129</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake3.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">STRAWBERRY SHORTCAKE CAKE</span>
+                        <span class="price-cake">50$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD130</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake4.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name"> ROASTER NUR CHOCOLATE CAKE</span>
+                        <span class="price-cake">45$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD131</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake5.png" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">  FLUFFY CHOCOLATE MOUSSE CAKE</span>
+                        <span class="price-cake">55$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD132</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake Now</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake6.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">CHOCOLATE DIPPED STRAWBERRIES</span>
+                        <span class="price-cake">55$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">BD132</span> </p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="our-menu-cake-list" data-category="Anniversary Cakes" >
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img14.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4>
+                      <span class="menu-cake-item__name">WEDDING 3-TIERS FLORAL CAKE</span>
+                      <span class="price-cake">40$</span>
+                    </h4>
+                    <p>Item code:  <span class="code-item-cake">AD132</span> </p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye "></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img13.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">Wedding 3-Tiers Floral CAKE</span>
+                        <span class="price-cake">40$</span>
+                      </h4>
+                    <p>Item code:  <span class="code-item-cake">AD136</span> </p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img12.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">ANNIVERSARY 3-TIERS NATURAL CAKE</span>
+                        <span class="price-cake">80$</span>
+                      </h4>
+                    <p>Item code:  <span class="code-item-cake">AD137</span> </p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img9.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">WEDDING 3-TIERS CAKE</span>
+                        <span class="price-cake">90$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">AD139</span> </p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img10.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">WEDDING 3-TIERS CAKE</span>
+                        <span class="price-cake">90$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">AD143</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="our-menu-cake-item">
+                  <div class="our-menu-cake-item-img">
+                    <img src="assets/image/Index_headerImg/menucake/WeddingCake/gallery_Img11.jpg" alt="">
+                    <div class="cake-item-img-feature">
+                      <i class="fas fa-shopping-cart btn-detail-feature"></i>
+                      <i class="fas fa-expand-alt btn-expand-feature"></i>
+                    </div>
+                  </div>
+                  <div class="menu-cake-item__content">
+                    <h4 >
+                        <span class="menu-cake-item__name">ANNIVERSARY 3-TIERS FLORAL CAKE</span>
+                        <span class="price-cake">100$</span>
+                      </h4>
+                    <p>Item code: <span class="code-item-cake">AD145</span></p>
+                    <div class="item-cake-feature">
+                      <ul>
+                        <li> <i class="fa fa-check"></i><span>Egg less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Suggar less</span></li>
+                        <li> <i class="fa fa-check"></i><span>Fresh Ingredient</span></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn-order-cake">
+                      <i class="far fa-eye"></i>
+                      <span>View Cake</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- detail cake -->
+        <div class="detail-item-cake">
+          <div class="details-item-cake-inner">
+            <div class="item-cake-inner-left">
+              <div class="cake-inner-img">
+                <img src="" alt="democake">
+              </div>
+            <div class="cake-inner-left-content">
+              <h4>Ingredient</h4>
+              <p class="item-cake-inner-ingredient">
+                Sugar, Enriched bleached wheat flour (bleached wheat flour, Iron, Niacin),
+                 Confectioners sugar (sugar, Corn starch), Butter (cream, Natural flavor), 
+                 Eggs, Vegetable shortening (soybean oil, Fully hydrogenated palm oil, Palm oil), Buttermilk.
+              </p>
+            </div>
+            </div>
+            <!--  -->
+            <div class="item-cake-inner-right">
+              <div class="cake-inner-right-content">
+                <h3 class="item-cake-inner-name">
+                  The Birthday Cake Chocolate
+                </h3>
+                <p>
+                  <span>Item Code: </span><span class="item-cake-inner-code"></span>
+                </p>
+                <p>
+                  <span>Type: </span>
+                  <span class="cake-inner-type-item"> </span>
+                  <span class="item-cake-inner-price"> </span>
+                </p>                
+              </div>
+              <form action="" class="form-cake-detail">
+               <div class="group-form-mix">
+                <div class="group-form-cake">
+                  <p>Chose Size</p>
+                  <div>
+                    <input type="radio" name="sizecakeinner" id="6"> <span>6 Inches</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="sizecakeinner" id="8"> <span>8 Inches</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="sizecakeinner" id="10"> <span>10 Inches</span>
+                  </div>
+                </div>
+                <div class="group-form-cake">
+                  <span>Quanity</span>
+                  <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="group-form-info">
+                  <input type="text" placeholder="Please enter your fullname" required>
+                  <input type="text" placeholder="Please enter your phonenumber" required>
+                  <input type="text" placeholder="Please email" required>
+                </div>
+               </div>
+                <textarea placeholder="Special Request"></textarea>
+                <a href="#" class="btn btn-checkout-cake btn-ordernow">Check Out</a>
+                <button type="button" class="btn btn-cancel-checkout">Cancel</button>
+                <p class="note-cake-item">
+                  <span>*</span>Please fill out all the information before check out! Thank for purchasing with our shop.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- large image -->
+        <div class="larger-img-tiem">
+          <div class="larger-img-item-details">
+            <div class="close__larger-item-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <img src="" alt="">
+          </div>
+        </div>
+        <!-- our story -->
+        <section class="our-story">
+          <div class="row-index">
+            <h3 class="subhome__heading">OUR STORY</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <p class="subhome__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem.</p>
+            <div class="our-story-details">
+              <div class="our-story__image">
+                <img src="assets/image/Index_headerImg/ourstory/ourstory_bg.jpg" alt="ourstory-image">
+              </div>
+              <div class="our-story__content">
+                <ul class="our-story__list">
+                  <li class="our-story__item">
+                    <img src="assets/image/Index_headerImg/ourstory/icon-ourstory-1.png" alt="ourstory-icon1">
+                    <div class="our-story__item-detail">
+                     <h4>OUR MISSION</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur modi fugiat in facere illo.</p> 
+                    </div>
+                  </li>
+                  <li class="our-story__item">
+                    <img src="assets/image/Index_headerImg/ourstory/icon-ourstory-2.png" alt="ourstory-icon2">
+                    <div class="our-story__item-detail">
+                     <h4>OUR VISION</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur modi fugiat in facere illo.</p> 
+                    </div>
+                  </li>
+                  <li class="our-story__item">
+                    <img src="assets/image/Index_headerImg/ourstory/icon-ourstory-3.png" alt="ourstory-icon3">
+                    <div class="our-story__item-detail">
+                     <h4>WHAT WE DO</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur modi fugiat in facere illo.</p> 
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- form order only -->
+        <section class="order__cake">
+          <div class="row-index">
+            <div class="order__cakes-details">
+              <div class="order__cakes-content">
+                <p class="order__cake-text">THE ULTIMATE PLACE FOR</p>
+                <h4 class="order__cake-heading">CAKES</h4>
+                <p class="order__cake-desc">We Are Ready Bring To You A Best Cake Ever</p>
+                <ul class="order__cake-list">
+                  <li class="order__cake-item">
+                    <i class="far fa-hand-point-right"></i>
+                    <span>Birthday Cake</span>
+                  </li>
+                  <li class="order__cake-item">
+                    <i class="far fa-hand-point-right"></i>
+                    <span>Wedding Cake</span>
+                  </li>
+                  <li class="order__cake-item">
+                    <i class="far fa-hand-point-right"></i>
+                    <span>Anniversary Cake</span>
+                  </li>
+                  <li class="order__cake-item">
+                    <i class="far fa-hand-point-right"></i>
+                    <span>CupCakes</span>
+                  </li>
+                  <li class="order__cake-item">
+                    <i class="far fa-hand-point-right"></i>
+                    <span>Sweet Cake</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="ordercake.html" class="btn btn-ordernow-form btn-ordernow">Order Now</a>
+              <div class="order__cake-image">
+                <img src="assets/image/Index_headerImg/alina-karpenko-Lr-KZKYzaj8-unsplash.jpg" alt="cake">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- lastest new -->
+        <section class="lastest-new">
+          <div class="row-index">
+            <h3 class="subhome__heading">LASTEST BLOG</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <div class="lastest-new-details">
+              <div class="lastest-new__list">
+                <div class="lastest-new__item">
+                  <div class="new-item__img">
+                    <img src="assets/image/Index_headerImg/blog/blo03.jpg" alt="blogimg1">
+                  </div>
+                  <div class="new-item__content">
+                    <p class="new-date">June 23, 2021</p>
+                  <p class="new-item__heading">What's Cupcake</p>
+                  <p class="new-item__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, accusamus!</p>
+                    <a href="#" class="btn btn-read-more">Read More</a>
+                </div>
+                </div>
+                <div class="lastest-new__item">
+                  <div class="new-item__img">
+                    <img src="assets/image/Index_headerImg/blog/blog02.jpg" alt="blogimg2">
+                  </div>
+                  <div class="new-item__content">
+                    <p class="new-date">May 23, 2021</p>
+                  <p class="new-item__heading">What's Cupcake</p>
+                  <p class="new-item__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, accusamus!</p>
+                    <a href="#" class="btn btn-read-more">Read More</a>
+                </div>
+                </div>
+                <div class="lastest-new__item">
+                  <div class="new-item__img">
+                    <img src="assets/image/Index_headerImg/blog/blog03.jpg" alt="blogimg3">
+                  </div>
+                  <div class="new-item__content">
+                    <p class="new-date">April 23, 2018</p>
+                  <p class="new-item__heading">What's Cupcake</p>
+                  <p class="new-item__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, accusamus!</p>
+                    <a href="#" class="btn btn-read-more">Read More</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- our team -->
+        <section class="our-team">
+          <h3 class="subhome__heading">OUR TEAM</h3>
+          <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+          <div class="ourteam__details">
+            <div class="ourteam-details__list">
+              <div class="ourteam-detail__item">
+                <img src="assets/image/ourteam/person1.jpg" alt="person1">
+                <div class="ourteam-person-info">
+                  <p class="name-ourteam">Sheri Mason</p>
+                  <p class="position-ourteam">Own</p>
+                <div class="ourteam-socail__list">
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="ourteam-detail__item">
+                <img src="assets/image/ourteam/person2.jpg" alt="person2">
+                <div class="ourteam-person-info">
+                  <p class="name-ourteam">Neal Lopez</p>
+                  <p class="position-ourteam">Main Chef</p>
+                <div class="ourteam-socail__list">
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="ourteam-detail__item">
+                <img src="assets/image/ourteam/person3.jpg" alt="person3">
+                <div class="ourteam-person-info">
+                  <p class="name-ourteam">Annie Yates</p>
+                  <p class="position-ourteam">Pastry Chef</p>
+                <div class="ourteam-socail__list">
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="ourteam-detail__item">
+                <img src="assets/image/ourteam/person4.jpg" alt="person4">
+                <div class="ourteam-person-info">
+                  <p class="name-ourteam">Alex Arnold</p>
+                  <p class="position-ourteam">Main Chef</p>
+                <div class="ourteam-socail__list">
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="ourteam-detail__item">
+                <img src="assets/image/ourteam/person5.jpg" alt="person5">
+                <div class="ourteam-person-info">
+                  <p class="name-ourteam">Kellie Byrd</p>
+                  <p class="position-ourteam">Manager</p>
+                <div class="ourteam-socail__list">
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="ourteam-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section class="contact-us">
+          <div class="row-index">
+            <h3>CONTACT US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolorum.</p>
+            <div class="contact-us__details">
+              <form action="" class="contactus-form">
+                <input type="text" placeholder="Email Address: Your email address">
+                <button class="btn btn-contactus-submit">
+                  <i class="fab fa-telegram-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- testimonial -->
+        <section class="testimonial">
+          <div class="row-index">
+            <h3 class="subhome__heading">TESTIMONIALS</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <div class="testimonial__details">
+              <div class="testimonial__list">
+                <div class="testimonial__item">
+                  <div class="testimonial__item-img">
+                    <img src="assets/image/testimonial/testimonial_per1.jpg" alt="person1">
+                  </div>
+                  <div class="testimonial__item-content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit totam eum mollitia laborum? Ratione.</p>
+                    <p class="testimonial__name">Nancy Doe</p>
+                    <p class="testimonial__position">CEO Home Shoppy</p>
+                  </div>
+                </div>
+                <div class="testimonial__item">
+                  <div class="testimonial__item-img">
+                    <img src="assets/image/testimonial/testimonial_per2.jpg" alt="person2">
+                  </div>
+                  <div class="testimonial__item-content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit totam eum mollitia laborum? Ratione.</p>
+                    <p class="testimonial__name">Jimmy Doe</p>
+                    <p class="testimonial__position">Happy Customer</p>
+                  </div>
+                </div>
+                <div class="testimonial__item">
+                  <div class="testimonial__item-img">
+                    <img src="assets/image/testimonial/testimonial_per3.jpg" alt="person3">
+                  </div>
+                  <div class="testimonial__item-content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit totam eum mollitia laborum? Ratione.</p>
+                    <p class="testimonial__name">Johnson Jimmy</p>
+                    <p class="testimonial__position">Singer</p>
+                  </div>
+                </div>
+                <div class="testimonial__item">
+                  <div class="testimonial__item-img">
+                    <img src="assets/image/testimonial/testimonial_per4.jpg" alt="person4">
+                  </div>
+                  <div class="testimonial__item-content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit totam eum mollitia laborum? Ratione.</p>
+                    <p class="testimonial__name">Peter Doe</p>
+                    <p class="testimonial__position">Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- new product -->
+        <section class="new-product">
+          <div class="row-index">
+            <h3 class="subhome__heading">NEW PRODUCT</h3>
+            <img class="cake-home-icon" src="assets/image/icon_index.png" alt="icon__bakecake">
+            <div class="new-product__details">
+              <div class="new-product__list">
+                <div class="new-product__item">
+                  <div class="newproduct-item__thumbnail">
+                    <img src="assets/image/newproduct/newpro1.jpg" alt="cakes">
+                    <p class="newproduct-item-tag">New</p>
+                    <i class="fas fa-search btn-expand-feature"></i>
+                  </div>
+                  <div class="newproduct-item__content">
+                    <p class="name-newproduct">Cream Dried Fruit Cake</p>
+                    <p class="price-newproduct">59$</p>
+                    <a href="#" class="btn btn-viewdetal ">View Detail</a>
+                  </div>
+                </div>
+                <div class="new-product__item">
+                  <div class="newproduct-item__thumbnail">
+                    <img src="assets/image/newproduct/newpro2.jpg" alt="cakes">
+                    <p class="newproduct-item-tag">Hot</p>
+                    <i class="fas fa-search btn-expand-feature"></i>
+                  </div>
+                  <div class="newproduct-item__content">
+                    <p class="name-newproduct">Strawberry Flat Cake</p>
+                    <p class="price-newproduct">50$</p>
+                    <a href="#" class="btn btn-viewdetal">View Detail</a>
+                  </div>
+                </div>
+                <div class="new-product__item">
+                  <div class="newproduct-item__thumbnail">
+                    <img src="assets/image/newproduct/newpro4.jpg" alt="cakes">
+                    <p class="newproduct-item-tag">Hot</p>
+                    <i class="fas fa-search btn-expand-feature"></i>
+                  </div>
+                  <div class="newproduct-item__content">
+                    <p class="name-newproduct">Strawberry Honey Cake</p>
+                    <p class="price-newproduct">45$</p>
+                    <a href="#" class="btn btn-viewdetal">View Detail</a>
+                  </div>
+                </div>
+                <div class="new-product__item">
+                  <div class="newproduct-item__thumbnail">
+                    <img src="assets/image/newproduct/newpro3.jpg" alt="cakes">
+                    <p class="newproduct-item-tag">New</p>
+                    <i class="fas fa-search btn-expand-feature"></i>
+                  </div>
+                  <div class="newproduct-item__content">
+                    <p class="name-newproduct">Tropical Fruit Cake</p>
+                    <p class="price-newproduct">53$</p>
+                    <a href="#" class="btn btn-viewdetal">View Detail</a>
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </section>
+        <!-- our partner -->
+        <section class="our-partner">
+          <h3 class="subhome__heading">OUR PARTNER</h3>
+          <div class="our-partner__details">
+            <div class="our-partner__item">
+              <img src="assets/image/ourpartner/partner2.jpg" alt="partner2">
+            </div>
+            <div class="our-partner__item">
+              <img src="assets/image/ourpartner/partner3.jpg" alt="partner3">
+            </div>
+            <div class="our-partner__item">
+              <img src="assets/image/ourpartner/partner1.jpg" alt="partner1">
+            </div>
+            <div class="our-partner__item">
+              <img src="assets/image/ourpartner/partner4.jpg" alt="partner4
+              ">
+            </div>
+            <div class="our-partner__item">
+              <img src="assets/image/ourpartner/partner5.jpg" alt="partner5
+              ">
+            </div>
+          </div>
+        </section>
+        <!-- move to top -->
+        <div class="moveto-top">
+          <a href="#top" class="movetotop-btn">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+      </main>
       <!-- footer -->
       <footer class="footer">
           <div class="footer-details">

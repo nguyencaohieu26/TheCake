@@ -1,13 +1,19 @@
 /* Responsive for desktop first */
-/* Responsive for screen width between 992px and 1200px */
 @media only screen and (min-width: 1201px) {
   .header__img-content {
-    top: 60%;
+    top: 50%;
   }
 }
+/* Responsive for screen width between 992px and 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header__img-content {
-    top: 55%;
+    top: 52%;
+  }
+  .menu-cake-item__content {
+    padding: 1rem;
+  }
+  .item-cake-feature ul {
+    display: inline;
   }
 }
 /* Responsive for screen less then 992px */
@@ -29,6 +35,16 @@
     margin: 0 2rem;
     display: block;
   }
+  /*  */
+  .header {
+    background: white;
+  }
+  .header__logo-text {
+    color: var(--text-color1);
+  }
+  .menu__icons > * {
+    color: var(--text-color1);
+  }
   /* header image */
   .header__img-content {
     top: 55%;
@@ -36,6 +52,83 @@
   }
   .img-heading {
     font-size: 4.5rem;
+  }
+  /* form detail cake */
+  .group-form-mix {
+    grid-template-columns: 1fr 1fr;
+  }
+  .group-form-info {
+    grid-column: span 2;
+  }
+  /*  */
+  .order__cake-image {
+    width: 50%;
+  }
+  .order__cake-image img {
+    width: 41rem;
+    height: 41rem;
+  }
+  /*  */
+  .menu-cake-item__content {
+    padding: 1rem;
+  }
+  .item-cake-feature ul {
+    display: inline;
+  }
+  .menu-cake-item__name {
+    font-size: 1.6rem;
+  }
+  /*  */
+  .new-product__item {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .order__cake-image img {
+    width: 32rem;
+    height: 32rem;
+  }
+  .order__cake-image {
+    top: 25%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* our menu */
+  .our-menu-cake-list {
+    grid-template-columns: 1fr;
+  }
+  .menu-cake-item__name {
+    font-size: 1.8rem;
+  }
+  .menu-cake-item__content {
+    padding: 0;
+  }
+  .item-cake-feature ul {
+    display: flex;
+  }
+  /* form detail cake */
+  .details-item-cake-inner {
+    display: block;
+    overflow: auto;
+  }
+  .cake-inner-img {
+    float: right;
+  }
+  .cake-inner-img img,
+  .cake-inner-img {
+    max-width: 20rem;
+    max-height: 20rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .item-cake-inner-right {
+    padding: 2rem;
+  }
+  /* call to action */
+  .callaction-details h3 {
+    font-size: 3.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 /* Responsive for screen less than 767px */
@@ -47,6 +140,25 @@
   .themost {
     font-size: 2rem;
   }
+  /* aboutus */
+  .aboutus-details {
+    grid-template-columns: 1fr;
+  }
+  /* our story */
+  .our-story-details {
+    grid-template-columns: 1fr;
+  }
+  /* order cake */
+  .order__cake-image {
+    top: 36%;
+  }
+  .order__cake-image img {
+    width: 26rem;
+    height: 26rem;
+  }
+  .details-item-cake-inner {
+    max-width: 85%;
+  }
   /* footer */
   .footer-details__bottom .row-index {
     grid-template-columns: 1fr;
@@ -56,8 +168,29 @@
     order: -1;
   }
 }
+@media only screen and (max-width: 600px) {
+  .order__cake-image {
+    display: none;
+  }
+  /* call to action */
+  .callaction-details h3 {
+    font-size: 3rem;
+  }
+  .btn-ordernow {
+    font-size: 1.7rem;
+  }
+  .our-menu-btn-chose {
+    min-width: 5rem;
+  }
+  .our-menu-btn-chose:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
 /* Responsive for screen less than 576px */
 @media only screen and (max-width: 576px) {
+  .header__img-item {
+    height: 80vh;
+  }
   /* footer */
   .copy-right {
     font-size: 1.4rem;
@@ -68,5 +201,43 @@
   }
   .form-right {
     display: none;
+  }
+  .our-menu-btn-chose {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .item-cake-feature ul {
+    display: block;
+  }
+  .menu-cake-item__content {
+    padding: 1.5rem;
+  }
+  .owl-dots {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header__nav {
+    grid-template-columns: 1fr;
+  }
+  .menu__icons,
+  .header__logo {
+    justify-self: center;
+  }
+
+  .cake-inner-img {
+    float: none;
+  }
+  .details-item-cake-inner {
+    max-width: 96%;
+  }
+  .callaction-details h3 {
+    font-size: 2.2rem;
+  }
+  .our-menu-cake-item {
+    grid-template-columns: 1fr;
+  }
+  .btn-viewdetal {
+    width: 40%;
   }
 }
