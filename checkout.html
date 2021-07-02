@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link responsive for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <!-- link stylesheet for checkoutpage -->
+    <link rel="stylesheet" href="assets/css/checkout.css">
+  </head>
+  <body>
+    <!-- 
+      Custom select
+     -->
+    <section class="check-out__page">
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- header logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  <img
+                    src="assets/image/logo_cake.png"
+                    alt="Thecake_logo"
+                    class="header__logo-img"
+                  />
+                  <span class="header__logo-text">TheCake</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <nav class="menu__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Products</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="popularcake.html" class="nav-child__link">
+                          Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link"> Event Cakes </a>
+                        <!-- nav c2 -->
+                        <ul class="nav-subchild__list">
+                          <li class="nav-subchild__item">
+                            <a
+                              href="birthdaycake.html"
+                              class="nav-subchild__link"
+                            >
+                              Birthday Cakes
+                            </a>
+                          </li>
+                          <li class="nav-subchild__item">
+                            <a
+                              href="anniversarycake.html"
+                              class="nav-subchild__link"
+                              >Anniversary Cakes</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="ordercake.html" class="nav-child__link">
+                          Custom Order
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>About Us</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="aboutus.html" class="nav-child__link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="blog.html" class="nav-child__link"> Blog </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="team.html" class="nav-child__link"> Team </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="testimonial.html" class="nav-child__link"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="faq.html" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="term.html" class="nav-child__link">Term</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icons">
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="menu__toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div class="login__icon">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu mobile -->
+          <nav class="menu-mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="index.html" class="mobile__nav-link">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>Products</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="popularcake.html" class="mobile__child-link"
+                      >Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="birthdaycake.html" class="mobile__child-link"
+                      >Birthday Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="anniversarycake.html" class="mobile__child-link">
+                      Anniversary Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="ordercake.html" class="mobile__child-link">
+                      Custom Cake
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>About Us</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="aboutus.html" class="mobile__child-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="blog.html" class="mobile__child-link">Blog</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="team.html" class="mobile__child-link">Team</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="testimonial.html" class="mobile__child-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="faq.html" class="mobile__child-link">FAQ</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="term.html" class="mobile__child-link">Term</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="contact.html" class="mobile__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- login form -->
+      <div class="login__form">
+        <div class="login-form-details">
+          <div class="form-left">
+            <div class="close__login-form">
+              <i class="fa fa-times"></i>
+            </div>
+            <h3 class="login-form__heading">Sign into your account</h3>
+            <div class="login__chose-btns">
+              <a href="#" class="btn btn-login-chose active">Login</a>
+              <a href="#" class="btn btn-login-chose">Register</a>
+            </div>
+            <form class="form-login active" data-form="Login">
+              <input type="text" placeholder="Email Address" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit" class="btn btn-login-form btn-sumbit-login">
+                Login
+              </button>
+              <p class="forget-password">Forgot Password</p>
+            </form>
+            <form class="form-register form-login" data-form="Register">
+              <input type="text" placeholder="FullName" required />
+              <input type="text" placeholder="Email Address" required />
+              <input type="password" placeholder="Password" required />
+              <button
+                type="submit"
+                class="btn btn-login-form btn-submit-register"
+              >
+                Register
+              </button>
+            </form>
+            <div class="form-social__icon">
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="form-image">
+              <img src="assets/image/img_login.jpg" alt="login__image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="seach-container">
+        <div class="search__container-details">
+          <div class="close__search">
+            <i class="fa fa-times"></i>
+          </div>
+          <form action="" class="search-infomation">
+            <input type="text" placeholder="Search for product" required />
+            <button class="btn btn-search-info">Search</button>
+          </form>
+        </div>
+      </div>
+      <!-- header__image -->
+      <div class ="header__checkout-image">
+        <div class="header__checkout-content">
+          <h3>Checkout</h3>
+        </div>
+      </div>
+      <!-- main -->
+      <main class="check-out__main">
+        <!-- returning cutomer -->
+        <section class="returning-customer">
+          <div class="row-index">
+            <div class="checkout-step1">
+              <div class="returning-customer__details">
+                <div class="returning-customer__item">
+                  <div class="returning-cutomer__question">
+                    <i class="far fa-window-maximize"></i>
+                    <span>Returning customer?</span>
+                    <button class="open-customer-question">Click here to login</button>
+                  </div>
+                  <div class="returning-cutomer__answer">
+                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                    <form action="" class="customer-login">
+                      <div class="group-form">
+                        <label for="username">Username or Email*</label>
+                        <input type="text" required>
+                      </div>
+                      <div class="group-form">
+                        <label for="password">Password*</label>
+                        <input type="password" required>
+                      </div>
+                      <button type="submit">
+                        <span>Login</span>
+                      </button>
+                    </form>
+                    <a href="#" class="btn btn-lost-pass">Lost your password?</a>
+                  </div>
+                </div>
+                <div class="returning-customer__item">
+                  <div class="returning-cutomer__question">
+                    <i class="far fa-window-maximize"></i>
+                    <span>Having a coupon?</span>
+                    <button class="open-customer-question">Click here to enter your code</button>
+                  </div>
+                  <div class="returning-cutomer__answer">
+                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                    <form action="" class="customer-login">    
+                      <input type="text" placeholder="Coupon Code">               
+                      <button type="submit">
+                        <span>Apply Coupon</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <form action="" class="check-out__form">
+            <div class="checkout-step2">
+              <div class="billing-details">
+                <h4 class="checkout-step2__heading">BILLING DETAILS</h4>
+                <div class="billing-details__content">
+                  <div class="group-form">
+                    <label for="firstname">First name*</label>
+                    <input type="text" id="firstname" required>
+                  </div>
+                  <div class="group-form">
+                    <label for="lastname">Last name*</label>
+                    <input type="text" id="lastname" required>
+                  </div>
+                  <div class="group-form">
+                    <label for="country">Country*</label>
+                    <input type="text" id="country" placeholder="Vietnam" required>
+                  </div>
+                  <div class="group-form">
+                    <label for="streetaddress">Street address*</label>
+                    <input type="text" id="streetaddress" placeholder="House number and street name">
+                  </div>
+                  <div class="group-form">
+                    <label for="zipcode">Postcode / ZIP*</label>
+                  <input type="text" required id="zipcode">
+                  </div>
+                  <div class="group-form">
+                    <label for="town">Town / City*</label>
+                  <input type="text" required id="town">
+                  </div>
+                  <div class="group-form">
+                    <label for="phone">Phone*</label>
+                  <input type="text" required id="phone">
+                  </div>
+                  <div class="group-form">
+                    <label for="email">Email Address*</label>
+                  <input type="email" required id="email" >
+                  </div>
+                </div>
+              </div>
+              <div class="additional-info">
+                <h4 class="checkout-step2__heading">ADDITIONAL INFOMATION</h4>
+                <div class="additional-info__content">
+                  <p>Order notes</p>
+                  <textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-step3">
+              <div class="your-order">
+                <h4 class="checkout-step2__heading">YOUR ORDER</h4>
+                <div class="your-order__details">
+                  <table border="0">
+                    <tr>
+                      <th>Product</th>
+                      <th>Quanity</th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <th>Blueberry Danish Round</th>
+                      <th contenteditable="true">1</th>
+                      <th >$50</th>
+                    </tr>
+                    <tr>
+                      <th>SubTotal</th>
+                      <th>1</th>
+                      <th>$50</th>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <th></th>
+                      <th>$50</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-step4">
+              <div class="group-radio">
+                <div>
+                  <label for="checkpayment">Check payments</label>
+                  <input type="radio" id="checkpayment" name="purchase">
+                </div>
+                <p class="check-payment__notify">
+                  <span>
+                    Please send a check to Store Name, Store Street, Store Town, Store State, Postcode
+                  </span>
+                </p>
+              </div>
+              <div class="group-radio">
+                <div>
+                  <label for="paypal">Paypal</label> 
+                  <input type="radio" id="paypal" name="purchase">
+                  <span>What is Paypal?</span>
+                </div>
+                <p class="check-payment__notify">
+                  <span>
+                  Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-submit-checkout"><span>Place Order</span></button>
+           </form>
+          </div>
+        </section>
+      </main>
+       <!-- footer -->
+       <footer class="footer">
+        <div class="footer-details">
+          <div class="footer-details__top">
+            <div class="row-index">         
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium suscipit ipsum harum error in sapiente alias, eos voluptatem tempore quis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi dolorem enim harum soluta ratione quod deserunt repellat ad. Atque?</p>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">LASTEST POST</h3>
+                <!-- list child -->
+              <ul class="item-footer__list">
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+          
+              </ul>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">QUICK LINKS</h3>
+                <!-- list child -->
+                <ul class="item-footer__list">
+                  <li class="item-footer__item">
+                    <a href="index.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="aboutus.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>About Us</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="popularcake.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Products</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="testimonial.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Testimonials</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="faq.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="contact.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">Contact Info</h3>
+                <!-- Add address -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsum placeat sunt suscipit omnis libero!</p>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item">
+                    <a href="tel: 1.800.555.6789" class="item-footer__link">
+                      <span>Phone:</span>  1.800.555.6789
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="mailto: support@gmail.com" class="item-footer__link">
+                      <span>Email:</span> support@gmail.com
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="index.html" class="item-footer__link">
+                     <span>We Website:</span> TheCake.com
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="footer-details__bottom">
+           <div class="row-index">
+            <p class="copy-right">
+              &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
+            <span>Made with love</span>
+            </p>
+            <div class="footer-social__list">
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+           </div>
+          </div>
+        </div>
+    </footer>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/Js/checkout.js"></script>
+  <script src="assets/Js/home.js"></script>
+    </section>
+  </body>
+</html>
