@@ -1,0 +1,33 @@
+@media only screen and (max-width: 992px) {
+  .main__popularcake-details .row-index {
+    grid-template-columns: 1fr;
+  }
+  .filter-ranger {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .image-detail__cake {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header__popular-cake-img h3 {
+    font-size: 3.5rem;
+  }
+  .center__product-list-top {
+    grid-template-columns: 1fr;
+  }
+  .center__product-list-top select {
+    justify-self: start;
+  }
+  .header__popular-cake-img {
+    height: 70vh;
+  }
+  .image-detail__cake img {
+    height: 40rem;
+  }
+  .image-detail__cake {
+    max-height: 45rem;
+  }
+}

@@ -1,0 +1,14 @@
+.header__popular-cake-img {
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba(49, 42, 42, 0.541),
+      rgba(80, 38, 38, 0.459)
+    ),
+    url(/assets/image/bg_birthdaycake.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 88vh;
+  color: white;
+}

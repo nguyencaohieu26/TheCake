@@ -211,15 +211,15 @@
   /* animate for mobile child list */
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s ease-in;
+  transition: all 0.8s ease-in;
 }
-.mobile__nav-link.active ~ .mobile__child-list {
+.mobile__nav-item.active .mobile__child-list {
   max-height: 30rem;
 }
 .fa-caret-down {
   transition: 0.4s ease-in;
 }
-.mobile__nav-link.active .fa-caret-down {
+.mobile__nav-item.active .fa-caret-down {
   transform: rotate(270deg);
 }
 .mobile__child-link {
@@ -385,6 +385,12 @@
 .our-story {
   background-color: #f6f6f6;
   margin-bottom: 0;
+}
+.aboutus__desc span {
+  font-family: cursive;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color1);
 }
 .aboutus-details {
   display: grid;
@@ -580,6 +586,8 @@
   max-height: 22rem;
 }
 /* Css for container hold details item and larger item */
+/* center product-list top ở bên popularcake.html */
+.product-cake-detail-image,
 .larger-img-tiem,
 .detail-item-cake {
   position: fixed;
@@ -594,10 +602,12 @@
   justify-content: center;
   display: none;
 }
+.product-cake-detail-image.active,
 .larger-img-tiem.active,
 .detail-item-cake.active {
   display: flex;
 }
+/*  */
 .details-item-cake-inner {
   max-width: 75%;
   max-height: 60rem;
@@ -711,6 +721,7 @@ textarea {
 }
 /* Css for container larger image */
 /* larger image */
+.image-detail__cake,
 .larger-img-item-details {
   background-color: #fff;
   width: 60%;

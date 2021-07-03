@@ -31,11 +31,18 @@ btn_OpenNav.addEventListener("click", function () {
   mobileNav.classList.toggle("active");
 })
 // Open mobile nav-child list
-const btnmobile__nav = document.querySelectorAll(".mobile__nav-link");
-btnmobile__nav.forEach(function(item){
+const btnmobile__nav = document.querySelectorAll(".mobile__nav-item");
+const submenu_mobile = document.querySelectorAll(".mobile__nav-link");
+submenu_mobile.forEach(function(item){
   item.addEventListener("click",function(e){
-    var test = e.currentTarget;
-    test.classList.toggle("active");
+    var test = e.currentTarget.parentElement;
+   btnmobile__nav.forEach(function(item){
+     if(item == test){
+       item.classList.toggle("active");
+       return;
+     }
+     item.classList.remove("active");
+   })
   })
 })
 // chose login form
@@ -132,8 +139,8 @@ open_DetailCake.forEach(function(item){
 })
 close_DetailCake.addEventListener("click",function(){
   detailItemCake.classList.remove("active");
-})
-// 
+}) 
+// view larger image
 const btn__ExpandImg = document.querySelectorAll(".btn-expand-feature");
 const btn__CloseExpand = document.querySelector(".close__larger-item-img")
 const largerImgElement = document.querySelector(".larger-img-tiem");
