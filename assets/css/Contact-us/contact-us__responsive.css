@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1024px) {
+  .contact-us__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us__send-message {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-us__container form input {
+    width: 100%;
+  }
+  .contact-us__container form input:first-child {
+    margin-bottom: 20px;
+  }
+  .contact-us__container h3 {
+    margin: 40px auto;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .contact-us__container form button {
+    width: 100%;
+  }
+}
