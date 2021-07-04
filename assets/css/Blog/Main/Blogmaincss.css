@@ -127,11 +127,20 @@
   color: #1b1b1b;
   font-size: 1.6rem;
 }
-.menu-icon li:hover {
-  background-color: #d3d3d3;
+.backface:hover {
+  background-color: var(--bg-facebook);
+}
+.backtwitter:hover {
+  background-color: var(--bg-twitter);
+}
+.backgoogle:hover {
+  background-color: var(--bg-google);
+}
+.backin:hover {
+  background-color: var(--bg-rss);
 }
 .menu-icon a:hover {
-  color: red;
+  color: white;
 }
 
 /* right blog */
