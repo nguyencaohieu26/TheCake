@@ -1,0 +1,181 @@
+/* header img */
+.top-image {
+  position: relative;
+}
+.headimg {
+  height: 95vh;
+}
+.fa-word {
+  position: absolute;
+  text-align: right;
+  min-width: 100%;
+  right: 5%;
+  bottom: 40%;
+}
+.fa-word p {
+  padding: 1rem;
+}
+.word1 {
+  background-color: var(--third-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+.word1:hover {
+  background-color: #e49826;
+}
+.word2 {
+  color: white;
+  padding: 1rem;
+  font-size: 6rem;
+  letter-spacing: 6px;
+}
+
+/* main blog */
+.main-blog {
+  padding-top: 8rem;
+}
+.nav-blog {
+  display: flex;
+  margin: 4rem 1rem;
+}
+
+/* left blog */
+.left-blog {
+  width: 35%;
+  padding-right: 1.5rem;
+  border-right: 1px solid #f1f1f1;
+}
+.search-blog,
+.our-cake-blog{
+  padding-bottom: 2rem;
+}
+
+/* search blog */
+.search-blog input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+/* about blog */
+.about-blog {
+  padding: 2rem 0.5rem;
+}
+.image-about-blog {
+  float: right;
+  padding-left: 1rem;
+  width: 40%;
+}
+.word-about-blog {
+  font-size: 1.9rem;
+}
+
+/* our cake blog */
+.heading-cake-blog {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+.list-cake-blog {
+  position: relative;
+  padding: 1rem 0;
+}
+.image-cake-blog {
+  height: 200px;
+}
+.word-cake-blog {
+  position: absolute;
+  top: 1rem;
+}
+.word-cake-blog p {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.word-cake-blog p:hover {
+  color: red;
+}
+
+/* share blog */
+.share-icon {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+.menu-icon {
+  display: flex;
+  padding: 0 2rem;
+}
+.menu-icon li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1.5rem;
+  border: 1px solid #5f5f5f;
+  border-radius: 25px;
+  margin: 0 1rem;
+}
+.menu-icon a {
+  display: flex;
+  color: #1b1b1b;
+  font-size: 1.6rem;
+}
+.menu-icon li:hover {
+  background-color: #d3d3d3;
+}
+.menu-icon a:hover {
+  color: red;
+}
+
+/* right blog */
+.right-blog {
+  width: 65%;
+  padding-left: 1.5rem;
+}
+.item-right,
+.item-right-not {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  padding: 2rem 0;
+}
+.item-right {
+  margin-bottom: 2rem;
+}
+.image-blog {
+  width: 30%;
+  padding: 0 1rem;
+}
+.image-right {
+  height: 200px;
+}
+.content-blog {
+  width: 70%;
+  padding: 0 1rem;
+}
+.heading-right {
+  color: black;
+  font-size: 1.8rem;
+  padding-bottom: 0.6rem;
+}
+.heading-right:hover {
+  color: rgb(143, 142, 142);
+}
+.dateby-right {
+  text-align: right;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.content-right {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

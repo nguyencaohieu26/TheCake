@@ -1,0 +1,80 @@
+@media only screen and (max-width: 992px) {
+  /* header img */
+  .fa-word {
+    bottom: 35%;
+  }
+  .fa-word p {
+    padding: 0.5rem;
+  }
+  .word1 {
+    font-size: 3.5rem;
+  }
+  .word2 {
+    font-size: 5rem;
+  }
+
+  /* main blog */
+  .nav-blog {
+    flex-wrap: wrap;
+  }
+
+  /* left blog */
+  .left-blog {
+    width: 100%;
+    padding-right: 0rem;
+    border-right: none;
+    border-bottom: 1px solid #f1f1f1 ;
+  }
+
+  /* search blog */
+  .search-blog {
+    display: none;
+  }
+  /* about blog */
+  .about-blog {
+    overflow: hidden;
+  }
+  .image-about-blog {
+    max-width: 20%;
+  }
+  .word-about-blog {
+    font-size: 2rem;
+  }
+
+  /* our cake blog */
+  .our-cake-blog {
+    padding: 2rem 0;
+  }
+  .menu-cake-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+  }
+
+  /* share blog */
+  .share-blog {
+    padding-bottom: 3rem;
+  }
+
+  /* right blog */
+  .right-blog {
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 0rem;
+  }
+  .heading-right {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  /* about blog */
+  .image-about-blog {
+    min-width: 180px;
+  }
+  /* right blog */
+  .heading-right {
+    font-size: 1.5rem;
+  }
+}
