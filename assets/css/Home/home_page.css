@@ -890,6 +890,7 @@ s.order__cake-desc {
   margin: 1rem 0 1.5rem;
 }
 .btn-read-more {
+  border-bottom: 2px solid var(--third-color);
   display: inline-block;
   margin-top: 2rem;
   color: var(--text-color1);
