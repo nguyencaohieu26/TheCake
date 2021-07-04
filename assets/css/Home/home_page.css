@@ -589,7 +589,8 @@
 /* center product-list top ở bên popularcake.html */
 .product-cake-detail-image,
 .larger-img-tiem,
-.detail-item-cake {
+.detail-item-cake,
+.birthdaycake__item-large {
   position: fixed;
   top: 0;
   left: 0;
@@ -604,7 +605,8 @@
 }
 .product-cake-detail-image.active,
 .larger-img-tiem.active,
-.detail-item-cake.active {
+.detail-item-cake.active,
+.birthdaycake__item-large.active {
   display: flex;
 }
 /*  */
@@ -722,7 +724,8 @@ textarea {
 /* Css for container larger image */
 /* larger image */
 .image-detail__cake,
-.larger-img-item-details {
+.larger-img-item-details,
+.birthdaycake__item-large-inner {
   background-color: #fff;
   width: 60%;
   border-radius: 1rem;
@@ -733,7 +736,8 @@ textarea {
 .larger-img-item-details img {
   max-height: 53rem;
 }
-.close__larger-item-img {
+.close__larger-item-img,
+.close__birthdaycake__item {
   position: absolute;
   cursor: pointer;
   top: 2rem;

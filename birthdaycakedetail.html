@@ -4,25 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <title>CakeDetails</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
+    />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- gg font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <!-- link base stylesheet -->
     <link rel="stylesheet" href="assets/css/base.css" />
     <!-- link stylesheet for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_page.css" />
     <!-- link responsive for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
-    <!-- link stylesheet for contactpage -->
-    <link rel="stylesheet" href="assets/css/Contact/contact.css">
-    <link rel="stylesheet" href="assets/css/Contact/contact__responsive.css">
+    <!-- link stylesheet for cakedetail -->
+    <link rel="stylesheet" href="assets/css/CakeDetail/cakedetail.css">
+    <!-- link responsive for cakedetail -->
+    <link rel="stylesheet" href="assets/css/CakeDetail/cakedetailresponsive.css">
   </head>
   <body>
-    <section class="home__page">
+    <!-- 
+      Nâng cấp form comment
+     -->
+    <section class="birthdaydetails__page">
       <!-- header -->
       <header class="header">
         <div class="header__scroll">
@@ -65,16 +81,23 @@
                         <!-- nav c2 -->
                         <ul class="nav-subchild__list">
                           <li class="nav-subchild__item">
-                            <a href="birthdaycake.html" class="nav-subchild__link">
+                            <a
+                              href="birthdaycake.html"
+                              class="nav-subchild__link"
+                            >
                               Birthday Cakes
                             </a>
                           </li>
                           <li class="nav-subchild__item">
-                            <a href="anniversarycake.html" class="nav-subchild__link">Anniversary Cakes</a>
+                            <a
+                              href="anniversarycake.html"
+                              class="nav-subchild__link"
+                              >Anniversary Cakes</a
+                            >
                           </li>
                         </ul>
                       </li>
-                      <li class="nav-child__item" >
+                      <li class="nav-child__item">
                         <a href="ordercake.html" class="nav-child__link">
                           Custom Order
                         </a>
@@ -220,21 +243,28 @@
               <i class="fa fa-times"></i>
             </div>
             <h3 class="login-form__heading">Sign into your account</h3>
-              <div class="login__chose-btns">
-                <a href="#" class="btn btn-login-chose active">Login</a>
-                <a href="#" class="btn btn-login-chose">Register</a>
-              </div>
-            <form class="form-login active" data-form = "Login">
-              <input type="text" placeholder="Email Address" required>
-              <input type="password" placeholder="Password" required>
-              <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
+            <div class="login__chose-btns">
+              <a href="#" class="btn btn-login-chose active">Login</a>
+              <a href="#" class="btn btn-login-chose">Register</a>
+            </div>
+            <form class="form-login active" data-form="Login">
+              <input type="text" placeholder="Email Address" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit" class="btn btn-login-form btn-sumbit-login">
+                Login
+              </button>
               <p class="forget-password">Forgot Password</p>
             </form>
             <form class="form-register form-login" data-form="Register">
-              <input type="text" placeholder="FullName" required>
-              <input type="text" placeholder="Email Address" required>
-              <input type="password" placeholder="Password" required>
-              <button type="submit" class="btn btn-login-form btn-submit-register">Register</button>
+              <input type="text" placeholder="FullName" required />
+              <input type="text" placeholder="Email Address" required />
+              <input type="password" placeholder="Password" required />
+              <button
+                type="submit"
+                class="btn btn-login-form btn-submit-register"
+              >
+                Register
+              </button>
             </form>
             <div class="form-social__icon">
               <a href="#" class="form-icon__link">
@@ -256,7 +286,7 @@
           </div>
           <div class="form-right">
             <div class="form-image">
-              <img src="assets/image/img_login.jpg" alt="login__image">
+              <img src="assets/image/img_login.jpg" alt="login__image" />
             </div>
           </div>
         </div>
@@ -264,170 +294,254 @@
       <!-- search -->
       <div class="seach-container">
         <div class="search__container-details">
-        <div class="close__search">
-          <i class="fa fa-times"></i>
-        </div>
+          <div class="close__search">
+            <i class="fa fa-times"></i>
+          </div>
           <form action="" class="search-infomation">
-            <input type="text" placeholder="Search for product" required>
+            <input type="text" placeholder="Search for product" required />
             <button class="btn btn-search-info">Search</button>
           </form>
         </div>
       </div>
-      <!-- header img -->
-      <section class="header__img" id="top">
-        <div class="header__img-list owl-carousel owl-theme">
-          <div class="header__img-item">
-            <div class="header__img-item-img">
-              <img
-                src="assets/image/Index_headerImg/headerImg1.jpg"
-                alt="headerImg1"
-              />
-            </div>
-            <div class="header__img-content">
-              <h3 class="img-heading">The Taste Of Our </br>Amazing Cakes</h3>
-              <p class="img__dess">Sometime you just need a cake</p>
-              <a href="#" class="btn btn-ordernow">Get Started</a>
-            </div>
-          </div>
-          <div class="header__img-item">
-            <div class="header__img-item-img">
-              <img
-              src="assets/image/Index_headerImg/headerImg2.jpg"
-              alt="headerImg1"
-              />
-            </div>
-            <div class="header__img-content">
-              <p class="themost">THE MOST</p>
-              <h3 class="img-heading">DELICOUS</h3>
-              <p class="img__dess">Cake's Always A Good Idea</p>
-              <a href="#" class="btn btn-ordernow">Get Started</a>
-            </div>
-          </div>
-          <div class="header__img-item">
-            <div class="header__img-item-img">
-              <img
-              src="assets/image/Index_headerImg/headerImg3.jpg"
-              alt="headerImg1"
-              />
-            </div>
-            <div class="header__img-content">
-              <p class="themost">MADE WITH LOVE</p>
-              <h3 class="img-heading">VANNILA SPECIALS</h3>
-              <p class="img__dess">Don't Be Sad Just Eat Some Cake</p>
-              <a href="#" class="btn btn-ordernow">View Now</a>
-            </div>
-          </div>
-          <div class="header__img-item">
-            <div class="header__img-item-img">
-              <img
-              src="assets/image/Index_headerImg/headerImg4.jpg"
-              alt="headerImg1"
-              />
-            </div>
-            <div class="header__img-content">
-              <p class="themost">DELICOUS & SWEET</p>
-              <h3 class="img-heading">CELEBRATION CAKES</h3>
-              <p class="img__dess">All You Need Is Love And Dessert</p>
-              <a href="#" class="btn btn-ordernow">Get Started</a>
-            </div>
-          </div>
-          <div class="header__img-item">
-            <div class="header__img-tem-img">
-              <img
-              src="assets/image/Index_headerImg/headerImg5.jpg"
-              alt="headerImg1"
-              />
-            </div>
-            <div class="header__img-content">
-              <p class="themost">DELICOUS & SWEET</p>
-              <h3 class="img-heading">BIRTHDAY CAKES</h3>
-              <p class="img__dess">A Party Without Cake Is Just A Meeting</p>
-              <a href="#" class="btn btn-ordernow">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- zigzac line -->
-      <div class="ziczac">
+      <!-- header image -->
+      <div class="header__birthdaycakedetail-img">
+        <h3>SHOP</h3>
       </div>
-      <!-- main contact-us -->
-      <main>
-        <div class="contact-us__container col">
-          <div class="contact-us__map">
-            <h2>CONTACT</h2>
-            <div id="map"></div>
-          </div>
-          <div class="contact-us__content">
-            <div class="contact-us__details">
-              <h3>CONTACT DETAILS</h3>
-              <div class="contact-us__details-list">
-                <div class="contact-us__details-list__item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="contact-us__details-list__item-info">
-                    <h4>ADDRESS</h4>
-                    <p>10 Nr. Street Road, Ohio, USA</p>
+      <main class="main__birthdaycake-details">
+        <!-- birthdaycake -->
+        <div class="birthdaycake__item">
+          <div class="row-index">
+            <!-- cake detail -->
+            <div class="birthdaycake__item-details">
+              <div class="birthdaycake__item-top">
+                <div class="birthdaycake__item-image">
+                  <img class="birthdaycake__item-main-img" src="assets/image/cakedetail/cakedetail1.jpg" alt="bdcake3">
+                <div class="birthdaycake__item-img-list">
+                  <img src="assets/image/cakedetail/cakedetail1.jpg" class="active" alt="cakedetail1">
+                  <img src="assets/image/cakedetail/cakedetail2.jpg" alt="cakedetail2">
+                  <img src="assets/image/cakedetail/cakedetail3.jpg" alt="cakedetail3">
+                  <img src="assets/image/cakedetail/cakedetail4.jpg" alt="cakedetail4">
+                  <img src="assets/image/cakedetail/cakedetail5.gif" alt="cakedetail5">
+                </div>
+              </div>
+              <div class="birthdaycake__item-content">
+                <h3 class="birthdaycake__item-name">Strawberry <br> Short Cake</h3>
+                <p class="birthdaycake__item-pricecode">
+                  <span class="birthdaycake__item-code">ItemCode: BD100</span>
+                  <span>Price:</span><span class="birthdaycake__item-price">$80</span>
+                </p>
+                <div class="birthdaycake__item-starts">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span>(1 customer review)</span>
+                </div>
+                <p class="birthdaycake__item-desc">
+                  Strawberry Shortcake Cake but on a whole new level: vanilla cake layered with silky sweet cream frosting, thick, tangy ribbons of strawberry jam, and buttery shortcake crumbs. 
+                </p>
+                <div class="birthdaycake__item-chose">
+                  <div class="btns">
+                    <button class="birthdaycake__item-size active">6 INCH</button>
+                    <button class="birthdaycake__item-size">10 INCH</button>
+                  </div>
+                  <div class="quanity">
+                    <p class="quanity_value">1</p>
+                   <p> <i class="fa fa-plus"></i></p>
+                    <p>
+                    <i class="fa fa-minus"></i>
+                    </p>
+                  </div>
+                </div>
+                <a  href="checkout.html" class="birthdaycake__item-addcart">ADD TO CART</a>
+                <div class="birthdaycake__item-moreinfo">
+                  <div>
+                    <i class="fas fa-truck"></i><span>$15 flat rate shipping on all orders</span>
+                  </div>
+                  <div>
+                    <i class="far fa-check-square"></i><span>Schedule your order up to 10 days in advance!</span>
+                  </div>
+                  <div>
+                    <i class="fas fa-box-open"></i><span>We ship nationwide, directly to your door.</span>
                   </div>
                 </div>
               </div>
-              <div class="contact-us__details-list">
-                <div class="contact-us__details-list__item">
-                  <i class="fas fa-phone-square"></i>
-                  <div class="contact-us__details-list__item-info">
-                    <h4>CONTACT NO.</h4>
-                    <p>+91 345-677-554</p>
-                  </div>
-                </div>
               </div>
-              <div class="contact-us__details-list">
-                <div class="contact-us__details-list__item">
-                  <i class="fas fa-envelope"></i>
-                  <div class="contact-us__details-list__item-info">
-                    <h4>EMAIL ADDRESS</h4>
-                    <p><a class="contact-us__mail-to" href="mailto:contact@thecake.com">contact@thecake.com</a></p>
-                  </div>
-                </div>
+            </div>
+            <!-- cake feature -->
+            <div class="birthdaycake__item-features">
+              <div class="birthdaycake__item-btns">
+                <button class="btn btn-feature__chose active">DESCRIPTION</button>
+                <button class="btn btn-feature__chose">ADDITIONAL INFOMATION</button>
+                <button class="btn btn-feature__chose">REVIEW</button>
               </div>
-              <div class="contact-us__details-list">
-                <div class="contact-us__details-list__item">
-                  <i class="fab fa-skype"></i>
-                  <div class="contact-us__details-list__item-info">
-                    <h4>SKYPE ID</h4>
-                    <p>TheCakeOhio</p>
-                  </div>
+              <div class="birthdaycake__features-list">
+                <div class="birthdaycake__features-item active" data-features='DESCRIPTION' >
+                  <p>Strawberry Shortcake Cake but on a whole new level: vanilla cake layered with silky sweet cream frosting, thick, tangy ribbons of strawberry jam, and buttery shortcake crumbs. </p>
+                  <p class="ingredient"><b>Ingredients</b></p>
+                  <p>Sugar, Cake flour (bleached wheat flour, Niacin, Iron, Thiamin mononitrate, Riboflavin, Folic acid), Butter (cream, Natural flavor), Confectioners sugar (sugar, Corn starch), Strawberry puree, Cream cheese (pasteurized milk and cream, Cheese culture, Salt, Carob bean gum), Whole egg, Buttermilk (cultured 1% lowfat milk, Modified food starch, Sodium citrate, Carrageenan, Guar gum, Locust bean gum), Milk (milk, Vitamin d3), Soybean oil (soy).</p>
                 </div>
-              </div>
-              <div class="contact-us__details-list">
-                <div class="contact-us__details-list__item">
-                  <i class="far fa-clock"></i>
-                  <div class="contact-us__details-list__item-info">
-                    <h4>WORKING DAYS</h4>
-                    <p>monday-friday 10.00AM-6.00PM</p>
+                <div class="birthdaycake__features-item " data-features="ADDITIONAL INFOMATION" >
+                  <p>Weight: 180g</p>
+                  <p>Demension: 50 x 50 x 20cm</p>
+                  <p>
+                    <i class="fas fa-birthday-cake fa-2x"></i>
+                    <span>
+                      <span class="size">6IN</span>
+                      <span>Groups of 6 - 10</span>
+                    </span>
+                  </p>
+                  <p>
+                    <i class="fas fa-birthday-cake fa-3x"></i>
+                    <span>
+                      <span class="size">10IN</span>
+                      <span>Groups of 15 - 25</span>
+                    </span>
+                  </p>
+                </div>
+                <div class="birthdaycake__features-item" data-features="REVIEW">
+                  <div class="birthdaycake__review-list">
+                    <div class="birthdaycake__review">
+                      <img src="assets/image/testimonial/testimonial_per1.jpg" alt="review-img1">
+                      <div class="birthdaycake__review-content">
+                        <div class="birthdaycake__item-starts">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          </div>
+                          <h4 class="birthdaycake__review-name">
+                            JANE RIDCI
+                          <span class="birthdaycake__review-date">May 5, 2021</span>
+                          </h4>
+                          <p class="birthdaycake__review-paragraph">Great!</p>
+                      </div>
+                    </div>
                   </div>
+                  <p class="form-review__heading">Add A Review</p>
+                  <form action="" class="form-comment">
+                    <textarea placeholder="Your review*"></textarea>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <button type="button">Submit</button>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="contact-us__send-message">
-              <h3>SEND US A MESSAGE</h3>
-              <form>
-                <input type="text" required placeholder="Name">
-                <input type="tel" required placeholder="Phone Number">
-                <textarea placeholder="Your Address"></textarea>
-                <button type="submit">ORDER NOW</button>
-                <button type="submit">FREE DELIVERY</button>
-              </form>
-
+            <!-- image larger -->
+            <div class="birthdaycake__item-large">
+              <div class="close__birthdaycake__item">
+                <i class="fa fa-times"></i>
+              </div>
+              <div class="birthdaycake__item-large-inner">
+                <img src="" alt="">
+              </div>
+              <i class="fas fa-arrow-circle-left btn-prev-largerimg"></i>
+              <i class="fas fa-arrow-circle-right btn-next-largerimg"></i>
             </div>
+            <!-- related product -->
+            <section class="related__product">
+              <h3 class="related__product-heading">Related Products</h3>
+              <div class="related__product-list owl-carousel owl-theme">
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake2.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">Chocolate Classic Cake</p>
+                    <p class="related__product-code">ItemCode: BD118</p>
+                    <p class="related__product-price">$70</p>
+                  </div>
+                </div>
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/Index_headerImg/menucake/birthdaymeu/bdcake1.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">Classic Birthday Cake</p>
+                    <p class="related__product-code">ItemCode:  BD115</p>
+                    <p class="related__product-price">$70</p>
+                  </div>
+                </div>
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/BirthdayCake/bdcake1.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">Marshmallow Cake</p>
+                    <p class="related__product-code">ItemCode: BD107</p>
+                    <p class="related__product-price">$60</p>
+                  </div>
+                </div>
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/BirthdayCake/gallery_Img19.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">MulFruit Birthday Cake</p>
+                    <p class="related__product-code">ItemCode: BD154</p>
+                    <p class="related__product-price">$50</p>
+                  </div>
+                </div>
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/BirthdayCake/gallery_Img16.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">Blueberry Vanila Cake</p>
+                    <p class="related__product-code">ItemCode: BD151</p>
+                    <p class="related__product-price">$40</p>
+                  </div>
+                </div>
+                <div class="related__product-item">
+                  <div class="related__product-img">
+                    <img src="assets/image/BirthdayCake/gallery_Img21.jpg" alt="">
+                    <div class="related__product-img-feature">
+                      <a href="birthdaycakedetail.html" class="btn btn-viewrelated">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="related__product-details">
+                    <p class="related__product-name">Peanut Butter Cake</p>
+                    <p class="related__product-code">ItemCode: BD122</p>
+                    <p class="related__product-price">$55</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
-        <!-- move to top -->
-        <div class="moveto-top">
-          <a href="#top" class="movetotop-btn">
-            <i class="fas fa-chevron-up"></i>
-          </a>
         </div>
       </main>
-      <!-- footer -->
-      <footer class="footer">
+       <!-- footer -->
+       <footer class="footer">
         <div class="footer-details">
           <div class="footer-details__top">
             <div class="row-index">         
@@ -579,33 +693,44 @@
           </div>
         </div>
     </footer>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+ var owl = $(".owl-carousel");
+ owl.owlCarousel({
+   items: 4,
+   loop: true,
+   margin: 15,
+   autoplay: false,
+   autoplayTimeout: 4000,
+   autoplayHoverPause: true,
+   animateOut: "fadeOut",
+   nav:true,
+   responsive:{
+     0:{
+       items:1,
+     },
+     500:{
+       items:2,
+     },
+     650:{
+       items:3,
+     },
+     800:{
+       items:4,
+     }
+   }
+ });
+ $(".play").on("click", function () {
+   owl.trigger("play.owl.autoplay", [4000]);
+ });
+ $(".stop").on("click", function () {
+   owl.trigger("stop.owl.autoplay");
+ });
+</script>
+  <script src="assets/Js/birthdaycakedetail.js"></script>
+  <script src="assets/Js/home.js"></script>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
-       "></script>
-    <script>
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-    </script>
-    <script src="assets/Js/contact.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDj_BA747-MBUfOHFsIOMyEZ5FhkqWb0&callback=initMap&libraries=&v=weekly"
-      async>
-    </script>
-    <script src="assets/Js/home.js"></script>
   </body>
 </html>

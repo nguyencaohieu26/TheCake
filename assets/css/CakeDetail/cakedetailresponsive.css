@@ -1,0 +1,15 @@
+@media only screen and (max-width: 650px) {
+  /* center top main */
+  .birthdaycake__item-top {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* feature */
+  .btn-feature__chose {
+    margin-bottom: 1rem;
+  }
+  .birthdaycake__features-item p {
+    font-size: 1.4rem;
+  }
+}
