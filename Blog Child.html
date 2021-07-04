@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TheCake Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?famxily=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <link rel="stylesheet" href="./assets/css/Blog/Child/Blogchildcss.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <link rel="stylesheet" href="./assets/css/Blog/Child/Blogchildresponsive.css" />
+  </head>
+  <body>
+    <section class="home__page">
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- header logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  <img
+                    src="assets/image/logo_cake.png"
+                    alt="Thecake_logo"
+                    class="header__logo-img"
+                  />
+                  <span class="header__logo-text">TheCake</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <nav class="menu__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Products</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="popularcake.html" class="nav-child__link">
+                          Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          Event Cakes
+                          <i class="fa fa-caret-right"></i>
+                        </a>
+                        <!-- nav c2 -->
+                        <ul class="nav-subchild__list">
+                          <li class="nav-subchild__item">
+                            <a href="birthdaycake.html" class="nav-subchild__link">
+                              Birthday Cakes
+                            </a>
+                          </li>
+                          <li class="nav-subchild__item">
+                            <a href="anniversarycake.html" class="nav-subchild__link">Anniversary Cakes</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-child__item" >
+                        <a href="ordercake.html" class="nav-child__link">
+                          Custom Order
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>About Us</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="aboutus.html" class="nav-child__link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="blog.html" class="nav-child__link"> Blog </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="team.html" class="nav-child__link"> Team </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="testimonial.html" class="nav-child__link"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="faq.html" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="term.html" class="nav-child__link">Term</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icons">
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="menu__toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div class="login__icon">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu mobile -->
+          <nav class="menu-mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="index.html" class="mobile__nav-link">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>Products</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="popularcake.html" class="mobile__child-link"
+                      >Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="birthdaycake.html" class="mobile__child-link"
+                      >Birthday Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="anniversarycake.html" class="mobile__child-link">
+                      Anniversary Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="ordercake.html" class="mobile__child-link">
+                      Custom Cake
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>About Us</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="aboutus.html" class="mobile__child-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="blog.html" class="mobile__child-link">Blog</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="team.html" class="mobile__child-link">Team</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="testimonial.html" class="mobile__child-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="faq.html" class="mobile__child-link">FAQ</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="term.html" class="mobile__child-link">Term</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="contact.html" class="mobile__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- login form -->
+      <div class="login__form">
+        <div class="login-form-details">
+          <div class="form-left">
+            <div class="close__login-form">
+              <i class="fa fa-times"></i>
+            </div>
+            <h3 class="login-form__heading">Sign into your account</h3>
+              <div class="login__chose-btns">
+                <a href="#" class="btn btn-login-chose active">Login</a>
+                <a href="#" class="btn btn-login-chose">Register</a>
+              </div>
+            <form class="form-login active" data-form = "Login">
+              <input type="text" placeholder="Email Address" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
+              <p class="forget-password">Forgot Password</p>
+            </form>
+            <form class="form-register form-login" data-form="Register">
+              <input type="text" placeholder="FullName" required>
+              <input type="text" placeholder="Email Address" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit" class="btn btn-login-form btn-submit-register">Register</button>
+            </form>
+            <div class="form-social__icon">
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="form-image">
+              <img src="assets/image/img_login.jpg" alt="login__image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="seach-container">
+        <div class="search__container-details">
+        <div class="close__search">
+          <i class="fa fa-times"></i>
+        </div>
+          <form action="" class="search-infomation">
+            <input type="text" placeholder="Search for product" required>
+            <button class="btn btn-search-info">Search</button>
+          </form>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="top-image">
+        <img src="assets/image/Blog/head1.jpg" class="headimg"/>
+      </div>
+      <!-- blog child -->
+      <div class="blog-child">
+        <div class="row-index">
+          <!-- main blog child -->
+          <div class="main-blog-child">
+            <p class="heading-main"> 6 New Cakes For Every Occasion </p>
+            <p class="dateby-main">17th September, 2020.  / Our Food</p>
+            <p class="content-blog-child">
+              <b> Every cake tells a story.  Here are some new cakes from us to help you celebrate your stories. </b>
+            </p>
+            <p class="content-blog-child">
+              Birthdays, anniversaries, christenings, retirements, passing exams, getting new jobs ... all occasions to be marked as special milestones and definitely worthy of cake delivery!
+            </p>
+            <p class="content-blog-child">
+              Every cake tells a story, even if it’s just coffee and a cake as a break from work, or a cheerful family afternoon tea.  A cake can be an essential part of a tradition of family sharing, or the centrepiece of a gathering to celebrate a happy event. 
+            </p>
+            <p class="content-blog-child">
+              <b> Whatever the story, PAUL has a cake, or a dessert, to make it special. </b>
+            </p>
+            <p class="content-blog-child1">
+              These are the NEW cakes joining our range, and they are available for <b> click & collect or delivery </b> via our website! <b> Order online before 12 noon for next day delivery: </b>
+            </p>
+            <p class="content-blog-child">
+              <b> Celebration Carrot Cake: </b> everyone loves a carrot cake, and we’ve created a splendid new 3-tiered carrot cake that’s perfect for special occasions.  Serves 6 – 8.
+            </p>
+            <img src="./assets/image/Blog/child1.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              <b> Small Chocolate Macaron Cake: </b> our Chocolate Macaron Cake is a best seller after only a few weeks, and this is its baby brother. Serving 6 - 8 (rather than 10 – 12) it’s just as decadent. Layers of chocolate sponge, filled with strawberry jam and chocolate butter cream; smothered in more butter cream, topped with a dripping chocolate glaze and decorated with chocolate meringue rosettes, chocolate and caramel mini macarons, gold sugar balls and curls of gold leaf. 
+            </p>
+            <img src="./assets/image/Blog/child2.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              <b> Victoria Sponge Cake: </b> another perennial favourite of the tea table, given a taste of France - with a filling of PAUL Strawberry Jam and Chantilly Cream.  Serves 4 – 6.
+            </p>
+            <img src="./assets/image/Blog/child3.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              <b> Cherry Clafoutis: </b> when you’re looking for something different for dessert, try this French classic. A creamy egg custard enriched with ground almonds, filled with Morello cherries, topped with flaked almonds and baked. It’s particularly good served warm with a dollop of cream or crème fraîche.  Serves 6.
+            </p>
+            <img src="./assets/image/Blog/child4.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              <b> Mixed Berry Swirl Cheesecake: </b> another pretty dessert! Hidden filling of coulis made with strawberry, blackberry, morello cherry and redcurrant; with more swirls of coulis on top. Serves 6 – 8.
+            </p>
+            <img src="./assets/image/Blog/child5.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              <b> Blackcurrant Cheesecake: </b> This blackcurrant cheesecake is a combination of rich, creamy cheesecake on a base of buttery, speculoos biscuit crumbs, given a stylish finish with blackcurrants & blackcurrant jam. Serve it as a dessert or enjoy as a treat any time. Serves 6 – 8.
+            </p>
+            <img src="./assets/image/Blog/child6.jpg" class="image-blog-child" />
+            <p class="content-blog-child">
+              All the cakes on our website are available for next day delivery, as long as you order before noon the day before.  We hope you enjoy creating your own new stories with them.
+            </p>
+          </div>
+          <!-- share blog child -->
+          <div class="share-icon">
+            <p class="word-share">SHARE: </p>
+            <ul class="menu-icon">
+              <li>
+                <a href="#" target="_blank" class="fab fa-facebook"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="fab fa-twitter"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="fab fa-google"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="fab fa-instagram"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-details">
+          <div class="footer-details__top">
+            <div class="row-index">         
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium suscipit ipsum harum error in sapiente alias, eos voluptatem tempore quis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi dolorem enim harum soluta ratione quod deserunt repellat ad. Atque?</p>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">LASTEST POST</h3>
+                <!-- list child -->
+              <ul class="item-footer__list">
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+                <li class="item-footer__item">
+                  <a href="#" class="item-footer__link">
+                    <i class="fa fa-chevron-right"></i>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </li>
+          
+              </ul>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">QUICK LINKS</h3>
+                <!-- list child -->
+                <ul class="item-footer__list">
+                  <li class="item-footer__item">
+                    <a href="index.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="aboutus.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>About Us</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="popularcake.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Products</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="testimonial.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Testimonials</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="faq.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="contact.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-top__item">
+                <h3 class="footer-top__heading">Contact Info</h3>
+                <!-- Add address -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsum placeat sunt suscipit omnis libero!</p>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item">
+                    <a href="tel: 1.800.555.6789" class="item-footer__link">
+                      <span>Phone:</span>  1.800.555.6789
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="mailto: support@gmail.com" class="item-footer__link">
+                      <span>Email:</span> support@gmail.com
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="index.html" class="item-footer__link">
+                     <span>We Website:</span> TheCake.com
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="footer-details__bottom">
+           <div class="row-index">
+            <p class="copy-right">
+              &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
+            <span>Made with love</span>
+            </p>
+            <div class="footer-social__list">
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="#" class="footer-social__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
+    <script src="assets/Js/home.js"></script>
+  </body>
+</html>
