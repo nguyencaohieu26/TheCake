@@ -17,10 +17,6 @@
   color: var(--text-color);
 }
 /* header image */
-.header__img-content {
-  display: flex;
-  justify-content: space-between;
-}
 .header__img-content button {
   padding: 10px;
   color: #fff;
@@ -119,12 +115,12 @@
   word-spacing: 0.3rem;
   letter-spacing: 0.1rem;
   color: var(--text-color1);
+  margin-bottom: 20px;
 }
 .contact-us__container form input:focus {
   outline: none;
 }
 .contact-us__container textarea {
-  margin-top: 20px;
   padding: 10px;
   resize: vertical;
   border: 1px solid #ddd;
@@ -133,20 +129,21 @@
   word-spacing: 0.3rem;
   letter-spacing: 0.1rem;
   color: var(--text-color1);
+  margin-bottom: 20px;
 }
 .contact-us__container textarea:focus {
   outline: none;
 }
 .contact-us__container form button {
-  margin-top: 20px;
   background-color: var(--third-color);
   padding: 10px;
   border-radius: 50px;
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 2 - 30px);
   font-size: 1.8rem;
   color: #fff;
   font-family: inherit;
   border: 2px solid #fff;
+  margin: auto;
 }
 .contact-us__container form button:hover {
   background-color: #fff;
