@@ -1,12 +1,12 @@
 @media only screen and (max-width: 1024px) {
-
-}
-@media only screen and (max-width: 900px) {
   .review-card-container {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
   }
+}
+@media only screen and (max-width: 900px) {
+
 }
 @media only screen and (max-width: 600px) {
 

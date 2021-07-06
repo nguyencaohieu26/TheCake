@@ -30,15 +30,14 @@
   column-count: 4;
 }
 .review-card-items {
+  display: flex;
+  display: block;
   font-family: inherit;
   font-size: 14px;
   overflow: hidden;
   page-break-inside: avoid;
   -webkit-break-inside: avoid;
   break-inside: avoid;
-}
-.review-card-content {
-  padding: 10px;
 }
 .review-card__title,
 .review-card__personal {
