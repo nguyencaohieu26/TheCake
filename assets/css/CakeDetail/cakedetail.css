@@ -16,12 +16,34 @@
   width: 80%;
   text-align: center;
   color: white;
-  font-size: 5rem;
+  font-size: 5.5rem;
   letter-spacing: 3px;
+  font-family: cursive;
 }
 /* birthdaycake infor */
 .main__birthdaycake-details {
   padding: 10rem 1.5rem 6rem;
+  position: relative;
+}
+.backtoprevious-site {
+  position: absolute;
+  top: 3rem;
+  left: 5.5%;
+}
+.backtoprevious-site a {
+  padding: 0.4rem 1.2rem;
+  border: 2px solid black;
+  color: black;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: all 0.4s ease-in-out;
+}
+.backtoprevious-site a:hover {
+  border-color: var(--third-color);
+  color: var(--third-color);
+}
+.backtoprevious-site a i {
+  font-size: 1.3rem;
 }
 .birthdaycake__item-top {
   display: grid;
@@ -170,6 +192,13 @@
 .birthdaycake__item-moreinfo div span {
   font-size: 1.2rem;
 }
+.step-makecake,
+.ingredient {
+  font-weight: 500;
+}
+.make-cake-recipe div {
+  margin-left: 1rem;
+}
 /* birthday featuress */
 .birthdaycake__item-features {
   margin-top: 6rem;
@@ -212,12 +241,29 @@
   font-weight: 600;
   margin-right: 1rem;
 }
+.description-details {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 0.75fr;
+}
+.description-details-right {
+  display: grid;
+  gap: 2rem;
+  height: 120rem;
+  grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.description-details-right img {
+  height: 100%;
+}
 /* reivew */
 .birthdaycake__review {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 10rem 1fr;
   margin-bottom: 2rem;
+}
+.birthdaycake__review img {
+  height: 10rem;
 }
 .birthdaycake__review-date {
   margin-left: 1rem;

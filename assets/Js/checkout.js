@@ -29,3 +29,50 @@ btn_customerquestion.forEach(function(button){
     })
   })
 })
+// function table
+const removeItem    = document.querySelectorAll(".remove-item");
+const btn_Incresase = document.querySelectorAll(".btn-incresase-quanity");
+const btn_Decresase = document.querySelectorAll(".btn-decresase-quanity");
+const sumlQuanity    = document.querySelector(".sum-quanity");
+var valueitem1=0;
+var valueitem2=0;
+removeItem.forEach(function(button){
+  button.addEventListener('click',function(e){
+    e.preventDefault()
+    var parentElement = e.currentTarget.parentElement.parentElement;
+    parentElement.remove(e.currentTarget.parentElement);
+  })
+})
+
+var default_money = 50;
+btn_Decresase.forEach(function(button){
+  button.addEventListener("click",function(e){
+    var parent = e.currentTarget.parentElement.parentElement;
+    var inputQuanity = parent.querySelector(".quanity-item");
+    var priceItem = parent.parentElement.parentElement.querySelector(".price-money"); 
+    inputQuanity.innerHTML = parseInt(inputQuanity.innerHTML) - 1;
+    var price = parseInt(inputQuanity.innerHTML) * default_money;
+    priceItem.innerHTML = `${price}$`
+    if(inputQuanity.innerHTML < 1){
+      inputQuanity.innerHTML = 1
+      priceItem.innerHTML = `${default_money}$`;
+      return
+    }
+  })
+})
+btn_Incresase.forEach(function(button){
+  button.addEventListener("click",function(e){
+    var parent = e.currentTarget.parentElement.parentElement;
+    var inputQuanity = parent.querySelector(".quanity-item");
+    var priceItem = parent.parentElement.parentElement.querySelector(".price-money");
+    inputQuanity.innerHTML = parseInt(inputQuanity.innerHTML) + 1;
+    var price = parseInt(inputQuanity.innerHTML) * default_money;
+    priceItem.innerHTML = `${price}$`
+  })
+})
+var test = document.querySelectorAll(".quanity-item");
+test.forEach(function(item){
+  item.addEventListener("click",function(){
+
+  })
+})

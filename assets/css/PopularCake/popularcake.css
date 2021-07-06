@@ -1,3 +1,4 @@
+/* header img */
 .header__popular-cake-img {
   position: relative;
   background: linear-gradient(
@@ -66,9 +67,8 @@
 }
 .list-product__show {
   color: #777;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5rem;
-  font-family: cursive;
 }
 /* main grid details */
 .main__popularcake-details .row-index {

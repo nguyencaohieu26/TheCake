@@ -36,7 +36,7 @@
 .returning-cutomer__question {
   background-color: var(--text-color);
   color: white;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.8rem;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -70,7 +70,8 @@
   grid-template-columns: 1fr 1fr;
 }
 .billing-details__content .group-form input,
-.customer-login input {
+.customer-login input,
+.login-coupon {
   width: 100%;
   height: 3.5rem;
   outline: none;
@@ -85,6 +86,7 @@
   display: block;
 }
 .btn-submit-checkout,
+.btn-getcoupon,
 .customer-login button {
   position: relative;
   justify-self: start;
@@ -97,6 +99,7 @@
   z-index: 2;
 }
 .btn-submit-checkout::after,
+.btn-getcoupon::after,
 .customer-login button::after {
   position: absolute;
   content: "";
@@ -112,10 +115,18 @@
   transition: transform 0.3s ease-in-out;
 }
 .btn-submit-checkout span,
+.btn-getcoupon span,
 .customer-login button span {
   position: relative;
   z-index: 4;
 }
+.btn-getcoupon {
+  margin-top: 1.5rem;
+}
+.checkout-step3 .login-coupon {
+  width: 100%;
+}
+.btn-getcoupon:hover::after,
 .btn-submit-checkout:hover::after,
 .customer-login button:hover::after {
   transform: scaleX(1);
@@ -132,7 +143,7 @@
 .checkout-step2 {
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 0.5fr 1fr;
 }
 .checkout-step2__heading {
   position: relative;
@@ -160,66 +171,95 @@
 }
 .billing-details__content {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
 }
 /* checkout-step3 */
-.checkout-step3 {
-  margin-top: 5rem;
+.addition-note {
+  margin-bottom: 2rem;
 }
 .checkout-step3 table {
   margin-top: 2rem;
-}
-.your-order__details table {
   width: 100%;
 }
-.your-order__details table tr {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgba(221, 221, 221, 0.1);
+.checkout-step3 table,
+th {
+  border: 0.5px solid rgb(233, 233, 233);
+  border-collapse: collapse;
 }
-.your-order__details table tr th:first-child {
-  text-align: left;
-}
-.your-order__details table tr th {
-  border: 1px solid rgba(179, 179, 179, 0.281);
-  font-size: 1.5rem;
-  font-weight: 400;
-  display: block;
-  padding: 1.2rem;
-}
-.your-order__details table tr:first-child th {
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: var(--text-color1);
-}
-.your-order__details table tr:last-child th {
-  font-weight: 500;
+.checkout-step3 table thead tr th {
   font-size: 1.7rem;
-  color: rgb(236, 189, 57);
+  font-weight: 400;
 }
-.your-order__details table tr:nth-child(2) {
-  background-color: rgba(241, 241, 241, 0.486);
+.checkout-step3 table tbody {
+  margin-top: -5px;
 }
-.your-order__details table tr:not(:last-child, :first-child) th {
-  color: #353533;
-  font-weight: 300;
+.checkout-step3 table tr {
+  display: grid;
+  grid-template-columns: 12rem 1fr 12rem 10rem 10rem;
+  background-color: white;
 }
-.your-order__details table tr:nth-child(3) {
-  background-color: rgba(241, 241, 241, 0.315);
+.checkout-step3 table .colspan2,
+.total-money {
+  grid-column: span 2;
 }
-.your-order__details table tr:first-child {
-  opacity: 1;
+.checkout-step3 table .colspan2 {
+  color: var(--third-color);
+}
+.checkout-step3 table tr th {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-step3 table tbody tr th {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.number-of-quanity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.quanity-modify {
+  margin-left: 2rem;
+}
+.quanity-item {
+  font-size: 1.8rem;
+}
+.checkout-step3 table tbody tr:last-child th {
+  font-size: 1.8rem;
+}
+.quanity-modify i {
+  cursor: pointer;
+  font-size: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 2px;
+}
+.quanity-modify i:hover {
+  background-color: #777;
+  color: white;
 }
 /* checkout-step4 */
 .checkout-step4 {
   margin-top: 5rem;
 }
 .group-radio {
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-size: 1.4rem;
   color: var(--text-color1);
+}
+.list-payment i {
+  font-size: 2.2rem;
+}
+.list-payment i:hover {
+  color: #9f2b00;
+  cursor: pointer;
 }
 .check-payment__notify {
   max-height: 0;
@@ -249,8 +289,16 @@
   display: inline-block;
 }
 /* Responsive */
-@media only screen and (max-width: 700px) {
-  .billing-details__content {
+@media only screen and (max-width: 950px) {
+  .checkout-step2 {
     grid-template-columns: 1fr;
+  }
+  .checkout-step3 {
+    order: -1;
+    display: grid;
+    gap: 2rem;
+  }
+  .addition-note {
+    order: 2;
   }
 }

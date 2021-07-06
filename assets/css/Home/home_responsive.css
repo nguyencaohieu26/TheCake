@@ -8,7 +8,7 @@
   .group-form-mix {
     grid-template-columns: 1fr 1fr;
   }
-  .birthdaycake__item-moreinfo {
+  .form-cake__desc {
     grid-column: span 2;
   }
 }

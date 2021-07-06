@@ -324,6 +324,10 @@
   margin: 0.5rem;
   border-radius: 50%;
   border: 1px solid rgb(247, 247, 247);
+  background: transparent;
+}
+.owl-dots .owl-dot.active span {
+  background-color: rgb(209, 209, 209);
 }
 /* ------------------------- */
 /* main content */
@@ -513,6 +517,9 @@
   right: 0.5rem;
   top: 1rem;
 }
+.cake-desc {
+  display: none;
+}
 .menu-cake-item__content p {
   font-size: 1.4rem;
   margin: 0.8rem 0;
@@ -666,7 +673,7 @@
   font-family: cursive;
   color: var(--third-color);
   margin-left: 5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 .item-cake-inner-ingredient {
   margin: 1.5rem 0;
@@ -675,6 +682,15 @@
 }
 /* Css for from inside a details item */
 /* group-form */
+.code-price-inline {
+  display: flex;
+  align-items: center;
+}
+.code-price-inline p:last-child {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
 .group-form-cake {
   margin-right: 5rem;
   color: var(--text-color1);
@@ -723,6 +739,10 @@ textarea {
   font-size: 1.5rem;
   color: var(--text-color);
   font-weight: 600;
+}
+.form-cake__desc p {
+  font-size: 1.4rem;
+  color: var(--text-color1);
 }
 .birthdaycake__item-moreinfo {
   padding-top: 1rem;
@@ -878,7 +898,7 @@ s.order__cake-desc {
 /* blog */
 .lastest-new {
   background-color: var(--bg-color1);
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 .lastest-new__list {
   margin-top: 6rem;
@@ -922,6 +942,7 @@ s.order__cake-desc {
 .our-team {
   padding-right: 0;
   padding-left: 0;
+  padding-top: 4rem;
 }
 .ourteam-details__list {
   display: grid;
@@ -1157,8 +1178,8 @@ button.btn-contactus-submit i {
   display: grid;
   padding: 1rem 1rem 5rem;
   gap: 1rem;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .btn-viewdetal {
   position: absolute;
@@ -1546,3 +1567,4 @@ button.btn-contactus-submit i {
   color: rgba(167, 167, 167, 0.589);
   border: 3px solid rgba(167, 167, 167, 0.61);
 }
+/*  */

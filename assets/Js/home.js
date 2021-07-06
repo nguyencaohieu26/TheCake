@@ -117,21 +117,23 @@ btn_OpenMenu.forEach(function(item,index){
 })
 // ------------------------------------------------------
 const cakeItemImg  = document.querySelector(".cake-inner-img img");
-const cakeDetailName     = document.querySelector(".item-cake-inner-name");
-const cakeDetailCode = document.querySelector(".item-cake-inner-code");
-const cakeDetailType = document.querySelector(".cake-inner-type-item");
-const cakeDetailPrice = document.querySelector(".item-cake-inner-price");
+const cakeDetailName   = document.querySelector(".item-cake-inner-name");
+const cakeDetailCode   = document.querySelector(".item-cake-inner-code");
+const cakeDetailType   = document.querySelector(".cake-inner-type-item");
+const cakeDetailPrice  = document.querySelector(".item-cake-inner-price");
+const cakeDetailDesc   = document.querySelector(".form-cake__desc p");
 //---------------------
 const detailItemCake  = document.querySelector(".detail-item-cake");
 const open_DetailCake = document.querySelectorAll(".btn-detail-feature");
 const close_DetailCake = document.querySelector(".btn-cancel-checkout");
 // function fill detail
-function fillDetailItem(img,name,code,type,price){
+function fillDetailItem(img,name,code,type,price,desc){
   cakeItemImg.src = img;
   cakeDetailName.innerText = name;
   cakeDetailCode.innerText = code;
   cakeDetailType.innerText =type;
   cakeDetailPrice.innerText = price;
+  cakeDetailDesc.innerHTML = desc
 }
 open_DetailCake.forEach(function(item){
   item.addEventListener("click",function(e){
@@ -141,7 +143,8 @@ open_DetailCake.forEach(function(item){
     var name = parentElement.querySelector(".menu-cake-item__name").innerText;
     var price = parentElement.querySelector(".price-cake").innerText;
     var itemcode = parentElement.querySelector(".code-item-cake").innerText;
-    fillDetailItem(img,name,itemcode,type,price);
+    var desc     = parentElement.querySelector(".cake-desc").innerText;
+    fillDetailItem(img,name,itemcode,type,price,desc);
     detailItemCake.classList.add("active");
   })
 })
