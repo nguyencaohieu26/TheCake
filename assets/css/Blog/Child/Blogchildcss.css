@@ -56,34 +56,31 @@
   display: flex;
   padding: 0 3rem;
 }
-.menu-icon li {
+.menu-icon a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  border: 1px solid #5f5f5f;
+  border-radius: 25px;
+  font-size: 1.6rem;
   width: 36px;
   height: 36px;
   line-height: 36px;
-  border: 1px solid #5f5f5f;
-  border-radius: 25px;
   margin: 0 2rem;
 }
-.menu-icon a {
-  display: flex;
-  color: #1b1b1b;
-  font-size: 1.6rem;
+.backface a:hover {
+  background-color: var(--bg-facebook);
+}
+.backtwitter a:hover {
+  background-color: var(--bg-twitter);
+}
+.backgoogle a:hover {
+  background-color: var(--bg-google);
+}
+.backin a:hover {
+  background-color: var(--bg-rss);
 }
 .menu-icon a:hover {
   color: white;
-}
-.backface:hover {
-  background-color: var(--bg-facebook);
-}
-.backtwitter:hover {
-  background-color: var(--bg-twitter);
-}
-.backgoogle:hover {
-  background-color: var(--bg-google);
-}
-.backin:hover {
-  background-color: var(--bg-rss);
 }
