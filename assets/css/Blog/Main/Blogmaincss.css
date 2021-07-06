@@ -111,32 +111,29 @@
   display: flex;
   padding: 0 2rem;
 }
-.menu-icon li {
+.menu-icon a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  border: 1px solid #5f5f5f;
+  border-radius: 25px;
   width: 3rem;
   height: 3rem;
   line-height: 1.5rem;
-  border: 1px solid #5f5f5f;
-  border-radius: 25px;
+  font-size: 1.6rem;
   margin: 0 1rem;
 }
-.menu-icon a {
-  display: flex;
-  color: #1b1b1b;
-  font-size: 1.6rem;
-}
-.backface:hover {
+.backface a:hover {
   background-color: var(--bg-facebook);
 }
-.backtwitter:hover {
+.backtwitter a:hover {
   background-color: var(--bg-twitter);
 }
-.backgoogle:hover {
+.backgoogle a:hover {
   background-color: var(--bg-google);
 }
-.backin:hover {
+.backin a:hover {
   background-color: var(--bg-rss);
 }
 .menu-icon a:hover {
