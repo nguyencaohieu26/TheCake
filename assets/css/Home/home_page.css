@@ -459,6 +459,9 @@
 /* -------------------------- */
 /* -------------------------- */
 /* our-menu */
+.our-menu {
+  padding-top: 3rem;
+}
 .our-menu-btns {
   width: 100%;
   margin: 3rem 0 5rem;
@@ -470,7 +473,7 @@
 }
 .our-menu-btn-chose.active,
 .our-menu-btn-chose:hover {
-  color: var(--text-color);
+  color: #9f2b00;
 }
 .our-menu-cake-list {
   display: none;
@@ -491,20 +494,31 @@
   background-color: rgba(224, 224, 224, 0.2);
   cursor: pointer;
 }
+
 .menu-cake-item__name {
   font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--text-color1);
+  font-weight: 500;
+  color: #9f2b00;
   margin-bottom: 0.5rem;
+}
+.menu-cake-item__content {
+  position: relative;
 }
 .price-cake {
   margin-left: 3rem;
   color: var(--third-color);
   font-weight: 400;
   font-family: cursive;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
 }
 .menu-cake-item__content p {
   font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+.code-item-cake {
+  font-weight: 500;
 }
 .item-cake-feature ul {
   display: flex;
@@ -641,7 +655,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   display: block;
-  color: var(--text-color1);
+  color: #9f2b00;
   margin-bottom: 1rem;
 }
 .cake-inner-right-content p {
@@ -673,17 +687,6 @@
 }
 .group-form-cake input[type="radio"] {
   margin-right: 0.3rem;
-}
-.group-form-info {
-  display: grid;
-  gap: 10px;
-}
-.group-form-info input {
-  width: 100%;
-  height: 3.4rem;
-  padding: 0.8rem;
-  border: 1px solid rgb(233, 233, 233);
-  border-radius: 5px;
 }
 textarea {
   margin-top: 1rem;
@@ -720,6 +723,20 @@ textarea {
   font-size: 1.5rem;
   color: var(--text-color);
   font-weight: 600;
+}
+.birthdaycake__item-moreinfo {
+  padding-top: 1rem;
+  border-top: 0;
+}
+.birthdaycake__item-moreinfo div i {
+  min-width: 3.5rem;
+  color: var(--third-color);
+}
+.birthdaycake__item-moreinfo div span {
+  font-size: 1.2rem;
+}
+.item-cake-inner-code {
+  font-weight: 500;
 }
 /* Css for container larger image */
 /* larger image */
@@ -1070,12 +1087,47 @@ button.btn-contactus-submit i {
 /* new-product */
 .new-product {
   padding: 4rem 1.5rem 7rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
 }
 .new-product__list {
+  position: relative;
   margin-top: 4rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/* slider */
+.new-product__list .owl-nav {
+  display: block !important;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 30%;
+}
+.owl-prev span,
+.owl-next span {
+  font-size: 4rem !important;
+  padding: 0 2rem;
+  border-radius: 4px;
+  transition: all 0.4s ease-in;
+  background-color: rgba(54, 54, 54, 0.418);
+  color: white;
+}
+.owl-prev span:hover,
+.owl-next span:hover {
+  border: 1px solid var(--ordercake-color);
+  background-color: #e5a74c60;
+}
+.owl-prev {
+  left: -3rem !important;
+}
+.owl-next {
+  right: -3rem !important;
+}
+/* slider */
+.new-product__list .owl-stage-outer {
+  padding-bottom: 3rem;
 }
 .newproduct-item__thumbnail {
   position: relative;
@@ -1124,6 +1176,7 @@ button.btn-contactus-submit i {
   opacity: 0.9;
 }
 .name-newproduct {
+  color: #9f2b00;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -1256,9 +1309,19 @@ button.btn-contactus-submit i {
   font-size: 1.5rem;
 }
 .close__login-form i {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 3px;
   cursor: pointer;
 }
+.close__login-form i:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .login-form__heading {
+  margin-top: 1.5rem;
   font-size: 2.4rem;
   font-weight: 400;
   display: block;
@@ -1312,7 +1375,11 @@ button.btn-contactus-submit i {
 }
 .forget-password {
   font-size: 1.5rem;
+  margin: 0.6rem 0;
   cursor: pointer;
+}
+.forget-password:hover {
+  color: #9f2b00;
 }
 .form-social__icon {
   margin-top: 1rem;

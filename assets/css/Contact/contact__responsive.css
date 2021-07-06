@@ -7,6 +7,14 @@
     margin-top: 50px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .header__img-content {
+    flex-direction: column;
+  }
+  .header__img-content button {
+    width: 180px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .contact-us__container form input {
     width: 100%;
@@ -18,7 +26,16 @@
     margin: 40px auto;
   }
 }
-@media only screen and (max-width: 414px) {
+
+@media only screen and (max-width: 576px) {
+  .header__img-item img {
+    height: 80vh;
+  }
+  .header__img-item::after {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 500px) {
   .contact-us__container form button {
     width: 100%;
   }

@@ -4,6 +4,14 @@
     top: 50%;
   }
 }
+@media only screen and (max-width: 1300px) {
+  .group-form-mix {
+    grid-template-columns: 1fr 1fr;
+  }
+  .birthdaycake__item-moreinfo {
+    grid-column: span 2;
+  }
+}
 /* Responsive for screen width between 992px and 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header__img-content {
@@ -54,12 +62,6 @@
     font-size: 4.5rem;
   }
   /* form detail cake */
-  .group-form-mix {
-    grid-template-columns: 1fr 1fr;
-  }
-  .group-form-info {
-    grid-column: span 2;
-  }
   /*  */
   .order__cake-image {
     width: 50%;

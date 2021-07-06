@@ -79,6 +79,14 @@ openFormLogin.addEventListener("click",function(){
 closeFormLogin.addEventListener("click",function(){
   FormLoginElement.classList.remove("active");
 })
+window.addEventListener("click",function(e){
+  if(e.target == FormLoginElement){
+    FormLoginElement.classList.remove("active");
+  }
+  if(e.target == detailItemCake){
+    detailItemCake.classList.remove("active");
+  }
+})
 // ---------------------------------
 // Open search
 const SearchElement = document.querySelector(".seach-container");
