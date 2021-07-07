@@ -29,3 +29,12 @@
     margin: 0px auto 10px auto;
   }
 }
+@media only screen and (max-width: 500px) {
+  .testimonial-rating-star {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-rating-star-list {
+    margin-top: 20px;
+  }
+}

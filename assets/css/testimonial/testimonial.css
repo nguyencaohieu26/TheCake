@@ -5,6 +5,7 @@
 }
 /* 1. TESTIMONIAL PAGE CSS */
 /* testimonial review */
+/* 5 star rating */
 .testimonial__container h2 {
   font-size: 3rem;
   font-family: Pacifico;
@@ -105,7 +106,10 @@
   margin: 20px 0px;
   justify-content: center;
 }
-.testimonial-rating-star > a {
+.testimonial-rating-star-list {
+  display: flex;
+}
+.testimonial-rating-star .testimonial-rating-star-list > a {
   vertical-align: middle;
   text-align: center;
   border: 1px solid #ddd;
@@ -192,4 +196,32 @@
   background-color: #ddd;
   cursor: pointer;
   transition: 0.5s;
+}
+/* 4 star rating */
+.__4-star-rating {
+  display: none;
+}
+.__4-star-rating.active {
+  display: block;
+}
+/* 3 star rating */
+.__3-star-rating {
+  display: none;
+}
+.__3-star-rating.active {
+  display: block;
+}
+/* 2 star rating */
+.__2-star-rating {
+  display: none;
+}
+.__2-star-rating.active {
+  display: block;
+}
+/* 1 star rating */
+.__1-star-rating {
+  display: none;
+}
+.__1-star-rating.active {
+  display: block;
 }
