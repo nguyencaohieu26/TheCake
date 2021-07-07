@@ -4,6 +4,11 @@
     height: 85vh;
   }
 
+  /* content */
+  .heading-img {
+    width: 15%;
+  }
+
   /* mission */
   .mission-img {
     width: 40%;
@@ -15,6 +20,11 @@
   .about-us {
     padding: 1rem;
   }
+  .heading-img {
+    width: 20%;
+  }
+
+  /* */
   .content-child {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +55,11 @@
   .about-us {
     padding: 0.75rem;
   }
+  .heading-img {
+    width: 30%;
+  }
+
+  /* */
   .mission-content,
   .vision-ul,
   .values-ol,
@@ -70,8 +85,20 @@
 }
 
 @media only screen and (max-width: 380px) {
+  /* content */
+  .heading-img {
+    width: 40%;
+  }
+  
+  /* */
   .values-img-child-1,
- .values-img-child-2 {
+  .values-img-child-2 {
    min-width: 100%;
  }
+}
+
+@media only screen and (max-width: 270px) {
+  .share-icon {
+    display: none;
+  }
 }

@@ -65,8 +65,17 @@
   }
 
   /* share blog */
-  .share-blog {
-    padding-bottom: 3rem;
+  .share-icon {
+    font-size: 1.5rem;
+  }
+  .menu-icon {
+    padding: 0 1rem;
+  }
+  .menu-icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.2rem;
+    font-size: 1.2rem;
   }
 
   /* right blog */
@@ -143,5 +152,11 @@
   }
   .content-blog {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .share-icon {
+    display: none;
   }
 }
