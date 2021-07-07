@@ -19,22 +19,22 @@
 .header__scroll.active-color {
   padding: 0 1.5rem;
   position: relative;
-  background-color: white;
+  background-color: rgb(237, 86, 59);
   color: black;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   animation: animatetop 0.6s;
 }
 .header__scroll.active-color .header__logo-text {
-  color: var(--text-color1);
+  color: white;
 }
 .header__scroll.active-color .header__logo-link {
-  color: var(--text-color);
+  color: white;
 }
 .header__scroll.active-color .header__nav-link {
-  color: var(--text-color1);
+  color: white;
 }
 .header__scroll.active-color .menu__icons > * {
-  color: var(--text-color1);
+  color: white;
 }
 .header__scroll.active-color .nav-child__list {
   background-color: rgba(0, 0, 0, 0.7);

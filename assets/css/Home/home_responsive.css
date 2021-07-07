@@ -45,13 +45,13 @@
   }
   /*  */
   .header {
-    background: white;
+    background: rgb(237, 86, 59);
   }
   .header__logo-text {
-    color: var(--text-color1);
+    color: white;
   }
   .menu__icons > * {
-    color: var(--text-color1);
+    color: white;
   }
   /* header image */
   .header__img-content {
