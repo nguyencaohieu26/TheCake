@@ -1,0 +1,120 @@
+/* header img */
+.header-img {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.top-img {
+  height: 95vh;
+}
+
+/* main */
+.main-about-us {
+  padding: 1rem 0;
+} 
+
+/* content */
+.about-us {
+  overflow: hidden;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 2rem;
+}
+.heading-1 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 3rem;
+}
+.heading-img {
+  margin: 0.5rem auto;
+  width: 10%;
+}
+
+/* mission */
+.heading-2 {
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.word-2 {
+  padding-bottom: 0.5rem;
+}
+.mission-img,
+.values-img-child-1,
+.values-img-child-2 {
+  float: right;
+  width: 30%;
+  padding-left: 2rem;
+}
+.mission-img {
+  min-width: 197px;
+}
+.mission-content {
+  padding-left: 1rem;
+}
+
+/* vision */
+.vision-img {
+  float: left;
+  width: 35%;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.vision-li {
+  list-style-type: circle;
+}
+
+/* values */
+.values-img-child-1,
+.values-img-child-2 {
+  min-width: 348px;
+  padding-bottom: 2rem;
+}
+.values-ol {
+  padding-left: 2rem;
+}
+.values-li {
+  list-style-type: decimal;
+}
+
+/* share */
+.share-icon {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.menu-icon {
+  display: flex;
+  padding: 0 2rem;
+}
+.menu-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid #5f5f5f;
+  border-radius: 25px;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1.5rem;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+}
+.backface a:hover {
+  background-color: var(--bg-facebook);
+}
+.backtwitter a:hover {
+  background-color: var(--bg-twitter);
+}
+.backgoogle a:hover {
+  background-color: var(--bg-google);
+}
+.backin a:hover {
+  background-color: var(--bg-rss);
+}
+.menu-icon a:hover {
+  color: white;
+}
+
+/* footer */
+.footer-top__list {
+  padding-top: 0;
+}

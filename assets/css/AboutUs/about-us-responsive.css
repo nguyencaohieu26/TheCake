@@ -1,0 +1,77 @@
+@media only screen and (max-width: 992px) {
+   /* header img */
+  .top-img {
+    height: 85vh;
+  }
+
+  /* mission */
+  .mission-img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* content */
+  .about-us {
+    padding: 1rem;
+  }
+  .content-child {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mission-img,
+  .values-img-child-1,
+  .values-img-child-2,
+  .vision-img {
+    width: 100%;
+    padding: 1rem;
+    max-height: 70vh;
+  }
+  .mission-img {
+    min-width: 100%;
+  }
+  .values-img-child-1,
+  .values-img-child-2 {
+    padding: 1rem 0;
+  }
+  .vision-ul,
+  .values-ol {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* content */
+  .about-us {
+    padding: 0.75rem;
+  }
+  .mission-content,
+  .vision-ul,
+  .values-ol,
+  .mission-img,
+  .values-img-child-1,
+  .values-img-child-2,
+  .vision-img {
+    padding: 0;
+  }
+  /* share */
+  .share-icon {
+    font-size: 1.5rem;
+  }
+  .menu-icon {
+    padding: 0 1rem;
+  }
+  .menu-icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .values-img-child-1,
+ .values-img-child-2 {
+   min-width: 100%;
+ }
+}

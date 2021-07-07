@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>TheCake Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCake</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
     />
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
     />
     <!-- gg font -->
     <link
@@ -20,17 +22,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?famxily=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <!-- link base stylesheet -->
     <link rel="stylesheet" href="assets/css/base.css" />
-    <!-- link stylesheet for blog -->
+    <!-- link stylesheet for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_page.css" />
-    <link rel="stylesheet" href="./assets/css/Blog/Main/Blogmaincss.css" />
-    <!-- link responsive for blog -->
+    <!-- link responsive for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
-    <link rel="stylesheet" href="./assets/css/Blog/Main/Blogmainresponsive.css" />
   </head>
   <body>
     <section class="home__page">
@@ -241,7 +241,7 @@
               <input type="text" placeholder="Email Address" required>
               <input type="password" placeholder="Password" required>
               <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
-              <p class="forget-password">Forgot Password</p>
+              <a class="forget-password">Forgot Password</a>
             </form>
             <form class="form-register form-login" data-form="Register">
               <input type="text" placeholder="FullName" required>
@@ -290,13 +290,17 @@
       <div class="top-image">
         <img src="assets/image/Blog/head2.jpg" class="headimg"/>
         <div class="fa-word">
-          <p><a class="word1" href="#">The Cake</a></p>
+          <p><a class="word1" href="./index.html">TheCake</a></p>
           <p><b class="word2">BLOG</b></p>
         </div>
       </div>
       <!-- main blog -->
       <div class="main-blog">
         <div class="row-index">
+          <div class="top-blog">
+            <p class="heading-blog"> Welcome to Blog</p>
+            <img src="./assets/image/icon_index.png" class="heading-icon-blog" />
+          </div>
           <div class="nav-blog">
             <!-- left blog -->
             <div class="left-blog">
@@ -306,37 +310,64 @@
               </div>
               <!-- about blog-->
               <div class="about-blog">
+                <div class="logo-blog">
+                  <div class="word-logo">
+                    <p class="word-logo-blog1">About</p>
+                    <p class="word-logo-blog2">BLOG</p>
+                  </div>
+                </div>
                 <p class="word-about-blog">
-                  <img src="./assets/image/Blog/TheCake Blog.png" class="image-about-blog" />
                   The Cake Blog is a community of bakers and cake lovers. If you’re looking for beautiful cake inspiration, projects, tutorials and recipes, you’ve come to the right place.                  
                 </p>
-              </div>              
+              </div>
+              <!-- list blog -->
+              <div class="list-blog">
+                <!-- list time -->
+                <div class="list-time">
+                  <p class="heading-time"> LIST TIME </p>
+                  <ul class="">
+                    <li> 7th July, 2021 </li>
+                    <li> 8th July, 2021 </li>
+                    <li> 22th July, 2021  </li>
+                  </ul>
+                </div>
+                <!-- list writer -->
+                <div class="list-writer">
+                  <p class="heading-writer"> LIST WRITER </p>
+                  <ul class="">
+                    <li> NGUYEN HIEU </li>
+                    <li> NGO THAI </li>
+                    <li> NGUYEN TRANG </li>
+                    <li> HOANG KHOI </li>
+                  </ul>
+                </div>
+              </div>
               <!-- our cake blog -->
               <div class="our-cake-blog">
-                <h3 class="heading-cake-blog">OUR CAKES</h3>
-                <div class="menu-cake-blog">
-                  <div class="list-cake-blog">
-                    <img src="./assets/image/Index_headerImg/ourcake/sara-cervera-zEwgRzJJIvk-unsplash.jpg" class="image-cake-blog" />
-                    <div class="word-cake-blog">
-                      <a href="#"> <p> Popular Cakes </p> </a>
+                <h3 class="heading-our-cake-blog">OUR CAKES</h3>
+                <div class="menu-our-cake-blog">
+                  <div class="list-our-cake-blog">
+                    <img src="./assets/image/Index_headerImg/ourcake/sara-cervera-zEwgRzJJIvk-unsplash.jpg" class="image-our-cake-blog" />
+                    <div class="word-our-cake-blog">
+                      <a href="./popularcake.html"> <p> Popular Cakes </p> </a>
                     </div>
                   </div>
-                  <div class="list-cake-blog">
-                    <img src="./assets/image/Index_headerImg/ourcake/Birthdaydaycake.jpg" class="image-cake-blog" />
-                    <div class="word-cake-blog">
-                      <a href="#"> <p> Birthday Cakes </p> </a>
+                  <div class="list-our-cake-blog">
+                    <img src="./assets/image/Index_headerImg/ourcake/Birthdaydaycake.jpg" class="image-our-cake-blog" />
+                    <div class="word-our-cake-blog">
+                      <a href="./birthdaycake.html"> <p> Birthday Cakes </p> </a>
                     </div>
                   </div>
-                  <div class="list-cake-blog">
-                    <img src="./assets/image/Index_headerImg/ourcake/jesse-ribeiro-b4-zAXyBdyU-unsplash.jpg" class="image-cake-blog" />
-                    <div class="word-cake-blog">
-                      <a href="#"> <p> Anniversary Cakes </p> </a>
+                  <div class="list-our-cake-blog">
+                    <img src="./assets/image/Index_headerImg/ourcake/jesse-ribeiro-b4-zAXyBdyU-unsplash.jpg" class="image-our-cake-blog" />
+                    <div class="word-our-cake-blog">
+                      <a href="./anniversarycake.html"> <p> Anniversary Cakes </p> </a>
                     </div>
                   </div>
-                  <div class="list-cake-blog">
-                    <img src="./assets/image/Index_headerImg/ourcake/justin-heap-6kjujXU56WY-unsplash.jpg" class="image-cake-blog" />
-                    <div class="word-cake-blog">
-                      <a href="#"> <p> Custom Cakes </p> </a>
+                  <div class="list-our-cake-blog">
+                    <img src="./assets/image/Index_headerImg/ourcake/justin-heap-6kjujXU56WY-unsplash.jpg" class="image-our-cake-blog" />
+                    <div class="word-our-cake-blog">
+                      <a href="./ordercake.html"> <p> Custom Cakes </p> </a>
                     </div>
                   </div>
                 </div>
@@ -370,9 +401,7 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> 6 New Cakes For Every Occasion </h3>
                   </a>                  
-                  <p class="dateby-right">
-                    17th September, 2020.  / Our Food
-                  </p>
+                  <p class="dateby-right"> 22th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     Every cake tells a story. Here are some new cakes from us to help you celebrate your stories.Birthdays, anniversaries, christenings, retirements, passing exams, getting new jobs. All occasions to be marked as special milestones and definitely worthy of cake delivery! Every cake tells a story, even if it’s just coffee and a cake as a break from work, or a cheerful family afternoon tea.  A cake can be an essential part of a tradition of family sharing, or the centrepiece of a gathering to celebrate a happy event. 
                   </p>
@@ -386,9 +415,7 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> Let's get through lockdown with cake! </h3>
                   </a>
-                  <p class="dateby-right">
-                    4th November, 2020.  / COVID-19 News
-                  </p>
+                  <p class="dateby-right"> 7th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     We’re still open for takeaway/click & collect, as well as delivery to your door from our own website, Uber Eats and Deliveroo. Lockdown round 2 is upon us, but we're looking on the bright side! All of us at PAUL are here for you to help you get through the next month.
                   </p>
@@ -402,9 +429,7 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> 6 New Cakes For Every Occasion </h3>
                   </a> 
-                  <p class="dateby-right">
-                    17th September, 2020.  / Our Food
-                  </p>
+                  <p class="dateby-right"> 22th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     Every cake tells a story. Here are some new cakes from us to help you celebrate your stories.Birthdays, anniversaries, christenings, retirements, passing exams, getting new jobs. All occasions to be marked as special milestones and definitely worthy of cake delivery! Every cake tells a story, even if it’s just coffee and a cake as a break from work, or a cheerful family afternoon tea.  A cake can be an essential part of a tradition of family sharing, or the centrepiece of a gathering to celebrate a happy event. 
                   </p>
@@ -418,9 +443,7 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> Order by 12 noon for next day delivery to even more London postcodes! </h3>
                   </a>
-                  <p class="dateby-right">
-                    8th September, 2020. / About PAUL
-                  </p>
+                  <p class="dateby-right"> 8th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     We've expanded our PAUL delivery service to reach everyone in zones 1 & 2 and beyond in London. And, if you order before 12 noon, you'll be eligible for next day delivery! We’re pleased to say that we’ve expanded our delivery service to cover all postcodes in London Zone 1 and Zone 2.  Next day delivery is available, as long as orders are placed before 12 noon on the day before delivery is required.  Deliveries will take place between 9am and 1pm. 
                   </p>
@@ -434,9 +457,7 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> Order by 12 noon for next day delivery to even more London postcodes! </h3>
                   </a>
-                  <p class="dateby-right">
-                    8th September, 2020.  / About PAUL
-                  </p>
+                  <p class="dateby-right"> 8th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     We've expanded our PAUL delivery service to reach everyone in zones 1 & 2 and beyond in London. And, if you order before 12 noon, you'll be eligible for next day delivery! We’re pleased to say that we’ve expanded our delivery service to cover all postcodes in London Zone 1 and Zone 2.  Next day delivery is available, as long as orders are placed before 12 noon on the day before delivery is required.  Deliveries will take place between 9am and 1pm. 
                   </p>
@@ -450,15 +471,19 @@
                   <a class="heading-right" href="./blog-child.html">
                     <h3> Let's get through lockdown with cake! </h3>
                   </a>
-                  <p class="dateby-right">
-                    4th November, 2020.  / COVID-19 News
-                  </p>
+                  <p class="dateby-right"> 7th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     We’re still open for takeaway/click & collect, as well as delivery to your door from our own website, Uber Eats and Deliveroo. Lockdown round 2 is upon us, but we're looking on the bright side! All of us at PAUL are here for you to help you get through the next month.
                   </p>
                 </div>
               </div>
-            </div>            
+            </div>
+            <!-- move to top -->
+            <div class="moveto-top">
+              <a href="#top" class="movetotop-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -614,9 +639,62 @@
            </div>
           </div>
         </div>
-    </footer>
+      </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+      "></script>
+    <script>
+      var owl = $(".header__img-list");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        nav:false,
+        dots:true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+      // 
+      var owl1 = $(".new-product__list");
+      owl1.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+        responsive:{
+        0:{
+          items:1,
+        },
+        500:{
+          items:2,
+        },
+        600:{
+          items:2,
+        },
+        900:{
+          items:4,
+        }
+      }
+      });
+      $(".play").on("click", function () {
+        owl1.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl1.trigger("stop.owl.autoplay");
+      });
+    </script>
     <script src="assets/Js/home.js"></script>
   </body>
 </html>

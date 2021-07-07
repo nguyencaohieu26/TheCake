@@ -1,7 +1,7 @@
 @media only screen and (max-width: 992px) {
   /* header img */
   .fa-word {
-    bottom: 35%;
+    bottom: 30%;
   }
   .fa-word p {
     padding: 0.5rem;
@@ -16,6 +16,12 @@
   /* main blog */
   .nav-blog {
     flex-wrap: wrap;
+  }
+  .heading-blog {
+    letter-spacing: 4px;
+  }
+  .heading-icon-blog {
+    width: 15%;
   }
 
   /* left blog */
@@ -34,18 +40,25 @@
   .about-blog {
     overflow: hidden;
   }
-  .image-about-blog {
-    max-width: 20%;
-  }
   .word-about-blog {
-    font-size: 2rem;
+    padding-left:  4rem;
+  }
+
+  /* list blog */
+  .list-blog {
+    display: flex;
+  }
+  .list-time,
+  .list-writer {
+    width: 50%;
+    margin: 0 2rem;
   }
 
   /* our cake blog */
   .our-cake-blog {
     padding: 2rem 0;
   }
-  .menu-cake-blog {
+  .menu-our-cake-blog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 15px;
@@ -65,16 +78,70 @@
   .heading-right {
     font-size: 1.7rem;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
-  /* about blog */
-  .image-about-blog {
-    min-width: 180px;
+  /* header img */
+  .fa-word {
+    bottom: 27%;
+  }
+
+  /* main blog */
+  .heading-blog {
+    letter-spacing: 3px;
+    font-size: 3rem;
+  }
+   /* about blog */
+   .word-about-blog {
+    padding-left:  2rem;
   }
   /* right blog */
   .heading-right {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* main blog */
+  .heading-icon-blog {
+    width: 25%;
+  }
+  .word-about-blog {
+    padding-left:  1rem;
+  }
+
+  /* list blog */
+  .list-time,
+  .list-writer {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  /* main blog */
+  .heading-icon-blog {
+    display: none;
+  }
+  .word-about-blog {
+    padding-left:  0rem;
+  }
+
+  /* list blog */
+  .list-blog {
+    flex-wrap: wrap;
+  }
+  .list-time,
+  .list-writer {
+    width: 100%;
+    margin: 0; 
+    margin-bottom: 2.5rem;
+  }
+
+  /* right blog*/
+  .image-blog {
+    display: none;
+  }
+  .content-blog {
+    width: 100%;
   }
 }

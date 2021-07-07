@@ -1,12 +1,36 @@
 @media only screen and (max-width: 650px) {
+  /* blog child */
+  .item-link-blog,
+  .link-blog p {
+    padding: 0 0.5rem;
+  }
+
+  /* content blog child */
   .heading-main {
     font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  /* blog child */
+  .item-link-blog,
+  .link-blog p {
+    padding: 0 0.25rem;
+    font-size: 1.5rem;
+  }
+  
   /* share blog child */
   .share-icon {
-    padding: 0;
+    font-size: 1.5rem;
+  }
+  .menu-icon {
+    padding: 0 1rem;
+  }
+  .menu-icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    margin: 0 1rem;
   }
 }

@@ -1,6 +1,7 @@
 /* header img */
 .top-image {
   position: relative;
+  margin-bottom: 3rem;
 }
 .headimg {
   height: 95vh;
@@ -10,12 +11,14 @@
   text-align: right;
   min-width: 100%;
   right: 5%;
-  bottom: 40%;
+  bottom: 33%;
 }
 .fa-word p {
   padding: 1rem;
 }
 .word1 {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
   background-color: var(--third-color);
   color: white;
   padding: 1rem;
@@ -35,11 +38,29 @@
 
 /* main blog */
 .main-blog {
-  padding-top: 8rem;
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.top-blog {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 1rem ;
+}
+.heading-blog {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 3.5rem;
+}
+.heading-blog:hover {
+  color:  var(--third-color);
+}
+.heading-icon-blog {
+  margin: 0 auto;
+  width: 10%;
 }
 .nav-blog {
   display: flex;
-  margin: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 /* left blog */
@@ -49,8 +70,12 @@
   border-right: 1px solid #f1f1f1;
 }
 .search-blog,
-.our-cake-blog{
-  padding-bottom: 2rem;
+.about-blog,
+.list-time,
+.list-writer {
+  box-sizing: border-box;
+  box-shadow: 6px 6px 2px 2px rgb(220 220 220);
+  margin-bottom: 2.5rem;
 }
 
 /* search blog */
@@ -62,41 +87,79 @@
 }
 
 /* about blog */
-.about-blog {
-  padding: 2rem 0.5rem;
-}
-.image-about-blog {
+.logo-blog {
   float: right;
-  padding-left: 1rem;
-  width: 40%;
+  border: 3px solid var(--third-color);
+  text-align: center;
+  color: white;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 6.5rem;
+  margin-left: 1rem;
+}
+.word-logo {
+  background-color: var(--third-color);
+  border: 3px solid white;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6rem;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+}
+.word-logo-blog1{
+  font-size: 2rem;
+  margin-top: 20%;
+}
+.word-logo-blog2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 .word-about-blog {
-  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+/* list blog */
+.heading-time,
+.heading-writer {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.list-blog li{
+  margin: 1rem 0;
+  padding: 0.5rem 2rem 0;
+  border-top: 1px solid rgb(228, 228, 228);
+}
+.list-blog li:hover {
+  cursor: pointer;
+  color: rgb(143, 142, 142);
 }
 
 /* our cake blog */
-.heading-cake-blog {
-  text-align: center;
-  font-size: 2.2rem;
+.our-cake-blog {
   padding-bottom: 1rem;
 }
-.list-cake-blog {
-  position: relative;
-  padding: 1rem 0;
+.heading-our-cake-blog {
+  text-align: center;
+  font-size: 2.2rem;
 }
-.image-cake-blog {
+.list-our-cake-blog {
+  position: relative;
+  padding: 0.5rem 0;
+}
+.image-our-cake-blog {
   height: 200px;
 }
-.word-cake-blog {
+.word-our-cake-blog {
   position: absolute;
   top: 1rem;
 }
-.word-cake-blog p {
+.word-our-cake-blog p {
   background-color: black;
   color: white;
   padding: 1rem;
 }
-.word-cake-blog p:hover {
+.word-our-cake-blog p:hover {
   color: red;
 }
 
@@ -105,7 +168,7 @@
   display: flex;
   font-weight: bold;
   font-size: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 .menu-icon {
   display: flex;
@@ -171,6 +234,7 @@
   padding-bottom: 0.6rem;
 }
 .heading-right:hover {
+  cursor: pointer;
   color: rgb(143, 142, 142);
 }
 .dateby-right {
@@ -184,4 +248,9 @@
   -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+
+/* footer */
+.footer-top__list {
+  padding-top: 2rem;
 }

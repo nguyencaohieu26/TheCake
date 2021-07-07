@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> 6 New Cakes For Every Occasion </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCake</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+     "
     />
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
     />
     <!-- gg font -->
     <link
@@ -20,17 +22,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?famxily=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <!-- link base stylesheet -->
     <link rel="stylesheet" href="assets/css/base.css" />
-    <!-- link stylesheet for blog -->
+    <!-- link stylesheet for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_page.css" />
-    <link rel="stylesheet" href="./assets/css/Blog/Child/Blogchildcss.css" />
-    <!-- link responsive for blog -->
+    <!-- link responsive for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
-    <link rel="stylesheet" href="./assets/css/Blog/Child/Blogchildresponsive.css" />
   </head>
   <body>
     <section class="home__page">
@@ -241,7 +241,7 @@
               <input type="text" placeholder="Email Address" required>
               <input type="password" placeholder="Password" required>
               <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
-              <p class="forget-password">Forgot Password</p>
+              <a class="forget-password">Forgot Password</a>
             </form>
             <form class="form-register form-login" data-form="Register">
               <input type="text" placeholder="FullName" required>
@@ -295,6 +295,15 @@
         <div class="row-index">
           <!-- main blog child -->
           <div class="main-blog-child">
+            <!-- link blog -->
+            <div class="link-blog">
+              <a class="item-link-blog" href="./index.html"> Home </a>
+              <p> > </p>
+              <a class="item-link-blog" href="./blog.html"> Blog </a>
+              <p> > </p>
+              <p> 6 New Cakes For Every Occasion </p>
+            </div>
+            <!-- content blog child -->
             <p class="heading-main"> 6 New Cakes For Every Occasion </p>
             <p class="dateby-main">17th September, 2020.  / Our Food</p>
             <p class="content-blog-child">
@@ -357,6 +366,12 @@
                 <a href="#" class="fab fa-instagram"></a>
               </li>
             </ul>
+          </div>
+          <!-- move to top -->
+          <div class="moveto-top">
+            <a href="#top" class="movetotop-btn">
+              <i class="fas fa-chevron-up"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -512,9 +527,62 @@
            </div>
           </div>
         </div>
-    </footer>
+      </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+      "></script>
+    <script>
+      var owl = $(".header__img-list");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        nav:false,
+        dots:true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+      // 
+      var owl1 = $(".new-product__list");
+      owl1.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+        responsive:{
+        0:{
+          items:1,
+        },
+        500:{
+          items:2,
+        },
+        600:{
+          items:2,
+        },
+        900:{
+          items:4,
+        }
+      }
+      });
+      $(".play").on("click", function () {
+        owl1.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl1.trigger("stop.owl.autoplay");
+      });
+    </script>
     <script src="assets/Js/home.js"></script>
   </body>
 </html>

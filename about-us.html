@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCake AboutUs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <link rel="stylesheet" href="./assets/css/AboutUs/about-us-css.css"/>
+    <!-- link responsive for homepage -->
+    <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <link rel="stylesheet" href="./assets/css/AboutUs/about-us-responsive.css" />
+  </head>
+  <body>
+    <section class="home__page">
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- header logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  <img
+                    src="assets/image/logo_cake.png"
+                    alt="Thecake_logo"
+                    class="header__logo-img"
+                  />
+                  <span class="header__logo-text">TheCake</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <nav class="menu__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Products</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="popularcake.html" class="nav-child__link">
+                          Cakes
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          Event Cakes
+                          <i class="fa fa-caret-right"></i>
+                        </a>
+                        <!-- nav c2 -->
+                        <ul class="nav-subchild__list">
+                          <li class="nav-subchild__item">
+                            <a href="birthdaycake.html" class="nav-subchild__link">
+                              Birthday Cakes
+                            </a>
+                          </li>
+                          <li class="nav-subchild__item">
+                            <a href="anniversarycake.html" class="nav-subchild__link">Anniversary Cakes</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-child__item" >
+                        <a href="ordercake.html" class="nav-child__link">
+                          Custom Order
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>About Us</span>
+                      <i class="nav-icon fa fa-caret-down"></i>
+                    </a>
+                    <!-- nav child c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="aboutus.html" class="nav-child__link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="blog.html" class="nav-child__link"> Blog </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="team.html" class="nav-child__link"> Team </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="testimonial.html" class="nav-child__link"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="faq.html" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="term.html" class="nav-child__link">Term</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icons">
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="menu__toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <div class="login__icon">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu mobile -->
+          <nav class="menu-mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="index.html" class="mobile__nav-link">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>Products</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="popularcake.html" class="mobile__child-link"
+                      >Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="birthdaycake.html" class="mobile__child-link"
+                      >Birthday Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="anniversarycake.html" class="mobile__child-link">
+                      Anniversary Cakes</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="ordercake.html" class="mobile__child-link">
+                      Custom Cake
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <button class="mobile__nav-link">
+                  <span>About Us</span>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- mobile menu c1 -->
+                <ul class="mobile__child-list">
+                  <li class="mobile__child-item">
+                    <a href="aboutus.html" class="mobile__child-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="blog.html" class="mobile__child-link">Blog</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="team.html" class="mobile__child-link">Team</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="testimonial.html" class="mobile__child-link"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="faq.html" class="mobile__child-link">FAQ</a>
+                  </li>
+                  <li class="mobile__child-item">
+                    <a href="term.html" class="mobile__child-link">Term</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="contact.html" class="mobile__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- login form -->
+      <div class="login__form">
+        <div class="login-form-details">
+          <div class="form-left">
+            <div class="close__login-form">
+              <i class="fa fa-times"></i>
+            </div>
+            <h3 class="login-form__heading">Sign into your account</h3>
+              <div class="login__chose-btns">
+                <a href="#" class="btn btn-login-chose active">Login</a>
+                <a href="#" class="btn btn-login-chose">Register</a>
+              </div>
+            <form class="form-login active" data-form = "Login">
+              <input type="text" placeholder="Email Address" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
+              <a class="forget-password">Forgot Password</a>
+            </form>
+            <form class="form-register form-login" data-form="Register">
+              <input type="text" placeholder="FullName" required>
+              <input type="text" placeholder="Email Address" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit" class="btn btn-login-form btn-submit-register">Register</button>
+            </form>
+            <div class="form-social__icon">
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="form-icon__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="form-image">
+              <img src="assets/image/img_login.jpg" alt="login__image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="seach-container">
+        <div class="search__container-details">
+        <div class="close__search">
+          <i class="fa fa-times"></i>
+        </div>
+          <form action="" class="search-infomation">
+            <input type="text" placeholder="Search for product" required>
+            <button class="btn btn-search-info">Search</button>
+          </form>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header-img">
+        <img src="./assets/image/AboutUs/1.jpg" class="top-img"/>
+      </div>
+      <!-- main -->
+      <div class="main-about-us">
+        <div class="row-index">
+          <!-- content -->
+          <div class="about-us">
+            <p class="heading-1"> <b> ABOUT US </b> </p>
+            <img src="./assets/image/icon_index.png" class="heading-img"/>
+            <p class="word-1">
+              Our adventure started with one humble shop in Fort, Seattle and developed to more than one thousand areas all through US under the moving vision of our author, Owner Name in the mid 1956. From that point forward, our family has joined their long periods of involvement with the vision of a network of cooperative shop proprietors, providers and different accomplices cooperating to make a brand name in the market to develop their business to what it is today.
+            </p>
+            <p class="word-1">
+              So as to accomplish this, the family offers establishments to growing business visionaries and merchants joining forces with them to guarantee achievement and perfection.We bake happiness for you in the face of cake. Let us deliver sweetness in your lives.
+            </p>          
+          </div>
+          <!-- mission -->
+          <div class="about-us">
+            <p class="heading-2">  <b> MISSION </b> </p>
+            <div class="content-child">
+              <img src="./assets/image/AboutUs/2.jpg" class="mission-img" />
+              <div class="mission-content">
+                <p class="word-2">
+                  We endeavor to provide family of our customers with safe, appetizing, nutritious and quality bakery products at reasonable prices. From manufacturing to selling at our own retail stores, we strive to be bakery leaders in each district we choose to operate. With third consecutive family generation in bakery business, we are committed to providing superior quality and unparalleled bakery products through our talented team of chefs and cutting edge techniques. We are internally aligned and externally focused to provide outstanding customer service and believe that customer satisfaction is our ultimate goal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- vision -->
+          <div class="about-us">
+            <p class="heading-2"> <b> VISION </b> </p>
+            <div class="content-child">
+              <img src="./assets/image/AboutUs/3.jpg" class="vision-img" />
+              <ul class="vision-ul">
+                <li class="vision-li"> 
+                  <p class="word-2"> Nations premier bakery and pastry shop. </p>
+                </li>
+                <li class="vision-li">
+                  <p class="word-2"> TheCake has become the need of every house-wife, craving of youth, dream-taste of kids and desire of each guest. </p>                
+                </li>              
+              </ul>
+            </div>
+          </div>
+          <!-- value -->
+          <div class="about-us">
+            <p class="heading-2"> <b> VALUES </b> </p>            
+            <div class="content-child">                            
+              <ol class="values-ol">
+                <img src="./assets/image/AboutUs/1.png" class="values-img-child-1" />  
+                <li class="values-li">
+                  <p class="word-2"> <b> Commitment: </b> I give myself and everything I commit to 100 percent until I succeed. I am committed to the Vision, Mission, Culture, and success of Simma’s, its current and future team, and its customers at all times. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Ownership: </b> I am truly responsible for my actions and outcomes and own everything that takes place in my work and my life. I am accountable for my results and I know that for things to change, first I must change. </p> 
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Integrity: </b> I always speak the truth. What I promise is what I deliver. I only ever make agreements with myself and others that I am willing and intend to keep. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Excellence: </b> Good enough isn’t. I always deliver products and services of exceptional quality. I stay on a path of constant and never-ending improvement and innovation. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Communication: </b> I speak positively of my fellow team members and customers in both public and private. I speak with good purpose using empowering and positive conversation. I never use or listen to sarcasm or gossip. I acknowledge what is being said as true for the speaker at that moment and I take responsibility for responses to my communication. I greet and say goodbye to people using their names. I always apologize for any upsets first and then look for a solution. I only ever discuss concerns in private with the person involved. </p>
+                </li>              
+                <li class="values-li">
+                  <p class="word-2"> <b> Success: </b> I totally focus my thoughts, energy, and attention on the successful outcome of whatever I am doing. I am willing to win and allow others to win: Win/Win. At all times, I display my inner pride, prosperity, competence, and personal confidence. I am a successful person. </p>
+                </li>                
+                <li class="values-li">
+                  <p class="word-2"> <b> Education: </b> I learn from my mistakes. I consistently learn, grow, and master so that I can help my fellow team members grow and master too. </p>
+                </li>
+              <img src="./assets/image/AboutUs/4.jpg" class="values-img-child-2" />
+                <li class="values-li">
+                  <p class="word-2"> <b> Teamwork: </b> I am a team player and a team leader. I do whatever it takes to stay together and achieve team goals. I focus on cooperation and always come to a resolution, or a compromise. I am flexible in my work and able to change if what I’m doing is not working. I ask for help when I need it and am compassionate to others who ask me. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Consistency: </b> I am consistent in my actions so my customers and teammates can feel comfortable in dealing with me at all times. I am disciplined in my work so my results, growth, and success are consistent. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Gratitude: </b> I am a truly grateful person. I say thank you and show appreciation often and in many ways, so that all around me know how much I appreciate everything and everyone I have in my life. I celebrate my wins and the wins of my team members. I consistently catch myself and other people doing things right. </p>
+                </li>
+                <li class="values-li">
+                  <p class="word-2"> <b> Accountability: </b> I am responsible for all my actions or lack there of in my life. I am fully accountable for all my duties and tasks I must accomplish. I take pride in my achievements and heed in my mistakes. </p>
+                </li>
+              </ol> 
+            </div>
+          </div>
+          <!-- share -->
+          <div class="about-us">
+            <div class="share-icon">
+              <p class="word-share"> SHARE: </p>
+              <ul class="menu-icon">
+                <li class="backface">
+                  <a href="#" class="fab fa-facebook"></a>
+                </li>
+                <li class="backtwitter">
+                  <a href="#" class="fab fa-twitter"></a>
+                </li class="">
+                <li class="backgoogle">
+                  <a href="#" class="fab fa-google"></a>
+                </li>
+                <li class="backin">
+                  <a href="#" class="fab fa-instagram"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- move to top -->
+        <div class="moveto-top">
+          <a href="#top" class="movetotop-btn">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+          <div class="footer-details">
+            <div class="footer-details__top">
+              <div class="row-index">         
+              <ul class="footer-top__list">
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium suscipit ipsum harum error in sapiente alias, eos voluptatem tempore quis.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi dolorem enim harum soluta ratione quod deserunt repellat ad. Atque?</p>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">LASTEST POST</h3>
+                  <!-- list child -->
+                <ul class="item-footer__list">
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>6 New Cakes For Every Occasion</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Let's get through with cake!</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>What's favorite cake in summer?</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Do cupcake can use for Birthday?</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Chose Cake for Birthday Party?</span>
+                    </a>
+                  </li>
+                  <li class="item-footer__item">
+                    <a href="blog-child.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>How to Keep Cakes Fresh & Flavorful?</span>
+                    </a>
+                  </li>           
+                </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">QUICK LINKS</h3>
+                  <!-- list child -->
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="aboutus.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="popularcake.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="testimonial.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="faq.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>FAQ</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="contact.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">Contact Info</h3>
+                  <p>Main Address: 10 Nr. Street Road, Ohio, USA</p>
+                  <a href="contact.html" class="item-footer__link"> Find more location</a>
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="tel: +91 345-677-554" class="item-footer__link">
+                        <span>Phone:</span> +91 345-677-554
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="mailto: support@gmail.com" class="item-footer__link">
+                        <span>Email:</span> contact@thecake.com
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                       <span>We Website:</span> TheCake.com
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            </div>
+            <div class="footer-details__bottom">
+             <div class="row-index">
+              <p class="copy-right">
+                &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
+              <span>Made with love</span>
+              </p>
+              <div class="footer-social__list">
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+             </div>
+            </div>
+          </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      var owl = $(".header__img-list");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        nav:false,
+        dots:true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+      // 
+      var owl1 = $(".new-product__list");
+      owl1.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
+        responsive:{
+        0:{
+          items:1,
+        },
+        500:{
+          items:2,
+        },
+        600:{
+          items:2,
+        },
+        900:{
+          items:4,
+        }
+      }
+      });
+      $(".play").on("click", function () {
+        owl1.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl1.trigger("stop.owl.autoplay");
+      });
+    </script>
+    <script src="assets/Js/home.js"></script>
+  </body>
+</html>
