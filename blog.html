@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -27,13 +23,15 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <!-- link stylesheet for Blog -->
     <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link style for blog -->
     <link rel="stylesheet" href="./assets/css/Blog/Main/Blogmaincss.css" />
-    <!-- link responsive for Blog -->
+    <!-- link responsive for home -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <!-- link responsive for blog -->
     <link rel="stylesheet" href="./assets/css/Blog/Main/Blogmainresponsive.css" />
   </head>
   <body>
-    <section class="home__page">
+    <section class="blog__page">
       <!-- header -->
       <header class="header">
         <div class="header__scroll">
@@ -312,8 +310,10 @@
               <div class="about-blog">
                 <div class="logo-blog">
                   <div class="word-logo">
-                    <p class="word-logo-blog1">About</p>
-                    <p class="word-logo-blog2">BLOG</p>
+                    <p>
+                      <span>Blog</span>
+                      <span class="word-logo_big">The Cake</span>
+                    </p>
                   </div>
                 </div>
                 <p class="word-about-blog">
@@ -427,7 +427,7 @@
                 </div>
                 <div class="content-blog">
                   <a class="heading-right" href="./blog-child.html">
-                    <h3> 6 New Cakes For Every Occasion </h3>
+                    <h3> What's the best Birthday Cake? </h3>
                   </a> 
                   <p class="dateby-right"> 22th July, 2021  / by KHOI </p>
                   <p class="content-right">
@@ -441,7 +441,7 @@
                 </div>
                 <div class="content-blog">
                   <a class="heading-right" href="./blog-child.html">
-                    <h3> Order by 12 noon for next day delivery to even more London postcodes! </h3>
+                    <h3>Does Cupcake is suitable for Birthday Party?</h3>
                   </a>
                   <p class="dateby-right"> 8th July, 2021  / by KHOI </p>
                   <p class="content-right">
@@ -455,7 +455,7 @@
                 </div>
                 <div class="content-blog">                  
                   <a class="heading-right" href="./blog-child.html">
-                    <h3> Order by 12 noon for next day delivery to even more London postcodes! </h3>
+                    <h3> Order by 12 noon for next day delivery to even...! </h3>
                   </a>
                   <p class="dateby-right"> 8th July, 2021  / by KHOI </p>
                   <p class="content-right">
@@ -463,19 +463,31 @@
                   </p>
                 </div>
               </div>
-              <div class="item-right-not"> 
+              <div class="item-right"> 
                 <div class="image-blog">
                   <img src="./assets/image/Blog/6.jpg " class="image-right" />
                 </div>
                 <div class="content-blog">                  
                   <a class="heading-right" href="./blog-child.html">
-                    <h3> Let's get through lockdown with cake! </h3>
+                    <h3>How to Keep Cakes Fresh & Flavorful?</h3>
                   </a>
                   <p class="dateby-right"> 7th July, 2021  / by KHOI </p>
                   <p class="content-right">
                     We’re still open for takeaway/click & collect, as well as delivery to your door from our own website, Uber Eats and Deliveroo. Lockdown round 2 is upon us, but we're looking on the bright side! All of us at PAUL are here for you to help you get through the next month.
                   </p>
                 </div>
+              </div>
+              <div class="pagination">
+                <a href="#" class="pagination__link">
+                  <i class="fa fa-chevron-left"></i>
+                </a>
+                <a href="#" class="pagination__link pagination__link--active">1</a>
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a href="#" class="pagination__link">4</a>
+                <a href="#" class="pagination__link">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
               </div>
             </div>
             <!-- move to top -->
@@ -495,8 +507,13 @@
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium suscipit ipsum harum error in sapiente alias, eos voluptatem tempore quis.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi dolorem enim harum soluta ratione quod deserunt repellat ad. Atque?</p>
+                <p>
+                  Our adventure started with one humble shop in Fort, Seattle and developed to more 
+                  than one thousand areas all through US.
+                </p>
+                <p>
+                  We bake happiness for you in the face of cake. Let us deliver sweetness in your lives. 
+                </p>
               </li>
               <li class="footer-top__item">
                 <h3 class="footer-top__heading">LASTEST POST</h3>
@@ -639,62 +656,9 @@
            </div>
           </div>
         </div>
-      </footer>
+    </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
-      "></script>
-    <script>
-      var owl = $(".header__img-list");
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        nav:false,
-        dots:true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-      // 
-      var owl1 = $(".new-product__list");
-      owl1.owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 20,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-        responsive:{
-        0:{
-          items:1,
-        },
-        500:{
-          items:2,
-        },
-        600:{
-          items:2,
-        },
-        900:{
-          items:4,
-        }
-      }
-      });
-      $(".play").on("click", function () {
-        owl1.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl1.trigger("stop.owl.autoplay");
-      });
-    </script>
     <script src="assets/Js/home.js"></script>
   </body>
 </html>

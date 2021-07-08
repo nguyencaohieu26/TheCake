@@ -1,41 +1,68 @@
 /* header img */
 .header-img {
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgb(228, 228, 228);
+  position: relative;
+}
+.header-img::after {
+  background: linear-gradient(-45deg, #ffffff 7px, transparent 0),
+    linear-gradient(45deg, #ffffff 7px, transparent 0);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 18px 30px;
+  content: "";
+  display: block;
+  height: 14px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .top-img {
   height: 95vh;
 }
-
 /* main */
 .main-about-us {
   padding: 1rem 0;
-} 
+}
 
 /* content */
 .about-us {
   overflow: hidden;
-  border-bottom: 1px solid rgb(228, 228, 228);
-  padding: 2rem;
+  margin: 2rem 0 1.2rem;
+  padding: 0 1.5rem;
 }
 .heading-1 {
+  margin-top: 2rem;
   text-align: center;
   letter-spacing: 5px;
   font-size: 3rem;
 }
 .heading-img {
-  margin: 0.5rem auto;
+  margin: 1rem auto 3rem;
   width: 10%;
 }
-
+.word-1 {
+  color: #353535;
+}
 /* mission */
 .heading-2 {
+  position: relative;
   letter-spacing: 3px;
   font-size: 2.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.heading-2::after {
+  position: absolute;
+  content: "";
+  width: 5rem;
+  height: 2px;
+  top: 100%;
+  left: 2px;
+  background-color: var(--third-color);
 }
 .word-2 {
-  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #353535;
 }
 .mission-img,
 .values-img-child-1,
@@ -55,8 +82,7 @@
 .vision-img {
   float: left;
   width: 35%;
-  padding-left: 1rem;
-  padding-right: 2rem;
+  margin-right: 4rem;
 }
 .vision-li {
   list-style-type: circle;
@@ -112,9 +138,4 @@
 }
 .menu-icon a:hover {
   color: white;
-}
-
-/* footer */
-.footer-top__list {
-  padding-top: 0;
 }
