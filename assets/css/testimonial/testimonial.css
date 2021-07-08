@@ -129,6 +129,7 @@
 .testimonial-rating__container a:hover {
   background-color: #ddd;
   transition: 0.5s;
+  cursor: pointer;
 }
 .testimonial-rating-star:first-child {
   border: none;
@@ -146,7 +147,7 @@
   padding: 10px 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0px 8px 16px 0px #808080;
+  box-shadow: 0px 3px 8px 0px #ddd;
   margin-bottom: 20px;
 }
 .testimonial-rating__review-list__description {
@@ -197,27 +198,7 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.star-rating__4 {
+/* cho fix */
+/* .rating-page1 {
   display: none;
-}
-.star-rating__4.active {
-  display: block;
-}
-.star-rating__3 {
-  display: none;
-}
-.star-rating.active__3 {
-  display: block;
-}
-.star-rating__2 {
-  display: none;
-}
-.star-rating.active__2 {
-  display: block;
-}
-.star-rating__1 {
-  display: none;
-}
-.star-rating.active__1 {
-  display: block;
-}
+} */
