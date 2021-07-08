@@ -1117,6 +1117,10 @@ button.btn-contactus-submit i {
 .testimonial__desc {
   font-size: 1.3rem;
   color: var(--text-color1);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 .testimonial__position {
   color: var(--third-color);

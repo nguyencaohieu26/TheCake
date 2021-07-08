@@ -133,6 +133,10 @@
   font-size: 1.7rem;
   font-weight: 500;
   margin-top: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 .product-cake-item-content div {
   display: flex;
