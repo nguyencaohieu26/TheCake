@@ -75,7 +75,7 @@
   color: var(--text-color1);
 }
 .contact-us__mail-to:hover {
-  filter: brightness(1.5);
+  color: #808080;
 }
 .contact-us__details {
   flex: 1 1 50%;
@@ -99,6 +99,12 @@
 .contact-us__details-list__item-info {
   margin-left: 20px;
   font-size: 1.5rem;
+}
+.contact-us__details-list__item-info p a:nth-child(1) {
+  color: var(--text-color1);
+}
+.contact-us__details-list__item-info p a:nth-child(1):hover {
+  color: #808080;
 }
 /* form css */
 .contact-us__container form {
