@@ -197,31 +197,27 @@
   cursor: pointer;
   transition: 0.5s;
 }
-/* 4 star rating */
-.__4-star-rating {
+.star-rating__4 {
   display: none;
 }
-.__4-star-rating.active {
+.star-rating__4.active {
   display: block;
 }
-/* 3 star rating */
-.__3-star-rating {
+.star-rating__3 {
   display: none;
 }
-.__3-star-rating.active {
+.star-rating.active__3 {
   display: block;
 }
-/* 2 star rating */
-.__2-star-rating {
+.star-rating__2 {
   display: none;
 }
-.__2-star-rating.active {
+.star-rating.active__2 {
   display: block;
 }
-/* 1 star rating */
-.__1-star-rating {
+.star-rating__1 {
   display: none;
 }
-.__1-star-rating.active {
+.star-rating.active__1 {
   display: block;
 }
