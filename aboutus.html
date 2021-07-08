@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AboutUs</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -25,15 +21,17 @@
     />
     <!-- link base stylesheet -->
     <link rel="stylesheet" href="assets/css/base.css" />
-    <!-- link stylesheet for About Us -->
+    <!-- link style for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link stylesheet for About Us -->
     <link rel="stylesheet" href="./assets/css/AboutUs/about-us-css.css" />
-    <!-- link responsive for About Us -->
+    <!-- link responsive for home page -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
+    <!-- link responsive for About Us -->
     <link rel="stylesheet" href="./assets/css/AboutUs/about-us-responsive.css" />
   </head>
   <body>
-    <section class="home__page">
+    <section class="contact__page">
       <!-- header -->
       <header class="header">
         <div class="header__scroll">
@@ -288,7 +286,7 @@
       </div>
       <!-- header img -->
       <div class="header-img">
-        <img src="./assets/image/AboutUs/1.jpg" class="top-img"/>
+        <img src="./assets/image/AboutUs/1.jpg" class="top-img" id="top11"/>
       </div>
       <!-- main -->
       <div class="main-about-us">
@@ -398,7 +396,7 @@
         </div>
         <!-- move to top -->
         <div class="moveto-top">
-          <a href="#top" class="movetotop-btn">
+          <a href="#top11" class="movetotop-btn">
             <i class="fas fa-chevron-up"></i>
           </a>
         </div>
@@ -411,8 +409,13 @@
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium suscipit ipsum harum error in sapiente alias, eos voluptatem tempore quis.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi dolorem enim harum soluta ratione quod deserunt repellat ad. Atque?</p>
+                <p>
+                  Our adventure started with one humble shop in Fort, Seattle and developed to more 
+                  than one thousand areas all through US.
+                </p>
+                <p>
+                  We bake happiness for you in the face of cake. Let us deliver sweetness in your lives. 
+                </p>
               </li>
               <li class="footer-top__item">
                 <h3 class="footer-top__heading">LASTEST POST</h3>
@@ -555,62 +558,9 @@
            </div>
           </div>
         </div>
-      </footer>
+    </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
-      "></script>
-    <script>
-      var owl = $(".header__img-list");
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        nav:false,
-        dots:true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-      // 
-      var owl1 = $(".new-product__list");
-      owl1.owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 20,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-        responsive:{
-        0:{
-          items:1,
-        },
-        500:{
-          items:2,
-        },
-        600:{
-          items:2,
-        },
-        900:{
-          items:4,
-        }
-      }
-      });
-      $(".play").on("click", function () {
-        owl1.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl1.trigger("stop.owl.autoplay");
-      });
-    </script>
     <script src="assets/Js/home.js"></script>
   </body>
 </html>

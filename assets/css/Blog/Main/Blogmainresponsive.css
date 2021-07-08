@@ -29,7 +29,7 @@
     width: 100%;
     padding-right: 0rem;
     border-right: none;
-    border-bottom: 1px solid #f1f1f1 ;
+    border-bottom: 1px solid #f1f1f1;
   }
 
   /* search blog */
@@ -41,17 +41,17 @@
     overflow: hidden;
   }
   .word-about-blog {
-    padding-left:  4rem;
+    padding-left: 4rem;
   }
 
   /* list blog */
   .list-blog {
     display: flex;
+    justify-content: space-between;
   }
   .list-time,
   .list-writer {
-    width: 50%;
-    margin: 0 2rem;
+    width: calc(50% - 2rem);
   }
 
   /* our cake blog */
@@ -94,15 +94,14 @@
   .fa-word {
     bottom: 27%;
   }
-
   /* main blog */
   .heading-blog {
     letter-spacing: 3px;
     font-size: 3rem;
   }
-   /* about blog */
-   .word-about-blog {
-    padding-left:  2rem;
+  /* about blog */
+  .word-about-blog {
+    padding-left: 2rem;
   }
   /* right blog */
   .heading-right {
@@ -116,7 +115,7 @@
     width: 25%;
   }
   .word-about-blog {
-    padding-left:  1rem;
+    padding-left: 1rem;
   }
 
   /* list blog */
@@ -125,16 +124,29 @@
     margin: 0 1rem;
   }
 }
-
+@media only screen and (max-width: 576px) {
+  .item-right {
+    flex-wrap: wrap;
+  }
+  .item-right > * {
+    width: 100%;
+  }
+  .image-right {
+    height: 22rem;
+  }
+  .content-blog {
+    margin-top: 1rem;
+  }
+  .heading-right {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (max-width: 420px) {
   /* main blog */
-  .heading-icon-blog {
-    display: none;
-  }
   .word-about-blog {
-    padding-left:  0rem;
+    padding-left: 0rem;
   }
-
   /* list blog */
   .list-blog {
     flex-wrap: wrap;
@@ -142,19 +154,10 @@
   .list-time,
   .list-writer {
     width: 100%;
-    margin: 0; 
+    margin: 0;
     margin-bottom: 2.5rem;
   }
-
-  /* right blog*/
-  .image-blog {
-    display: none;
-  }
-  .content-blog {
-    width: 100%;
-  }
 }
-
 @media only screen and (max-width: 270px) {
   .share-icon {
     display: none;

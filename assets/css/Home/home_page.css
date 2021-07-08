@@ -814,19 +814,19 @@ textarea {
 }
 .our-story__list {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
 }
 .our-story__item {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 8rem 1fr;
   align-items: center;
 }
 .our-story__item-detail h4 {
   font-size: 1.8rem;
   font-weight: 400;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .our-story__item-detail h4::after {
   content: "";

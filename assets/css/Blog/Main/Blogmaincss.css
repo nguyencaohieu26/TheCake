@@ -3,6 +3,20 @@
   position: relative;
   margin-bottom: 3rem;
 }
+.top-image::after {
+  background: linear-gradient(-45deg, #ffffff 7px, transparent 0),
+    linear-gradient(45deg, #ffffff 7px, transparent 0);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 18px 30px;
+  content: "";
+  display: block;
+  height: 14px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 .headimg {
   height: 95vh;
 }
@@ -37,22 +51,19 @@
 }
 
 /* main blog */
-.main-blog {
-  border-top: 1px solid rgb(228, 228, 228);
-  border-bottom: 1px solid rgb(228, 228, 228);
-}
 .top-blog {
-  border-bottom: 1px solid rgb(228, 228, 228);
-  padding: 1rem ;
+  padding: 0 1.5rem;
+  margin: 6rem 0;
 }
 .heading-blog {
+  text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   letter-spacing: 5px;
   font-size: 3.5rem;
 }
 .heading-blog:hover {
-  color:  var(--third-color);
+  color: var(--third-color);
 }
 .heading-icon-blog {
   margin: 0 auto;
@@ -74,7 +85,7 @@
 .list-time,
 .list-writer {
   box-sizing: border-box;
-  box-shadow: 6px 6px 2px 2px rgb(220 220 220);
+  box-shadow: 2px 2px 2px 2px rgb(220 220 220);
   margin-bottom: 2.5rem;
 }
 
@@ -89,45 +100,50 @@
 /* about blog */
 .logo-blog {
   float: right;
-  border: 3px solid var(--third-color);
   text-align: center;
   color: white;
-  width: 13rem;
-  height: 13rem;
-  border-radius: 6.5rem;
-  margin-left: 1rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
+
 .word-logo {
   background-color: var(--third-color);
   border: 3px solid white;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 6rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   margin-top: 0.25rem;
   margin-left: 0.25rem;
 }
-.word-logo-blog1{
-  font-size: 2rem;
-  margin-top: 20%;
+.word-logo p span {
+  display: block;
 }
-.word-logo-blog2 {
-  font-weight: bold;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+.word-logo_big {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.word-logo p {
+  line-height: 1.4;
 }
 .word-about-blog {
-  padding-bottom: 1rem;
+  padding: 1.5rem;
 }
 
 /* list blog */
 .heading-time,
 .heading-writer {
+  padding-left: 1rem;
   font-size: 2.2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
-.list-blog li{
-  margin: 1rem 0;
-  padding: 0.5rem 2rem 0;
+.list-blog li {
+  padding: 0.8rem 2rem;
   border-top: 1px solid rgb(228, 228, 228);
 }
 .list-blog li:hover {
@@ -142,6 +158,8 @@
 .heading-our-cake-blog {
   text-align: center;
   font-size: 2.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
 }
 .list-our-cake-blog {
   position: relative;
@@ -152,15 +170,15 @@
 }
 .word-our-cake-blog {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
 }
 .word-our-cake-blog p {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 1rem;
 }
 .word-our-cake-blog p:hover {
-  color: red;
+  color: rgb(237, 86, 59);
 }
 
 /* share blog */
@@ -168,6 +186,7 @@
   display: flex;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
 }
 .menu-icon {
@@ -183,9 +202,12 @@
   border-radius: 25px;
   width: 3rem;
   height: 3rem;
-  line-height: 1.5rem;
+  line-height: 3rem;
   font-size: 1.6rem;
   margin: 0 1rem;
+}
+.menu-icon a:hover {
+  border-color: transparent;
 }
 .backface a:hover {
   background-color: var(--bg-facebook);
@@ -208,8 +230,7 @@
   width: 65%;
   padding-left: 1.5rem;
 }
-.item-right,
-.item-right-not {
+.item-right {
   display: flex;
   background-color: rgb(238, 238, 238);
   padding: 2rem 0;
@@ -233,24 +254,45 @@
   font-size: 1.8rem;
   padding-bottom: 0.6rem;
 }
+.heading-right h3 {
+  font-weight: 500;
+}
 .heading-right:hover {
   cursor: pointer;
-  color: rgb(143, 142, 142);
+  color: #9f2b00;
 }
 .dateby-right {
   text-align: right;
   font-size: 1.3rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 .content-right {
   overflow: hidden;
+  color: #353535;
+  font-size: 1.5rem;
+  line-height: 1.6;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-
-/* footer */
-.footer-top__list {
-  padding-top: 2rem;
+/* pagination */
+.pagination {
+  text-align: center;
+  margin: 3rem auto 0;
+}
+.pagination__link {
+  color: black;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  min-width: 4rem;
+  border-radius: 2px;
+  border: 1px solid rgb(202, 202, 202);
+}
+.pagination__link--active,
+.pagination__link:hover {
+  background-color: rgb(202, 202, 202);
+}
+.pagination__link i {
+  font-size: 1.2rem;
 }
