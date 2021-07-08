@@ -199,6 +199,15 @@
   transition: 0.5s;
 }
 /* cho fix */
-/* .rating-page1 {
+.star-rating__4 {
   display: none;
-} */
+}
+.star-rating__3 {
+  display: none;
+}
+.star-rating__2 {
+  display: none;
+}
+.star-rating__1 {
+  display: none;
+}
