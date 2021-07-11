@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
   </head>
   <body>
+
     <section class="home__page">
       <!-- header -->
       <header class="header">
@@ -89,7 +90,7 @@
                       </li>
                       <li class="nav-child__item" >
                         <a href="ordercake.html" class="nav-child__link">
-                          Custom Order
+                          Design Your Cake
                         </a>
                       </li>
                     </ul>
@@ -105,9 +106,6 @@
                         <a href="aboutus.html" class="nav-child__link"
                           >About us</a
                         >
-                      </li>
-                      <li class="nav-child__item">
-                        <a href="blog.html" class="nav-child__link"> Blog </a>
                       </li>
                       <li class="nav-child__item">
                         <a href="team.html" class="nav-child__link"> Team </a>
@@ -126,7 +124,7 @@
                     </ul>
                   </li>
                   <li class="header__nav-item">
-                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                    <a href="blog.html" class="header__nav-link">Blog</a>
                   </li>
                   <li class="header__nav-item">
                     <a href="contact.html" class="header__nav-link">
@@ -179,7 +177,7 @@
                   </li>
                   <li class="mobile__child-item">
                     <a href="ordercake.html" class="mobile__child-link">
-                      Custom Cake
+                      Design Your Cake
                     </a>
                   </li>
                 </ul>
@@ -195,9 +193,6 @@
                     <a href="aboutus.html" class="mobile__child-link"
                       >About us</a
                     >
-                  </li>
-                  <li class="mobile__child-item">
-                    <a href="blog.html" class="mobile__child-link">Blog</a>
                   </li>
                   <li class="mobile__child-item">
                     <a href="team.html" class="mobile__child-link">Team</a>
@@ -216,7 +211,7 @@
                 </ul>
               </li>
               <li class="mobile__nav-item">
-                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+                <a href="blog.html" class="mobile__nav-link">Blog</a>
               </li>
               <li class="mobile__nav-item">
                 <a href="contact.html" class="mobile__nav-link">Contact</a>
@@ -241,7 +236,7 @@
               <input type="text" placeholder="Email Address" required>
               <input type="password" placeholder="Password" required>
               <button type="submit" class="btn btn-login-form btn-sumbit-login">Login</button>
-              <a class="forget-password">Forgot Password</a>
+              <a href="maintenace.html" class="forget-password">Forgot Password</a>
             </form>
             <form class="form-register form-login" data-form="Register">
               <input type="text" placeholder="FullName" required>
@@ -1652,6 +1647,12 @@
                         <span>Contact</span>
                       </a>
                     </li>
+                    <li class="item-footer__item">
+                      <a href="sitemap.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Sitemap</span>
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="footer-top__item">
@@ -1710,57 +1711,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
        "></script>
-    <script>
-      var owl = $(".header__img-list");
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        nav:false,
-        dots:true,
-        margin: 0,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-      // 
-      var owl1 = $(".new-product__list");
-      owl1.owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 20,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateOut: "fadeOut",
-        responsive:{
-        0:{
-          items:1,
-        },
-        500:{
-          items:2,
-        },
-        600:{
-          items:2,
-        },
-        900:{
-          items:4,
-        }
-      }
-      });
-      $(".play").on("click", function () {
-        owl1.trigger("play.owl.autoplay", [4000]);
-      });
-      $(".stop").on("click", function () {
-        owl1.trigger("stop.owl.autoplay");
-      });
-    </script>
+    <script src="assets/Js/slider.js"></script>
     <script src="assets/Js/home.js"></script>
   </body>
 </html>

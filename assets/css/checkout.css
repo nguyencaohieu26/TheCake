@@ -70,6 +70,7 @@
   grid-template-columns: 1fr 1fr;
 }
 .billing-details__content .group-form input,
+.group-form select,
 .customer-login input,
 .login-coupon {
   width: 100%;
@@ -79,6 +80,10 @@
   border: 1px solid #353535;
   padding: 1rem;
   color: #333;
+}
+.group-form select {
+  height: 3.8rem;
+  color: #777;
 }
 .group-form label {
   font-size: 1.5rem;
@@ -174,6 +179,12 @@
   gap: 1.2rem;
 }
 /* checkout-step3 */
+.your-order {
+  overflow: hidden;
+}
+.your-order__details {
+  overflow-x: scroll;
+}
 .addition-note {
   margin-bottom: 2rem;
 }
@@ -254,13 +265,25 @@ th {
   font-size: 1.4rem;
   color: var(--text-color1);
 }
-.list-payment i {
-  font-size: 2.2rem;
+.list-payment-modify {
+  display: flex;
+  margin-top: 1rem;
 }
-.list-payment i:hover {
-  color: #9f2b00;
+.list-payment-modify img {
+  max-width: 50px;
+  margin-right: 1rem;
   cursor: pointer;
 }
+.list-payment-modify img.active {
+  border: 2px solid rgb(54, 117, 233);
+  border-radius: 2px;
+}
+.list-payment i {
+  font-size: 5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
 .check-payment__notify {
   max-height: 0;
   overflow: hidden;

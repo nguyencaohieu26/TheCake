@@ -156,7 +156,6 @@ const btn__ExpandImg = document.querySelectorAll(".btn-expand-feature");
 const btn__CloseExpand = document.querySelector(".close__larger-item-img")
 const largerImgElement = document.querySelector(".larger-img-tiem");
 const largerImage      = document.querySelector(".larger-img-item-details img");
-console.log(largerImage)
 btn__ExpandImg.forEach(function(button){
   button.addEventListener("click",function(e){
     var target = e.currentTarget.parentElement.parentElement;

@@ -1,0 +1,44 @@
+/*  */
+.header {
+  background-color: rgb(237, 86, 59);
+}
+.main__home {
+  padding: 15rem 1.5rem 6rem;
+  color: var(--text-color1);
+}
+.sitemap__heading {
+  font-size: 4rem;
+  margin-bottom: 8rem;
+}
+.sitemap-details {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+.sitemap__left {
+  display: grid;
+  gap: 2rem;
+}
+.sitemap__subheading {
+  position: relative;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+.sitemap__subheading::after {
+  position: absolute;
+  content: "";
+  top: calc(100% + 0.8rem);
+  left: 0;
+  width: 4rem;
+  height: 2px;
+  background-color: var(--second-color);
+}
+.sitemap-pages__link,
+.sitemap-subpages__link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.sitemap-pages__link:hover,
+.sitemap-subpages__link:hover {
+  color: var(--text-color);
+}

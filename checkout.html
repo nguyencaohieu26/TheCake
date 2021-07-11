@@ -27,12 +27,9 @@
     <!-- link responsive for homepage -->
     <link rel="stylesheet" href="assets/css/Home/home_responsive.css" />
     <!-- link stylesheet for checkoutpage -->
-    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/checkout.css" />
   </head>
   <body>
-    <!-- 
-      Custom select
-     -->
     <section class="check-out__page">
       <!-- header -->
       <header class="header">
@@ -42,13 +39,13 @@
               <!-- header logo -->
               <div class="header__logo">
                 <a href="index.html" class="header__logo-link">
-                 <div class="img-div">
-                  <img
-                  src="assets/image/logo_cake.png"
-                  alt="Thecake_logo"
-                  class="header__logo-img"
-                />  
-                 </div>
+                  <div class="img-div">
+                    <img
+                      src="assets/image/logo_cake.png"
+                      alt="Thecake_logo"
+                      class="header__logo-img"
+                    />
+                  </div>
                   <span class="header__logo-text">TheCake</span>
                 </a>
               </div>
@@ -78,18 +75,25 @@
                         <!-- nav c2 -->
                         <ul class="nav-subchild__list">
                           <li class="nav-subchild__item">
-                            <a href="birthdaycake.html" class="nav-subchild__link">
+                            <a
+                              href="birthdaycake.html"
+                              class="nav-subchild__link"
+                            >
                               Birthday Cakes
                             </a>
                           </li>
                           <li class="nav-subchild__item">
-                            <a href="anniversarycake.html" class="nav-subchild__link">Anniversary Cakes</a>
+                            <a
+                              href="anniversarycake.html"
+                              class="nav-subchild__link"
+                              >Anniversary Cakes</a
+                            >
                           </li>
                         </ul>
                       </li>
-                      <li class="nav-child__item" >
+                      <li class="nav-child__item">
                         <a href="ordercake.html" class="nav-child__link">
-                          Custom Order
+                          Design Your Cake
                         </a>
                       </li>
                     </ul>
@@ -105,9 +109,6 @@
                         <a href="aboutus.html" class="nav-child__link"
                           >About us</a
                         >
-                      </li>
-                      <li class="nav-child__item">
-                        <a href="blog.html" class="nav-child__link"> Blog </a>
                       </li>
                       <li class="nav-child__item">
                         <a href="team.html" class="nav-child__link"> Team </a>
@@ -126,7 +127,7 @@
                     </ul>
                   </li>
                   <li class="header__nav-item">
-                    <a href="gallery.html" class="header__nav-link">Gallery</a>
+                    <a href="blog.html" class="header__nav-link">Blog</a>
                   </li>
                   <li class="header__nav-item">
                     <a href="contact.html" class="header__nav-link">
@@ -179,7 +180,7 @@
                   </li>
                   <li class="mobile__child-item">
                     <a href="ordercake.html" class="mobile__child-link">
-                      Custom Cake
+                      Design Your Cake
                     </a>
                   </li>
                 </ul>
@@ -195,9 +196,6 @@
                     <a href="aboutus.html" class="mobile__child-link"
                       >About us</a
                     >
-                  </li>
-                  <li class="mobile__child-item">
-                    <a href="blog.html" class="mobile__child-link">Blog</a>
                   </li>
                   <li class="mobile__child-item">
                     <a href="team.html" class="mobile__child-link">Team</a>
@@ -216,7 +214,7 @@
                 </ul>
               </li>
               <li class="mobile__nav-item">
-                <a href="gallery.html" class="mobile__nav-link">Gallery</a>
+                <a href="blog.html" class="mobile__nav-link">Blog</a>
               </li>
               <li class="mobile__nav-item">
                 <a href="contact.html" class="mobile__nav-link">Contact</a>
@@ -294,7 +292,7 @@
         </div>
       </div>
       <!-- header__image -->
-      <div class ="header__checkout-image">
+      <div class="header__checkout-image">
         <div class="header__checkout-content">
           <h3>Checkout</h3>
         </div>
@@ -310,191 +308,241 @@
                   <div class="returning-cutomer__question">
                     <i class="far fa-window-maximize"></i>
                     <span>Returning customer?</span>
-                    <button class="open-customer-question">Click here to login</button>
+                    <button class="open-customer-question">
+                      Click here to login
+                    </button>
                   </div>
                   <div class="returning-cutomer__answer">
-                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                    <p>
+                      If you have shopped with us before, please enter your
+                      details in the boxes below. If you are a new customer,
+                      please proceed to the Billing & Shipping section.
+                    </p>
                     <form action="" class="customer-login">
                       <div class="group-form">
                         <label for="username">Username or Email*</label>
-                        <input type="text" required>
+                        <input type="text" required />
                       </div>
                       <div class="group-form">
                         <label for="password">Password*</label>
-                        <input type="password" required>
+                        <input type="password" required />
                       </div>
                       <button type="submit">
                         <span>Login</span>
                       </button>
                     </form>
-                    <a href="#" class="btn btn-lost-pass">Lost your password?</a>
+                    <a href="maintenace.html" class="btn btn-lost-pass"
+                      >Lost your password?</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-           <form action="" class="check-out__form">
-            <div class="checkout-step2">
-              <div class="billing-details">
-                <h4 class="checkout-step2__heading">BILLING DETAILS</h4>
-                <div class="billing-details__content">
-                  <div class="group-form">
-                    <label for="firstname">First name*</label>
-                    <input type="text" id="firstname" required>
-                  </div>
-                  <div class="group-form">
-                    <label for="lastname">Last name*</label>
-                    <input type="text" id="lastname" required>
-                  </div>
-                  <div class="group-form">
-                    <label for="country">Country*</label>
-                    <input type="text" id="country" placeholder="Vietnam" required>
-                  </div>
-                  <div class="group-form">
-                    <label for="streetaddress">Street address*</label>
-                    <input type="text" id="streetaddress" placeholder="House number and street name">
-                  </div>
-                  <div class="group-form">
-                    <label for="zipcode">Postcode / ZIP*</label>
-                  <input type="text" required id="zipcode">
-                  </div>
-                  <div class="group-form">
-                    <label for="town">Town / City*</label>
-                  <input type="text" required id="town">
-                  </div>
-                  <div class="group-form">
-                    <label for="phone">Phone*</label>
-                  <input type="text" required id="phone">
-                  </div>
-                  <div class="group-form">
-                    <label for="email">Email Address*</label>
-                  <input type="email" required id="email" >
+            <form action="" class="check-out__form">
+              <div class="checkout-step2">
+                <div class="billing-details">
+                  <h4 class="checkout-step2__heading">BILLING DETAILS</h4>
+                  <div class="billing-details__content">
+                    <div class="group-form">
+                      <label for="firstname">First name*</label>
+                      <input type="text" id="firstname" required />
+                    </div>
+                    <div class="group-form">
+                      <label for="lastname">Last name*</label>
+                      <input type="text" id="lastname" required />
+                    </div>
+                    <div class="group-form">
+                      <label for="country">Country*</label>
+                      <select>
+                        <option value="">Select Country</option>
+                        <option value="">United State</option>
+                        <option value="">United Kingdom</option>
+                        <option value="">Canada</option>
+                        <option value="">Mexico</option>
+                        <option value="">German</option>
+                        <option value="">France</option>
+                      </select>
+                    </div>
+                    <div class="group-form">
+                      <label for="streetaddress">Street address*</label>
+                      <input
+                        type="text"
+                        id="streetaddress"
+                        placeholder="House number and street name"
+                      />
+                    </div>
+                    <div class="group-form">
+                      <label for="zipcode">Postcode / ZIP*</label>
+                      <input type="text" required id="zipcode" />
+                    </div>
+                    <div class="group-form">
+                      <label for="town">Town / City*</label>
+                      <input type="text" required id="town" />
+                    </div>
+                    <div class="group-form">
+                      <label for="phone">Phone*</label>
+                      <input type="text" required id="phone" />
+                    </div>
+                    <div class="group-form">
+                      <label for="email">Email Address*</label>
+                      <input type="email" required id="email" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="checkout-step3">
-                <!-- additional info -->
-                <div class="addition-note">
-                  <h4 class="checkout-step2__heading">ADDITIONAL INFORMATION</h4>
-                  <div class="additional-info__content">
-                    <p>Order notes</p>
-                    <textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                <div class="checkout-step3">
+                  <!-- additional info -->
+                  <div class="addition-note">
+                    <h4 class="checkout-step2__heading">
+                      ADDITIONAL INFORMATION
+                    </h4>
+                    <div class="additional-info__content">
+                      <p>Order notes</p>
+                      <textarea
+                        placeholder="Notes about your order, e.g. special notes for delivery."
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
-                <!-- apply coupon -->
-                <div class="returning-customer__item">
-                  <div class="returning-cutomer__question">
-                    <i class="far fa-window-maximize"></i>
-                    <span>Having a coupon?</span>
-                    <button type="button" class="open-customer-question">Click here to enter your code</button>
-                  </div>
-                  <div class="returning-cutomer__answer">
-                    <p class="custom-desc-cop" style="padding: 1.3rem 0;">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
-                    <form action="" class="customer-login">    
-                      <input type="text" placeholder="Coupon Code" class="login-coupon">               
-                      <button type="button" class="btn-getcoupon">
-                        <span>Apply Coupon</span>
+                  <!-- apply coupon -->
+                  <div class="returning-customer__item">
+                    <div class="returning-cutomer__question">
+                      <i class="far fa-window-maximize"></i>
+                      <span>Having a coupon?</span>
+                      <button type="button" class="open-customer-question">
+                        Click here to enter your code
                       </button>
-                    </form>
+                    </div>
+                    <div class="returning-cutomer__answer">
+                      <p class="custom-desc-cop" style="padding: 1.3rem 0">
+                        If you have shopped with us before, please enter your
+                        details in the boxes below. If you are a new customer,
+                        please proceed to the Billing & Shipping section.
+                      </p>
+                      <form action="" class="customer-login">
+                        <input
+                          type="text"
+                          placeholder="Coupon Code"
+                          class="login-coupon"
+                        />
+                        <button type="button" class="btn-getcoupon">
+                          <span>Apply Coupon</span>
+                        </button>
+                      </form>
+                    </div>
                   </div>
-                </div>
-                <!-- table detail product -->
-                <div class="your-order">
-                  <h4 class="checkout-step2__heading">YOUR ORDER</h4>
-                  <div class="your-order__details">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>ItemCode</th>
-                          <th>Products</th>
-                          <th>Quanity</th>
-                          <th>Total</th>
-                          <th>Remove</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <!-- row1 -->
-                        <tr>
-                          <th>BD107</th>
-                          <th>Class Birthday Cake</th>
-                          <th>
-                            <div class="number-of-quanity">
-                              <span class="quanity-item">1</span>
-                              <div class="quanity-modify">
-                                <i class="fa fa-plus btn-incresase-quanity"></i>
-                                <i class="fa fa-minus btn-decresase-quanity"></i>
+                  <!-- table detail product -->
+                  <div class="your-order">
+                    <h4 class="checkout-step2__heading">YOUR ORDER</h4>
+                    <div class="your-order__details">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ItemCode</th>
+                            <th>Products</th>
+                            <th>Quanity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- row1 -->
+                          <tr>
+                            <th>BD107</th>
+                            <th>Class Birthday Cake</th>
+                            <th>
+                              <div class="number-of-quanity">
+                                <span class="quanity-item">1</span>
+                                <div class="quanity-modify">
+                                  <i
+                                    class="fa fa-plus btn-incresase-quanity"
+                                  ></i>
+                                  <i
+                                    class="fa fa-minus btn-decresase-quanity"
+                                  ></i>
+                                </div>
                               </div>
-                            </div>
-                          </th>
-                          <th class="price-money">50$</th>
-                          <th><a href="#" class="remove-item">Remove</a></th>
-                        </tr>
-                        <!-- row2 -->
-                        <tr>
-                          <th>BD108</th>
-                          <th>Chocolate Birthday Cake</th>
-                          <th>
-                            <div class="number-of-quanity">
-                              <span class="quanity-item">1</span>
-                              <div class="quanity-modify">
-                                <i class="fa fa-plus btn-incresase-quanity"></i>
-                                <i class="fa fa-minus btn-decresase-quanity"></i>
+                            </th>
+                            <th class="price-money">50$</th>
+                            <th><a href="#" class="remove-item">Remove</a></th>
+                          </tr>
+                          <!-- row2 -->
+                          <tr>
+                            <th>BD108</th>
+                            <th>Chocolate Birthday Cake</th>
+                            <th>
+                              <div class="number-of-quanity">
+                                <span class="quanity-item">1</span>
+                                <div class="quanity-modify">
+                                  <i
+                                    class="fa fa-plus btn-incresase-quanity"
+                                  ></i>
+                                  <i
+                                    class="fa fa-minus btn-decresase-quanity"
+                                  ></i>
+                                </div>
                               </div>
-                            </div>
-                          </th>
-                          <th class="price-money">50$</th>
-                          <th><a href="#" class="remove-item">Remove</a></th>
-                        </tr>
-                        <!-- row3 -->
-                        <tr>
-                          <th colspan="2" class="colspan2">Totals</th>
-                          <th class="sum-quanity">2</th>
-                          <th class="total-money">100$</th>     
-                        </tr>
-                      </tbody>
-                    </table>
+                            </th>
+                            <th class="price-money">50$</th>
+                            <th><a href="#" class="remove-item">Remove</a></th>
+                          </tr>
+                          <!-- row3 -->
+                          <tr>
+                            <th colspan="2" class="colspan2">Totals</th>
+                            <th class="sum-quanity">2</th>
+                            <th class="total-money">100$</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
+                  <!-- end -->
                 </div>
-                <!-- end -->
-              </div>             
-            </div>
-            <div class="checkout-step4">
-              <h4 class="checkout-step2__heading">PAYMENT</h4>
-              <div class="group-radio">
-                <div>
-                  <label for="checkpayment">Check payments</label>
-                  <input type="radio" id="checkpayment" name="purchase">
-                  <ul class="list-payment">
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-amazon-pay"></i>
-                  </ul>
-                </div>
-                <p class="check-payment__notify">
-                  <span>
-                    Please send a check to Store Name, Store Street, Store Town, Store State, Postcode
-                  </span>
-                </p>
               </div>
-              <div class="group-radio">
-                <div>
-                  <label for="paypal">Paypal</label> 
-                  <input type="radio" id="paypal" name="purchase">
-                  <span>What is Paypal?</span>
-                  <ul class="list-payment">
-                    <i class="fab fa-cc-paypal"></i>
-                    <i class="fab fa-cc-jcb"></i>
-                  </ul>
+              <div class="checkout-step4">
+                <h4 class="checkout-step2__heading">PAYMENT</h4>
+                <div class="group-radio">
+                  <div>
+                    <label for="checkpayment">Check payments</label>
+                    <input type="radio" id="checkpayment" name="purchase" />
+                    <ul class="list-payment-modify">
+                      <img
+                        src="assets/image/payment/ezgif.com-gif-maker.png"
+                        alt="pay1"
+                      />
+                      <img src="assets/image/payment/lpay2.png" alt="pay2" />
+                      <img src="assets/image/payment/pay3.png" alt="pay3" />
+                      <img src="assets/image/payment/pay4.png" alt="pay4" />
+                      <img src="assets/image/payment/pay5.png" alt="pay5" />
+                      <img src="assets/image/payment/pay6.png" alt="pay6" />
+                    </ul>
+                  </div>
+                  <p class="check-payment__notify">
+                    <span>
+                      Please send a check to Store Name, Store Street, Store
+                      Town, Store State, Postcode
+                    </span>
+                  </p>
                 </div>
-                <p class="check-payment__notify">
-                  <span>
-                  Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
-                  </span>
-                </p>
+                <div class="group-radio">
+                  <div>
+                    <label for="paypal">Paypal</label>
+                    <input type="radio" id="paypal" name="purchase" />
+                    <span>What is Paypal?</span>
+                    <ul class="list-payment">
+                      <i class="fab fa-cc-paypal"></i>
+                    </ul>
+                  </div>
+                  <p class="check-payment__notify">
+                    <span>
+                      Pay via PayPal; you can pay with your credit card if you
+                      don’t have a PayPal account.
+                    </span>
+                  </p>
+                </div>
               </div>
-            </div>
-            <button type="submit" class="btn btn-submit-checkout"><span>Place Order</span></button>
-           </form>
+              <button type="submit" class="btn btn-submit-checkout">
+                <span>Place Order</span>
+              </button>
+            </form>
           </div>
         </section>
       </main>
@@ -602,6 +650,12 @@
                       <span>Contact</span>
                     </a>
                   </li>
+                  <li class="item-footer__item">
+                    <a href="sitemap.html" class="item-footer__link">
+                      <i class="fa fa-chevron-right"></i>
+                      <span>Sitemap</span>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-top__item">
@@ -656,10 +710,9 @@
           </div>
         </div>
     </footer>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="assets/Js/checkout.js"></script>
-  <script src="assets/Js/home.js"></script>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/Js/checkout.js"></script>
+    <script src="assets/Js/home.js"></script>
   </body>
 </html>

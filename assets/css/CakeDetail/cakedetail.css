@@ -286,6 +286,7 @@
 .form-comment textarea,
 .form-comment input {
   outline: none;
+  font-family: "Poppins", sans-serif;
 }
 .form-comment input {
   height: 3.4rem;

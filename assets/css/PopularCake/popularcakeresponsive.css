@@ -10,6 +10,10 @@
   .image-detail__cake {
     width: 85%;
   }
+  .addcart-form__inner {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .header__popular-cake-img h3 {
@@ -29,5 +33,8 @@
   }
   .image-detail__cake {
     max-height: 45rem;
+  }
+  .addcart-form__inner {
+    width: 90%;
   }
 }

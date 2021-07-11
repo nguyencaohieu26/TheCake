@@ -76,3 +76,10 @@ test.forEach(function(item){
 
   })
 })
+// chose payment active
+const paymentElement = document.querySelectorAll(".list-payment-modify img");
+paymentElement.forEach(function(button,index){
+  button.addEventListener("click",function(){
+    choseActivelogin(index,paymentElement);
+  })
+})
