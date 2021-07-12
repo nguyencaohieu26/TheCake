@@ -49,17 +49,19 @@ $(".stop").on("click", function () {
   owl1.trigger("stop.owl.autoplay");
 });
 // ------------------------------------
-// site anniversarycake detail
+// site CAKE detail
+//  ---------------------------
 var owl = $(".related__product-list");
  owl.owlCarousel({
    items: 4,
    loop: true,
    margin: 15,
+   dots:false,
+   nav:true,
    autoplay: false,
    autoplayTimeout: 4000,
    autoplayHoverPause: true,
    animateOut: "fadeOut",
-   nav:true,
    responsive:{
      0:{
        items:1,
@@ -67,10 +69,10 @@ var owl = $(".related__product-list");
      500:{
        items:2,
      },
-     650:{
+     750:{
        items:3,
      },
-     800:{
+     900:{
        items:4,
      }
    }
@@ -81,4 +83,3 @@ var owl = $(".related__product-list");
  $(".stop").on("click", function () {
    owl.trigger("stop.owl.autoplay");
  });
-//  ---------------------------

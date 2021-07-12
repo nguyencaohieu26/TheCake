@@ -347,7 +347,7 @@
                     </p>
                   </div>
                 </div>
-                <a  href="checkout.html" class="birthdaycake__item-addcart">ADD TO CART</a>
+                <a  href="checkout.html" class="birthdaycake__item-addcart">CHECK OUT</a>
                 <div class="birthdaycake__item-moreinfo">
                   <div>
                     <i class="fas fa-truck"></i><span>$15 flat rate shipping on all orders</span>
@@ -819,37 +819,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
- var owl = $(".owl-carousel");
- owl.owlCarousel({
-   items: 4,
-   loop: true,
-   margin: 15,
-   autoplay: false,
-   autoplayTimeout: 4000,
-   autoplayHoverPause: true,
-   animateOut: "fadeOut",
-   nav:true,
-   responsive:{
-     0:{
-       items:1,
-     },
-     500:{
-       items:2,
-     },
-     650:{
-       items:3,
-     },
-     800:{
-       items:4,
-     }
-   }
- });
- $(".play").on("click", function () {
-   owl.trigger("play.owl.autoplay", [4000]);
- });
- $(".stop").on("click", function () {
-   owl.trigger("stop.owl.autoplay");
- });
 </script>
   <script src="assets/Js/birthdaycakedetail.js"></script>
   <script>
@@ -858,6 +827,7 @@
     }
   </script>
   <script src="assets/Js/home.js"></script>
-    </section>
+<script src="assets/Js/slider.js"></script>    
+</section>
   </body>
 </html>
