@@ -498,9 +498,11 @@
   color: #9f2b00;
 }
 .our-menu-cake-list {
+  position: relative;
   display: none;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 8rem;
 }
 .our-menu-cake-list.active {
   display: grid;
@@ -623,6 +625,20 @@
   .our-menu-cake-item-img
   img {
   max-height: 22rem;
+}
+.btn-view-morecake {
+  position: absolute;
+  bottom: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--third-color);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+.btn-view-morecake:hover {
+  background-color: var(--second-color);
 }
 /* Css for container hold details item and larger item */
 /* center product-list top ở bên popularcake.html */
@@ -1163,10 +1179,10 @@ button.btn-contactus-submit i {
   background-color: #e5a74c60;
 }
 .owl-prev {
-  left: -3rem !important;
+  left: 0.5rem;
 }
 .owl-next {
-  right: -3rem !important;
+  right: 0.5rem;
 }
 /* slider */
 .new-product__list .owl-stage-outer {
