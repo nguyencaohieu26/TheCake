@@ -1,7 +1,7 @@
 .header__team-img {
   position: relative;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(/assets/image/bg_team.jpg);
+    url(./../image/bg_team.jpg);
   height: 90vh;
   width: 100%;
   background-position: center;
