@@ -5,7 +5,7 @@
       rgba(49, 42, 42, 0.541),
       rgba(80, 38, 38, 0.459)
     ),
-    url(/assets/image/bg_birthdaycake.jpg);
+    url("../../image/bg_birthdaycake.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;

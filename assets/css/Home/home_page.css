@@ -449,7 +449,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/assets/image/Index_headerImg/makingcake.jpg);
+  background: url("../../image/Index_headerImg/makingcake.jpg");
   height: 70vh;
   width: 100%;
   background-position: center;
@@ -866,7 +866,7 @@ textarea {
   overflow: hidden;
   position: relative;
   margin-bottom: 0;
-  background: url(/assets/image/ordercake/order-form-bg.jpg);
+  background: url("../../image/ordercake/order-form-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1057,7 +1057,7 @@ s.order__cake-desc {
       rgba(128, 30, 30, 0.2),
       rgba(128, 30, 30, 0.2)
     ),
-    url(/assets/image/gallery/bg_img.png);
+    url("../../image/gallery/bg_img.png");
   height: 85vh;
   width: 100%;
   background-position: center;
@@ -1287,7 +1287,7 @@ button.btn-contactus-submit i {
       rgb(0, 0, 0, 0.8),
       rgba(27, 26, 26, 0.774)
     ),
-    url(/assets/image/login_background.jpg);
+    url("../../image/login_background.jpg");
   background-position: center center;
   background-size: cover;
   align-items: center;
@@ -1472,7 +1472,7 @@ button.btn-contactus-submit i {
 /* -------------------------- */
 /* footer */
 .footer {
-  background: url(/assets/image/footer-bg.jpg);
+  background-image: url("../../image/footer-bg.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;

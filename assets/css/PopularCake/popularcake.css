@@ -6,7 +6,7 @@
       rgba(54, 45, 45, 0.3),
       rgba(83, 28, 28, 0.3)
     ),
-    url(/assets/image/bg_popularcake.jpg);
+    url("../../image/bg_popularcake.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
