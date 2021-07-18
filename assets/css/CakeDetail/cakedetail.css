@@ -1,7 +1,7 @@
 /* header image */
 .header__birthdaycakedetail-img {
   position: relative;
-  background: url(/assets/image/gallery/bg_img.png);
+  background: url(../../image/gallery/bg_img.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
