@@ -5,7 +5,7 @@
       rgba(14, 10, 10, 0.671),
       rgba(28, 29, 32, 0.527)
     ),
-    url(../../image/checkout__bg.jpg);
+    url(../image/checkout__bg.jpg);
   background-position: center center;
   background-size: cover;
   height: 60vh;
