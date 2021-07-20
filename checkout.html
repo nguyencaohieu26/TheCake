@@ -298,418 +298,369 @@
         </div>
       </div>
       <!-- main -->
-      <main class="check-out__main">
-        <!-- returning cutomer -->
-        <section class="returning-customer">
-          <div class="row-index">
-            <div class="checkout-step1">
-              <div class="returning-customer__details">
-                <div class="returning-customer__item">
-                  <div class="returning-cutomer__question">
-                    <i class="far fa-window-maximize"></i>
-                    <span>Returning customer?</span>
-                    <button class="open-customer-question">
-                      Click here to login
-                    </button>
-                  </div>
-                  <div class="returning-cutomer__answer">
-                    <p>
-                      If you have shopped with us before, please enter your
-                      details in the boxes below. If you are a new customer,
-                      please proceed to the Billing & Shipping section.
-                    </p>
-                    <form action="" class="customer-login">
-                      <div class="group-form">
-                        <label for="username">Username or Email*</label>
-                        <input type="text" required />
-                      </div>
-                      <div class="group-form">
-                        <label for="password">Password*</label>
-                        <input type="password" required />
-                      </div>
-                      <button type="submit">
-                        <span>Login</span>
-                      </button>
-                    </form>
-                    <a href="maintenace.html" class="btn btn-lost-pass"
-                      >Lost your password?</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <form action="" class="check-out__form">
-              <div class="checkout-step2">
-                <div class="billing-details">
-                  <h4 class="checkout-step2__heading">BILLING DETAILS</h4>
-                  <div class="billing-details__content">
-                    <div class="group-form">
-                      <label for="firstname">First name*</label>
-                      <input type="text" id="firstname" required />
-                    </div>
-                    <div class="group-form">
-                      <label for="lastname">Last name*</label>
-                      <input type="text" id="lastname" required />
-                    </div>
-                    <div class="group-form">
-                      <label for="country">Country*</label>
-                      <select>
-                        <option value="">Select Country</option>
-                        <option value="">United State</option>
-                        <option value="">United Kingdom</option>
-                        <option value="">Canada</option>
-                        <option value="">Mexico</option>
-                        <option value="">German</option>
-                        <option value="">France</option>
-                      </select>
-                    </div>
-                    <div class="group-form">
-                      <label for="streetaddress">Street address*</label>
-                      <input
-                        type="text"
-                        id="streetaddress"
-                        placeholder="House number and street name"
-                      />
-                    </div>
-                    <div class="group-form">
-                      <label for="zipcode">Postcode / ZIP*</label>
-                      <input type="text" required id="zipcode" />
-                    </div>
-                    <div class="group-form">
-                      <label for="town">Town / City*</label>
-                      <input type="text" required id="town" />
-                    </div>
-                    <div class="group-form">
-                      <label for="phone">Phone*</label>
-                      <input type="text" required id="phone" />
-                    </div>
-                    <div class="group-form">
-                      <label for="email">Email Address*</label>
-                      <input type="email" required id="email" />
-                    </div>
-                  </div>
-                </div>
-                <div class="checkout-step3">
-                  <!-- additional info -->
-                  <div class="addition-note">
-                    <h4 class="checkout-step2__heading">
-                      ADDITIONAL INFORMATION
-                    </h4>
-                    <div class="additional-info__content">
-                      <p>Order notes</p>
-                      <textarea
-                        placeholder="Notes about your order, e.g. special notes for delivery."
-                      ></textarea>
-                    </div>
-                  </div>
-                  <!-- apply coupon -->
-                  <div class="returning-customer__item">
-                    <div class="returning-cutomer__question">
-                      <i class="far fa-window-maximize"></i>
-                      <span>Having a coupon?</span>
-                      <button type="button" class="open-customer-question">
-                        Click here to enter your code
-                      </button>
-                    </div>
-                    <div class="returning-cutomer__answer">
-                      <p class="custom-desc-cop" style="padding: 1.3rem 0">
-                        If you have shopped with us before, please enter your
-                        details in the boxes below. If you are a new customer,
-                        please proceed to the Billing & Shipping section.
-                      </p>
-                      <form action="" class="customer-login">
-                        <input
-                          type="text"
-                          placeholder="Coupon Code"
-                          class="login-coupon"
-                        />
-                        <button type="button" class="btn-getcoupon">
-                          <span>Apply Coupon</span>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <!-- table detail product -->
-                  <div class="your-order">
-                    <h4 class="checkout-step2__heading">YOUR ORDER</h4>
-                    <div class="your-order__details">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>ItemCode</th>
-                            <th>Products</th>
-                            <th>Quanity</th>
-                            <th>Total</th>
-                            <th>Remove</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <!-- row1 -->
-                          <tr>
-                            <th>BD107</th>
-                            <th>Class Birthday Cake</th>
-                            <th>
-                              <div class="number-of-quanity">
-                                <span class="quanity-item">1</span>
-                                <div class="quanity-modify">
-                                  <i
-                                    class="fa fa-plus btn-incresase-quanity"
-                                  ></i>
-                                  <i
-                                    class="fa fa-minus btn-decresase-quanity"
-                                  ></i>
-                                </div>
-                              </div>
-                            </th>
-                            <th class="price-money">50$</th>
-                            <th><a href="#" class="remove-item">Remove</a></th>
-                          </tr>
-                          <!-- row2 -->
-                          <tr>
-                            <th>BD108</th>
-                            <th>Chocolate Birthday Cake</th>
-                            <th>
-                              <div class="number-of-quanity">
-                                <span class="quanity-item">1</span>
-                                <div class="quanity-modify">
-                                  <i
-                                    class="fa fa-plus btn-incresase-quanity"
-                                  ></i>
-                                  <i
-                                    class="fa fa-minus btn-decresase-quanity"
-                                  ></i>
-                                </div>
-                              </div>
-                            </th>
-                            <th class="price-money">50$</th>
-                            <th><a href="#" class="remove-item">Remove</a></th>
-                          </tr>
-                          <!-- row3 -->
-                          <tr>
-                            <th colspan="2" class="colspan2">Totals</th>
-                            <th class="sum-quanity">2</th>
-                            <th class="total-money">100$</th>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- end -->
-                </div>
-              </div>
-              <div class="checkout-step4">
-                <h4 class="checkout-step2__heading">PAYMENT</h4>
-                <div class="group-radio">
-                  <div>
-                    <label for="checkpayment">Check payments</label>
-                    <input type="radio" id="checkpayment" name="purchase" />
-                    <ul class="list-payment-modify">
-                      <img
-                        src="assets/image/payment/ezgif.com-gif-maker.png"
-                        alt="pay1"
-                      />
-                      <img src="assets/image/payment/lpay2.png" alt="pay2" />
-                      <img src="assets/image/payment/pay3.png" alt="pay3" />
-                      <img src="assets/image/payment/pay4.png" alt="pay4" />
-                      <img src="assets/image/payment/pay5.png" alt="pay5" />
-                      <img src="assets/image/payment/pay6.png" alt="pay6" />
-                    </ul>
-                  </div>
-                  <p class="check-payment__notify">
-                    <span>
-                      Please send a check to Store Name, Store Street, Store
-                      Town, Store State, Postcode
-                    </span>
-                  </p>
-                </div>
-                <div class="group-radio">
-                  <div>
-                    <label for="paypal">Paypal</label>
-                    <input type="radio" id="paypal" name="purchase" />
-                    <span>What is Paypal?</span>
-                    <ul class="list-payment">
-                      <i class="fab fa-cc-paypal"></i>
-                    </ul>
-                  </div>
-                  <p class="check-payment__notify">
-                    <span>
-                      Pay via PayPal; you can pay with your credit card if you
-                      don’t have a PayPal account.
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-submit-checkout">
-                <span>Place Order</span>
-              </button>
-            </form>
-          </div>
-        </section>
-      </main>
-       <!-- footer -->
-       <footer class="footer">
-        <div class="footer-details">
-          <div class="footer-details__top">
-            <div class="row-index">         
-            <ul class="footer-top__list">
-              <li class="footer-top__item">
-                <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
-                <p>
-                  Our adventure started with one humble shop in Fort, Seattle and developed to more 
-                  than one thousand areas all through US.
-                </p>
-                <p>
-                  We bake happiness for you in the face of cake. Let us deliver sweetness in your lives. 
-                </p>
-              </li>
-              <li class="footer-top__item">
-                <h3 class="footer-top__heading">LASTEST POST</h3>
-                <!-- list child -->
-              <ul class="item-footer__list">
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>6 New Cakes For Every Occasion</span>
-                  </a>
-                </li>
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>Let's get through with cake!</span>
-                  </a>
-                </li>
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>What's favorite cake in summer?</span>
-                  </a>
-                </li>
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>Do cupcake can use for Birthday?</span>
-                  </a>
-                </li>
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>Chose Cake for Birthday Party?</span>
-                  </a>
-                </li>
-                <li class="item-footer__item">
-                  <a href="blog-child.html" class="item-footer__link">
-                    <i class="fa fa-chevron-right"></i>
-                    <span>How to Keep Cakes Fresh & Flavorful?</span>
-                  </a>
-                </li>           
-              </ul>
-              </li>
-              <li class="footer-top__item">
-                <h3 class="footer-top__heading">QUICK LINKS</h3>
-                <!-- list child -->
-                <ul class="item-footer__list">
-                  <li class="item-footer__item">
-                    <a href="index.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Home</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="aboutus.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>About Us</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="popularcake.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Products</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="blog.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Blog</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="testimonial.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Testimonials</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="faq.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>FAQ</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="contact.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Contact</span>
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="sitemap.html" class="item-footer__link">
-                      <i class="fa fa-chevron-right"></i>
-                      <span>Sitemap</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer-top__item">
-                <h3 class="footer-top__heading">Contact Info</h3>
-                <p>Main Address: 10 Nr. Street Road, Ohio, USA</p>
-                <a href="contact.html" class="item-footer__link"> Find more location</a>
-                <ul class="item-footer__list">
-                  <li class="item-footer__item">
-                    <a href="tel: +91 345-677-554" class="item-footer__link">
-                      <span>Phone:</span> +91 345-677-554
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="mailto: support@gmail.com" class="item-footer__link">
-                      <span>Email:</span> contact@thecake.com
-                    </a>
-                  </li>
-                  <li class="item-footer__item">
-                    <a href="index.html" class="item-footer__link">
-                     <span>We Website:</span> TheCake.com
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          </div>
-          <div class="footer-details__bottom">
-           <div class="row-index">
-            <p class="copy-right">
-              &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
-            <span>Made with love</span>
+      <main class="checkout__main">
+        <div class="row-index1">
+          <div class="checkout__main-detail">
+            <h3 class="checkout__heading">CheckOut</h3>
+            <p class="checkout__desc">
+              Fill form below to complete your purchase!
             </p>
-            <div class="footer-social__list">
-              <a href="#" class="footer-social__link">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="footer-social__link">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="footer-social__link">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="footer-social__link">
-                <i class="fab fa-pinterest-p"></i>
-              </a>
-              <a href="#" class="footer-social__link">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+            <p>Already registered? <a href="#">Click here to login</a></p>
+            <!-- checkout process -->
+            <div class="checkout__process">
+              <!-- step1 -->
+              <div class="billing__address">
+                <h3 class="checkout__process-heading">1. BILLING ADDRESS</h3>
+                <form action="" class="bill-address__form">
+                  <div class="group-form__checkout">
+                    <div class="group-form1">
+                      <label for="firstname">First Name<span>*</span></label>
+                      <input type="text" name="firstname" id="firstname" />
+                    </div>
+                    <div class="group-form1">
+                      <label for="lastname">Last Name<span>*</span></label>
+                      <input type="text" name="lastname" id="lastname" />
+                    </div>
+                  </div>
+                  <div class="group-form__checkout">
+                    <div class="group-form1">
+                      <label for="email">Email Address<span>*</span></label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="group-form1">
+                      <label for="phonenumber"
+                        >Phone Number<span>*</span></label
+                      >
+                      <input type="text" name="phonenumber" id="phonenumber" />
+                    </div>
+                  </div>
+                  <div class="group-form2">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" />
+                  </div>
+                  <div class="group-form2">
+                    <label for="country">Country<span>*</span></label>
+                    <select name="country" id="country">
+                      <option value="0">Select Country</option>
+                      <option value="1">United State</option>
+                      <option value="1">United Kingdom</option>
+                      <option value="1">Finland</option>
+                      <option value="1">Canada</option>
+                      <option value="1">Australia</option>
+                      <option value="1">Japan</option>
+                      <option value="1">Singapo</option>
+                    </select>
+                  </div>
+                  <div class="group-form__checkout">
+                    <div class="group-form1">
+                      <label for="postalcode"
+                        >Zip/ PostalCode<span>*</span></label
+                      >
+                      <input type="text" name="postalcode" id="postalcode" />
+                    </div>
+                    <div class="group-form1">
+                      <label for="state">State/ Province<span>*</span></label>
+                      <input type="text" name="state" id="state" />
+                    </div>
+                  </div>
+                  <div class="group-form2">
+                    <input type="checkbox" />
+                    <span>Ship to the same address</span>
+                  </div>
+                </form>
+              </div>
+              <!-- step2 & step3 -->
+              <div class="step2-3__process">
+                <h3 class="checkout__process-heading">2. SHIPPING METHOD</h3>
+                <div class="step2-3__detail">
+                  <div class="shipping__method">
+                    <div class="shipping__method-free">
+                      <input type="radio" name="shipmethod" />
+                      <span>Free Shipping</span>
+                    </div>
+                    <div class="shipping__method-pay">
+                      <input type="radio" name="shipmethod" />
+                      <span>EMS(Express Mail Services) $18.00</span>
+                      <img
+                        src="assets/image/payment/EMS-Logo.png"
+                        alt="emslogo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="payment__method">
+                  <h3 class="checkout__process-heading">3. PAYMENT METHOD</h3>
+                  <div class="shipping__method">
+                    <div class="shipping__method-free">
+                      <input type="radio" name="paymethod" />
+                      <span>PayPal</span>
+                      <img
+                        src="assets/image/payment/imagepaypal.jpg"
+                        alt="paypal"
+                      />
+                    </div>
+                    <div class="shipping__method-pay1">
+                      <input type="radio" name="paymethod" />
+                      <span>Credit Card</span>
+                      <div class="payment__method-list">
+                        <img
+                          src="assets/image/payment/pay3.png"
+                          alt="payment1"
+                        />
+                        <img
+                          src="assets/image/payment/pay4.png"
+                          alt="payment1"
+                        />
+                        <img
+                          src="assets/image/payment/pay5.png"
+                          alt="payment1"
+                        />
+                        <img
+                          src="assets/image/payment/pay6.png"
+                          alt="payment1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- step4 -->
+              <div class="step4__progress">
+                <h3 class="checkout__process-heading">4. REVIEW YOUR ORDER</h3>
+                <!-- cart detail -->
+                <div class="table__detail-cart">
+                  <table cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Quanity</th>
+                        <th>Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Chocolate Birthday Cake</td>
+                        <td class="table__detail-input">
+                          <input type="text" value="1" />
+                        </td>
+                        <td class="table__detail-price">$50</td>
+                      </tr>
+                      <tr class="fix-grid fix-grid-1">
+                        <td></td>
+                        <td>Subtotal</td>
+                        <td>$50</td>
+                      </tr>
+                      <tr class="fix-grid">
+                        <td></td>
+                        <td>Shipping</td>
+                        <td>$18</td>
+                      </tr>
+                      <tr class="fix-grid">
+                        <td></td>
+                        <td>Total</td>
+                        <td>$68</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- coupon -->
+                <div class="group-coupon">
+                  <p>Coupon code</p>
+                  <input type="text" placeholder="Enter coupon code" />
+                  <button>Apply Coupon</button>
+                </div>
+                <div class="group-coupon">
+                  <p>Gift card code</p>
+                  <input type="text" placeholder="Enter gift code" />
+                  <button>Apply Coupon</button>
+                </div>
+                <!-- comment -->
+                <div class="group-comment">
+                  <p>Comments</p>
+                  <textarea placeholder="Add your comments"></textarea>
+                </div>
+                <div class="group-checkbox1">
+                  <input type="checkbox"> <span>Add a gift message to my order</span>
+                </div>
+                <div class="moveleft">
+                  <a href="maintenace.html" class="btn btn-checkout-placeorder">PLACE ORDER NOW</a>
+                </div>
+              </div>
             </div>
-           </div>
           </div>
         </div>
-    </footer>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-details">
+          <div class="footer-details__top">
+            <div class="row-index">
+              <ul class="footer-top__list">
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">ABOUT THE CAKE</h3>
+                  <p>
+                    Our adventure started with one humble shop in Fort, Seattle
+                    and developed to more than one thousand areas all through
+                    US.
+                  </p>
+                  <p>
+                    We bake happiness for you in the face of cake. Let us
+                    deliver sweetness in your lives.
+                  </p>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">LASTEST POST</h3>
+                  <!-- list child -->
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>6 New Cakes For Every Occasion</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Let's get through with cake!</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>What's favorite cake in summer?</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Do cupcake can use for Birthday?</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Chose Cake for Birthday Party?</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog-child.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>How to Keep Cakes Fresh & Flavorful?</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">QUICK LINKS</h3>
+                  <!-- list child -->
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="aboutus.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="popularcake.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="blog.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="testimonial.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="faq.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>FAQ</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="contact.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="sitemap.html" class="item-footer__link">
+                        <i class="fa fa-chevron-right"></i>
+                        <span>Sitemap</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-top__item">
+                  <h3 class="footer-top__heading">Contact Info</h3>
+                  <p>Main Address: 10 Nr. Street Road, Ohio, USA</p>
+                  <a href="contact.html" class="item-footer__link">
+                    Find more location</a
+                  >
+                  <ul class="item-footer__list">
+                    <li class="item-footer__item">
+                      <a href="tel: +91 345-677-554" class="item-footer__link">
+                        <span>Phone:</span> +91 345-677-554
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a
+                        href="mailto: support@gmail.com"
+                        class="item-footer__link"
+                      >
+                        <span>Email:</span> contact@thecake.com
+                      </a>
+                    </li>
+                    <li class="item-footer__item">
+                      <a href="index.html" class="item-footer__link">
+                        <span>We Website:</span> TheCake.com
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-details__bottom">
+            <div class="row-index">
+              <p class="copy-right">
+                &copy; Copyright 2021 <span>TheCake.</span> All Rights Reserved.
+                <span>Made with love</span>
+              </p>
+              <div class="footer-social__list">
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="footer-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/Js/checkout.js"></script>
