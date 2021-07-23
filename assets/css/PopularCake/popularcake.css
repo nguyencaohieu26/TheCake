@@ -40,7 +40,7 @@
 }
 /* main */
 .main__popularcake {
-  padding: 8rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 /* main top filter */
 .center__product-list-top {
@@ -162,14 +162,15 @@
   margin-top: 5rem;
   text-align: center;
   display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 .product-page,
 .product-prev-page,
 .product-next-page {
   color: var(--text-color1);
-  font-size: 2rem;
+  padding: 0 0.8rem;
+  font-size: 1.7rem;
 }
 .product-page {
   margin-right: 1rem;
@@ -180,8 +181,40 @@
 .product-next-page:hover {
   color: var(--third-color);
 }
+.product-prev-page,
+.product-next-page {
+  font-size: 1.3rem;
+}
 /* ----------------- */
 /* aside */
+.advance__filter-cake-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.advance__filter-cake__item {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+}
+.advance__filter-cake__item:nth-child(even) > * {
+  margin-left: 5rem;
+}
+.advance__filter-cake__item p {
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.advance__filter-opt {
+  display: flex;
+  align-items: center;
+}
+.advance__filter-opt span {
+  font-size: 1.4rem;
+  margin-left: 0.7rem;
+  line-height: 2;
+  color: #353535;
+}
+/*  */
 .aside__product-list {
   background-color: #fcfcfc;
   padding: 2rem 2rem 4rem;

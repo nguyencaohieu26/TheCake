@@ -149,7 +149,7 @@
   margin-bottom: 2rem;
 }
 .recent-post__item img {
-  height: 100%;
+  height: 9rem;
   border-radius: 5px;
 }
 .recent-post__item:hover {

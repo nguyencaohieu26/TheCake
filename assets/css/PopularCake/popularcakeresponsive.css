@@ -1,9 +1,17 @@
+@media only screen and (max-width: 1080px) {
+  .advance__filter-cake__item:nth-child(even) > * {
+    margin-left: 0;
+  }
+}
 @media only screen and (max-width: 992px) {
   .main__popularcake-details .row-index {
     grid-template-columns: 1fr;
   }
   .filter-ranger {
     width: 80%;
+  }
+  .advance__filter-cake__item {
+    flex-basis: 25%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -13,6 +21,11 @@
   .addcart-form__inner {
     grid-template-columns: 1fr;
     width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .advance__filter-cake__item {
+    flex-basis: 50%;
   }
 }
 @media only screen and (max-width: 576px) {
