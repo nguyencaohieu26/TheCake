@@ -51,12 +51,12 @@
   }
   .list-time,
   .list-writer {
-    width: calc(50% - 2rem);
+    width: calc(50% - 1rem);
   }
 
   /* our cake blog */
   .our-cake-blog {
-    padding: 2rem 0;
+    padding: 0;
   }
   .menu-our-cake-blog {
     display: grid;
@@ -117,14 +117,25 @@
   .word-about-blog {
     padding-left: 1rem;
   }
-
   /* list blog */
   .list-time,
   .list-writer {
-    margin: 0 1rem;
+    margin: 0;
+    width: calc(50% - 0.75rem);
+  }
+   /* our cake blog */
+   .our-cake-blog {
+    padding-top: 1rem;
   }
 }
+
 @media only screen and (max-width: 576px) {
+   /* list blog */
+   .list-time,
+   .list-writer {
+     width: calc(50% - 0.5rem);
+   }
+  /* right blog */
   .item-right {
     flex-wrap: wrap;
   }
@@ -142,7 +153,7 @@
     font-size: 1.4rem;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 451.5px) {
   /* main blog */
   .word-about-blog {
     padding-left: 0rem;
@@ -151,11 +162,15 @@
   .list-blog {
     flex-wrap: wrap;
   }
-  .list-time,
-  .list-writer {
+  .list-time {
     width: 100%;
     margin: 0;
     margin-bottom: 2.5rem;
+  }
+  .list-writer {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0rem;
   }
 }
 @media only screen and (max-width: 270px) {
