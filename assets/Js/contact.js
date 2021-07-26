@@ -1,3 +1,5 @@
+// Contact page javascript
+// Marker Map option
 function initMap(){
   // map options
   var options = {
