@@ -14,6 +14,18 @@
   .header__img-content button {
     width: 180px;
   }
+  .morelocation__wrapcontent {
+    display: flex;
+    flex-direction: column;
+  }
+  .morelocation__content {
+    margin-bottom: 20px;
+  }
+  .morelocation__content,
+  .morelocation__map {
+    width: 100%;
+    height: 500px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .contact-us__container form input {
