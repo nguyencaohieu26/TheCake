@@ -23,8 +23,9 @@
   .end-img {
     width: 102px;
   }
-  .w-off {
-    display: none;
+  .previous-and-next,
+  .index-blog-child {
+    padding: 1rem 1rem;
   }
 
   /* share blog child */
@@ -45,17 +46,12 @@
 
 @media only screen and (max-width: 350px) {
   /* group blog child */
-  .previous-and-next {
-    padding: 1rem 1rem 0;
-  }
+  .previous-and-next,
   .index-blog-child {
-    display: none;
+    padding: 0.5rem 0.25rem;
+    margin: 0.5rem 0.1rem;
   }
-}
-
-@media only screen and (max-width: 270px) {
-  /* share blog child */
-  .share-icon {
-    display: none;
-  }
+  .w-on {
+    padding: 0 0.5rem;
+   }
 }

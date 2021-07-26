@@ -40,20 +40,22 @@
   text-align: center;
   font-weight: bold;
   font-size: 4rem;
+  padding-bottom: 1rem;
 }
 .dateby-main {
   text-align: center;
   font-style: italic;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
-.content-blog-child {
+.word-blog-child {
   padding-bottom: 1rem;
 }
-.content-blog-child b {
+.word-blog-child b,
+.word-blog-child1 b {
   font-size: 2rem;
 }
 .image-blog-child,
-.content-blog-child1 {
+.word-blog-child1 {
   padding-bottom: 3rem;
 }
 .image-blog-child {
@@ -79,12 +81,15 @@
   display: flex;
   color: black;
   border: 1px solid black;
-  padding: 1rem 2rem 0;
+  padding: 1rem 2rem;
   margin: 0.5rem;
 }
 .previous-and-next span,
 .index-blog-child span {
-  padding: 0.25rem 0.25rem 0;
+  padding: 0.45rem 1rem;
+}
+.w-on {
+  padding: 0 1rem;
 }
 .previous-and-next:hover,
 .index-blog-child:hover {
@@ -92,25 +97,22 @@
   color: black;
   text-decoration: none;
 }
-.w-off,
-.w-on {
- padding: 0 0.5rem;
-}
-
 /* share blog child */
 .share-icon {
   display: flex;
   font-weight: bold;
   font-size: 2rem;
   padding-top: 2rem;
-  margin-bottom: 3rem;
+}
+.share-icon {
+  margin-left: auto;
 }
 .word-share {
   padding-top: 0.25rem;
 }
 .menu-icon {
   display: flex;
-  padding: 0 3rem;
+  padding-left: 2rem;
 }
 .menu-icon a {
   display: flex;
@@ -126,7 +128,7 @@
   margin: 0 2rem;
 }
 .menu-icon a:hover {
-  border-color: transparent;
+  color: white;
 }
 .backface a:hover {
   background-color: var(--bg-facebook);
@@ -139,7 +141,4 @@
 }
 .backin a:hover {
   background-color: var(--bg-rss);
-}
-.menu-icon a:hover {
-  color: white;
 }
