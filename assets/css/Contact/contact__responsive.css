@@ -36,7 +36,8 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .contact-us__container form button {
+  .contact-us__container form button,
+  .contact-us__details-list-button {
     width: 100%;
   }
 }

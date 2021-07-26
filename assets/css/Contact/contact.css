@@ -42,7 +42,6 @@
 iframe {
   width: 100%;
   height: 450px; 
-  border: 0px;
 }
 /* content */
 .contact-us__content {
@@ -145,7 +144,8 @@ iframe {
 .contact-us__container textarea:focus {
   outline: none;
 }
-.contact-us__container form button {
+.contact-us__container form button,
+.contact-us__details-list-button {
   background-color: var(--third-color);
   padding: 10px;
   border-radius: 50px;
@@ -156,9 +156,67 @@ iframe {
   border: 2px solid #fff;
   margin: auto;
 }
-.contact-us__container form button:hover {
+.contact-us__container form button:hover,
+.contact-us__details-list-button:hover {
   background-color: #fff;
   color: var(--text-color1);
   border: 2px solid var(--third-color);
   transition: 0.5s;
+}
+
+/* branch contact */
+/* setting branch contact css */
+.morelocation__container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.morelocation__container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.morelocation__container a {
+  color: inherit;
+}
+/* right map */
+.morelocation__container iframe {
+  height: 100%;
+}
+/* left content */
+.morelocation__wrapcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.morelocation__wrapcontent > * {
+  width: calc(100% / 2 - 10px);
+}
+.morelocation__content {
+  height: 450px;
+  overflow: scroll;
+}
+.morelocation__content .showroom {
+  margin-bottom: 10px;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+}
+.morelocation__content .showroom:hover {
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.morelocation__content div.active {
+  background-color: #ddd;
+}
+.active {
+  background-color: #ddd;
+}
+.morelocation__wrapcontent .place2,
+.place3, 
+.place4, 
+.place5, 
+.place6, 
+.place7, 
+.place8 {
+  display: none;
 }
