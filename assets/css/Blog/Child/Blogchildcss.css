@@ -8,9 +8,7 @@
 
 /* blog child */
 .blog-child {
-  padding: 1rem;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
+  padding: 1rem 1rem 2rem;
 }
 
 /* link blog */
@@ -19,14 +17,13 @@
   padding-bottom: 2rem;
 }
 .item-link-blog {
-  padding: 0 1rem;
   color: var(--third-color);
 }
 .item-link-blog:hover {
   color: red;
 }
 .link-blog p {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 /* content blog child */
