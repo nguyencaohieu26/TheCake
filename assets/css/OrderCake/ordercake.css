@@ -247,12 +247,12 @@
   height: 8rem;
 }
 .btn-place-order {
-  margin: 3rem 0 0.5rem;
+  margin: 3rem 0 0.5rem auto;
   display: block;
   background-color: var(--ordercake-color);
   color: white;
   padding: 0.8rem;
-  width: 100%;
+  min-width: 18rem;
   border-radius: 3px;
   text-align: center;
   transition: 0.2s ease-in;
