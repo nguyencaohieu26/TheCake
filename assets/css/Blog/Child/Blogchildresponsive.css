@@ -19,15 +19,6 @@
     font-size: 1.4rem;
   }
 
-  /* group blog child */
-  .end-img {
-    width: 102px;
-  }
-  .previous-and-next,
-  .index-blog-child {
-    padding: 1rem 1rem;
-  }
-
   /* share blog child */
   .share-icon {
     font-size: 1.5rem;
@@ -42,16 +33,4 @@
     font-size: 1.2rem;
     margin: 0 1rem;
   }
-}
-
-@media only screen and (max-width: 350px) {
-  /* group blog child */
-  .previous-and-next,
-  .index-blog-child {
-    padding: 0.5rem 0.25rem;
-    margin: 0.5rem 0.1rem;
-  }
-  .w-on {
-    padding: 0 0.5rem;
-   }
 }
