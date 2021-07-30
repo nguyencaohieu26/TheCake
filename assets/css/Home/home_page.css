@@ -991,7 +991,7 @@ s.order__cake-desc {
   cursor: pointer;
 }
 .ourteam-detail__item img {
-  max-height: 40rem;
+  height: 36rem;
 }
 .ourteam-detail__item::after {
   content: "";

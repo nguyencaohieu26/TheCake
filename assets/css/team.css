@@ -37,16 +37,11 @@
 .main__team {
   padding: 7rem 1.5rem 8rem;
 }
-.main__team .row-index {
-  max-width: 900px;
-  margin: 0 auto;
-}
 .main__team-list {
   margin-top: 8rem;
   display: grid;
   gap: 3rem;
-  row-gap: 5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .main__team-item {
   border: 2px solid var(--third-color);
@@ -109,19 +104,4 @@
 }
 .person-team-position {
   color: var(--third-color);
-}
-/* Responsive for screen less than 670px */
-@media only screen and (max-width: 670px) {
-  .main__team-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 500px) {
-  .header__team-img {
-    height: 80vh;
-  }
-  .main__team-list {
-    gap: 4rem;
-    grid-template-columns: 1fr;
-  }
 }
