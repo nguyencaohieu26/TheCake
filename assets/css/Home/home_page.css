@@ -910,7 +910,7 @@ s.order__cake-desc {
   margin-left: 0.5rem;
 }
 .order__cake-image {
-  top: 15%;
+  top: 16%;
   right: -5%;
   position: absolute;
   height: 50rem;
@@ -989,6 +989,9 @@ s.order__cake-desc {
   overflow: hidden;
   z-index: 2;
   cursor: pointer;
+}
+.ourteam-detail__item img {
+  max-height: 40rem;
 }
 .ourteam-detail__item::after {
   content: "";
