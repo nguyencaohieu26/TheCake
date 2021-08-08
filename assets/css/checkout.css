@@ -221,6 +221,22 @@
 .group-coupon p {
   font-size: 1.5rem;
 }
+p.notify_coupon,
+p.notify_gift {
+  font-size: 1.3rem;
+  color: red;
+  display: none;
+}
+p.coup_code,
+p.gift_code {
+  margin-top: 1rem;
+  border: 1px dashed rgb(163, 162, 162);
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  background-color: rgb(221, 221, 221);
+  display: none;
+}
 .group-comment textarea,
 .group-coupon input {
   width: 100%;

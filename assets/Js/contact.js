@@ -35,3 +35,19 @@ function initMap(){
   });
  }
 }
+const formElement = document.querySelector('.form__contact');
+const popupContact = document.querySelector('.popup__contact');
+const closepopup   = document.querySelector('.popup__contact-inner button');
+
+formElement.addEventListener('submit',function(e){
+  e.preventDefault();
+  const input = this.querySelectorAll('input');
+  input.forEach(item=>{
+    item.value ='';
+  })
+  this.querySelector('textarea').value='';
+  popupContact.classList.add('active');
+})
+closepopup.addEventListener("click",function(){
+  popupContact.classList.remove('active');
+})
